@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Document - Graph", "Documen
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Document - NP Problem", "Document - NP Problem\Document - NP Problem.vcxproj", "{135B1845-A1DE-47AB-A8EA-5304A53759B2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Optimal Strategy for a game", "Quiz - Optimal Strategy for a game\Quiz - Optimal Strategy for a game.vcxproj", "{179F2E34-46C7-4149-ADBB-2116BB80EA34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -27,6 +29,10 @@ Global
 		{135B1845-A1DE-47AB-A8EA-5304A53759B2}.Debug|Win32.Build.0 = Debug|Win32
 		{135B1845-A1DE-47AB-A8EA-5304A53759B2}.Release|Win32.ActiveCfg = Release|Win32
 		{135B1845-A1DE-47AB-A8EA-5304A53759B2}.Release|Win32.Build.0 = Release|Win32
+		{179F2E34-46C7-4149-ADBB-2116BB80EA34}.Debug|Win32.ActiveCfg = Debug|Win32
+		{179F2E34-46C7-4149-ADBB-2116BB80EA34}.Debug|Win32.Build.0 = Debug|Win32
+		{179F2E34-46C7-4149-ADBB-2116BB80EA34}.Release|Win32.ActiveCfg = Release|Win32
+		{179F2E34-46C7-4149-ADBB-2116BB80EA34}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
