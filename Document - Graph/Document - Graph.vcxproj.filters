@@ -55,5 +55,8 @@
     <None Include="..\Document - Suffix Tree and Suffix Array\Suffix Tree and Suffix Array.docx">
       <Filter>后缀树与后缀树组</Filter>
     </None>
+    <None Include="..\ArraySorting\Implementation Problems in Quick Sort.docx">
+      <Filter>数组排序</Filter>
+    </None>
   </ItemGroup>
 </Project>
