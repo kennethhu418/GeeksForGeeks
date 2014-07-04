@@ -86,9 +86,6 @@
     <ClCompile Include="Document - NP Problem.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="NP问题的解释.docx" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="头文件">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
@@ -22,6 +18,16 @@
     <Filter Include="后缀树与后缀树组">
       <UniqueIdentifier>{07697d7c-794a-418e-b23f-c7553c80e407}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Graph Related">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="NP Problem">
+      <UniqueIdentifier>{11d7cbba-95f5-4efd-9dff-a2990dab3fcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="海量数据处理">
+      <UniqueIdentifier>{3bb43f9f-7d07-4a73-bd38-1f85ed030880}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -36,10 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
-      <Filter>源文件</Filter>
+      <Filter>Graph Related</Filter>
     </ClCompile>
     <ClCompile Include="Document - Graph.cpp">
-      <Filter>源文件</Filter>
+      <Filter>Graph Related</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +63,18 @@
     </None>
     <None Include="..\ArraySorting\Implementation Problems in Quick Sort.docx">
       <Filter>数组排序</Filter>
+    </None>
+    <None Include="..\Document - NP Problem\NP问题的解释.docx">
+      <Filter>NP Problem</Filter>
+    </None>
+    <None Include="..\Document - 海量数据处理\十七道海量数据处理面试题与Bit.docx">
+      <Filter>海量数据处理</Filter>
+    </None>
+    <None Include="..\Document - 海量数据处理\教你如何迅速秒杀掉.docx">
+      <Filter>海量数据处理</Filter>
+    </None>
+    <None Include="..\Document - 海量数据处理\海量数据处理.docx">
+      <Filter>海量数据处理</Filter>
     </None>
   </ItemGroup>
 </Project>

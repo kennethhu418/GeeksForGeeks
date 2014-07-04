@@ -5,9 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Geeks4Geeks", "Geeks4Geeks\Geeks4Geeks.vcxproj", "{9A6FBDB5-5D61-4335-89A8-8978C050D0DE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Document - Graph", "Document - Graph\Document - Graph.vcxproj", "{4E43A2D7-1A4E-48E2-9634-D334A199A716}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Document - NP Problem", "Document - NP Problem\Document - NP Problem.vcxproj", "{135B1845-A1DE-47AB-A8EA-5304A53759B2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Document", "Document - Graph\Document - Graph.vcxproj", "{4E43A2D7-1A4E-48E2-9634-D334A199A716}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Optimal Strategy for a game", "Quiz - Optimal Strategy for a game\Quiz - Optimal Strategy for a game.vcxproj", "{179F2E34-46C7-4149-ADBB-2116BB80EA34}"
 EndProject
@@ -29,10 +27,6 @@ Global
 		{4E43A2D7-1A4E-48E2-9634-D334A199A716}.Debug|Win32.Build.0 = Debug|Win32
 		{4E43A2D7-1A4E-48E2-9634-D334A199A716}.Release|Win32.ActiveCfg = Release|Win32
 		{4E43A2D7-1A4E-48E2-9634-D334A199A716}.Release|Win32.Build.0 = Release|Win32
-		{135B1845-A1DE-47AB-A8EA-5304A53759B2}.Debug|Win32.ActiveCfg = Debug|Win32
-		{135B1845-A1DE-47AB-A8EA-5304A53759B2}.Debug|Win32.Build.0 = Debug|Win32
-		{135B1845-A1DE-47AB-A8EA-5304A53759B2}.Release|Win32.ActiveCfg = Release|Win32
-		{135B1845-A1DE-47AB-A8EA-5304A53759B2}.Release|Win32.Build.0 = Release|Win32
 		{179F2E34-46C7-4149-ADBB-2116BB80EA34}.Debug|Win32.ActiveCfg = Debug|Win32
 		{179F2E34-46C7-4149-ADBB-2116BB80EA34}.Debug|Win32.Build.0 = Debug|Win32
 		{179F2E34-46C7-4149-ADBB-2116BB80EA34}.Release|Win32.ActiveCfg = Release|Win32

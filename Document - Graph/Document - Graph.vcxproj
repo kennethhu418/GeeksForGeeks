@@ -14,6 +14,7 @@
     <ProjectGuid>{4E43A2D7-1A4E-48E2-9634-D334A199A716}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>DocumentGraph</RootNamespace>
+    <ProjectName>Document</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -89,7 +90,13 @@
   <ItemGroup>
     <None Include="..\ArraySorting\Implementation Problems in Quick Sort.docx" />
     <None Include="..\ArraySorting\数组排序总结.docx" />
+    <None Include="..\Document - NP Problem\NP问题的解释.docx">
+      <FileType>Document</FileType>
+    </None>
     <None Include="..\Document - Suffix Tree and Suffix Array\Suffix Tree and Suffix Array.docx" />
+    <None Include="..\Document - 海量数据处理\十七道海量数据处理面试题与Bit.docx" />
+    <None Include="..\Document - 海量数据处理\教你如何迅速秒杀掉.docx" />
+    <None Include="..\Document - 海量数据处理\海量数据处理.docx" />
     <None Include="图中的距离\图中结点的最短距离汇总.docx" />
     <None Include="图中的距离\图中结点的最长距离汇总 .docx" />
   </ItemGroup>

@@ -33,7 +33,4 @@
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="NP问题的解释.docx" />
-  </ItemGroup>
 </Project>
