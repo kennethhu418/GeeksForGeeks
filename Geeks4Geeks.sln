@@ -11,6 +11,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Document - NP Problem", "Do
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Optimal Strategy for a game", "Quiz - Optimal Strategy for a game\Quiz - Optimal Strategy for a game.vcxproj", "{179F2E34-46C7-4149-ADBB-2116BB80EA34}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Sort a K sorted array", "Quiz - Sort a K sorted array\Quiz - Sort a K sorted array.vcxproj", "{65F3F9BF-507A-4EFF-979C-F7E02E06EE30}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Mathematical Expression OOP", "Quiz - Mathematical Expression OOP\Quiz - Mathematical Expression OOP.vcxproj", "{64444E97-BF42-4F17-A9A3-275BDF9D9157}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -33,6 +37,14 @@ Global
 		{179F2E34-46C7-4149-ADBB-2116BB80EA34}.Debug|Win32.Build.0 = Debug|Win32
 		{179F2E34-46C7-4149-ADBB-2116BB80EA34}.Release|Win32.ActiveCfg = Release|Win32
 		{179F2E34-46C7-4149-ADBB-2116BB80EA34}.Release|Win32.Build.0 = Release|Win32
+		{65F3F9BF-507A-4EFF-979C-F7E02E06EE30}.Debug|Win32.ActiveCfg = Debug|Win32
+		{65F3F9BF-507A-4EFF-979C-F7E02E06EE30}.Debug|Win32.Build.0 = Debug|Win32
+		{65F3F9BF-507A-4EFF-979C-F7E02E06EE30}.Release|Win32.ActiveCfg = Release|Win32
+		{65F3F9BF-507A-4EFF-979C-F7E02E06EE30}.Release|Win32.Build.0 = Release|Win32
+		{64444E97-BF42-4F17-A9A3-275BDF9D9157}.Debug|Win32.ActiveCfg = Debug|Win32
+		{64444E97-BF42-4F17-A9A3-275BDF9D9157}.Debug|Win32.Build.0 = Debug|Win32
+		{64444E97-BF42-4F17-A9A3-275BDF9D9157}.Release|Win32.ActiveCfg = Release|Win32
+		{64444E97-BF42-4F17-A9A3-275BDF9D9157}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

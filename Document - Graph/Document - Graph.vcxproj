@@ -87,6 +87,8 @@
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\ArraySorting\数组排序总结.docx" />
+    <None Include="..\Document - Suffix Tree and Suffix Array\Suffix Tree and Suffix Array.docx" />
     <None Include="图中的距离\图中结点的最短距离汇总.docx" />
     <None Include="图中的距离\图中结点的最长距离汇总 .docx" />
   </ItemGroup>
