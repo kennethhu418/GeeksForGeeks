@@ -28,6 +28,9 @@
     <Filter Include="海量数据处理">
       <UniqueIdentifier>{3bb43f9f-7d07-4a73-bd38-1f85ed030880}</UniqueIdentifier>
     </Filter>
+    <Filter Include="知识型题目">
+      <UniqueIdentifier>{f5bab50d-8589-4f83-9bf4-fefd0f0c1472}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -75,6 +78,9 @@
     </None>
     <None Include="..\Document - 海量数据处理\海量数据处理.docx">
       <Filter>海量数据处理</Filter>
+    </None>
+    <None Include="..\Document - URL Navigate\What really happens when you navigate to a URL.docx">
+      <Filter>知识型题目</Filter>
     </None>
   </ItemGroup>
 </Project>

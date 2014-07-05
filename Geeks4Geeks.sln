@@ -13,6 +13,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Sort a K sorted arra
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Mathematical Expression OOP", "Quiz - Mathematical Expression OOP\Quiz - Mathematical Expression OOP.vcxproj", "{64444E97-BF42-4F17-A9A3-275BDF9D9157}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Multiple Stacks in a Single Array", "Quiz - Multiple Stacks in a Single Array\Quiz - Multiple Stacks in a Single Array.vcxproj", "{86FE8B42-1184-40A1-834E-E333318BFD9F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Rectangle Overlap", "Quiz - Rectangle Overlap\Quiz - Rectangle Overlap.vcxproj", "{6C0E61A5-434F-4397-9207-EC2514731127}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Least Common Ansestor", "Quiz - Least Common Ansestor\Quiz - Least Common Ansestor.vcxproj", "{6391AC61-ABEC-4837-8366-5778EACBCDA0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find the row with maximum number of 1s", "Quiz - Find the row with maximum number of 1s\Quiz - Find the row with maximum number of 1s.vcxproj", "{BAFFFBE7-DDEF-491D-A958-201AF80EBF10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -39,6 +47,22 @@ Global
 		{64444E97-BF42-4F17-A9A3-275BDF9D9157}.Debug|Win32.Build.0 = Debug|Win32
 		{64444E97-BF42-4F17-A9A3-275BDF9D9157}.Release|Win32.ActiveCfg = Release|Win32
 		{64444E97-BF42-4F17-A9A3-275BDF9D9157}.Release|Win32.Build.0 = Release|Win32
+		{86FE8B42-1184-40A1-834E-E333318BFD9F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{86FE8B42-1184-40A1-834E-E333318BFD9F}.Debug|Win32.Build.0 = Debug|Win32
+		{86FE8B42-1184-40A1-834E-E333318BFD9F}.Release|Win32.ActiveCfg = Release|Win32
+		{86FE8B42-1184-40A1-834E-E333318BFD9F}.Release|Win32.Build.0 = Release|Win32
+		{6C0E61A5-434F-4397-9207-EC2514731127}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C0E61A5-434F-4397-9207-EC2514731127}.Debug|Win32.Build.0 = Debug|Win32
+		{6C0E61A5-434F-4397-9207-EC2514731127}.Release|Win32.ActiveCfg = Release|Win32
+		{6C0E61A5-434F-4397-9207-EC2514731127}.Release|Win32.Build.0 = Release|Win32
+		{6391AC61-ABEC-4837-8366-5778EACBCDA0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6391AC61-ABEC-4837-8366-5778EACBCDA0}.Debug|Win32.Build.0 = Debug|Win32
+		{6391AC61-ABEC-4837-8366-5778EACBCDA0}.Release|Win32.ActiveCfg = Release|Win32
+		{6391AC61-ABEC-4837-8366-5778EACBCDA0}.Release|Win32.Build.0 = Release|Win32
+		{BAFFFBE7-DDEF-491D-A958-201AF80EBF10}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BAFFFBE7-DDEF-491D-A958-201AF80EBF10}.Debug|Win32.Build.0 = Debug|Win32
+		{BAFFFBE7-DDEF-491D-A958-201AF80EBF10}.Release|Win32.ActiveCfg = Release|Win32
+		{BAFFFBE7-DDEF-491D-A958-201AF80EBF10}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
