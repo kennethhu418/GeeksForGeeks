@@ -21,6 +21,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Least Common Ansesto
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find the row with maximum number of 1s", "Quiz - Find the row with maximum number of 1s\Quiz - Find the row with maximum number of 1s.vcxproj", "{BAFFFBE7-DDEF-491D-A958-201AF80EBF10}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - MsExcel Column Pattern", "Quiz - MsExcel Column Pattern\Quiz - MsExcel Column Pattern.vcxproj", "{EFBFE16E-740D-438E-B998-452B4670065D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Array Seperation", "Quiz - Array Seperation\Quiz - Array Seperation.vcxproj", "{1C4718B5-146A-4987-9081-F3F195B61211}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - isFactorialDivisible", "Quiz - isFactorialDivisible\Quiz - isFactorialDivisible.vcxproj", "{0C58E886-EF29-4EF5-BC23-10615ACE6F0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -63,6 +69,18 @@ Global
 		{BAFFFBE7-DDEF-491D-A958-201AF80EBF10}.Debug|Win32.Build.0 = Debug|Win32
 		{BAFFFBE7-DDEF-491D-A958-201AF80EBF10}.Release|Win32.ActiveCfg = Release|Win32
 		{BAFFFBE7-DDEF-491D-A958-201AF80EBF10}.Release|Win32.Build.0 = Release|Win32
+		{EFBFE16E-740D-438E-B998-452B4670065D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EFBFE16E-740D-438E-B998-452B4670065D}.Debug|Win32.Build.0 = Debug|Win32
+		{EFBFE16E-740D-438E-B998-452B4670065D}.Release|Win32.ActiveCfg = Release|Win32
+		{EFBFE16E-740D-438E-B998-452B4670065D}.Release|Win32.Build.0 = Release|Win32
+		{1C4718B5-146A-4987-9081-F3F195B61211}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C4718B5-146A-4987-9081-F3F195B61211}.Debug|Win32.Build.0 = Debug|Win32
+		{1C4718B5-146A-4987-9081-F3F195B61211}.Release|Win32.ActiveCfg = Release|Win32
+		{1C4718B5-146A-4987-9081-F3F195B61211}.Release|Win32.Build.0 = Release|Win32
+		{0C58E886-EF29-4EF5-BC23-10615ACE6F0D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0C58E886-EF29-4EF5-BC23-10615ACE6F0D}.Debug|Win32.Build.0 = Debug|Win32
+		{0C58E886-EF29-4EF5-BC23-10615ACE6F0D}.Release|Win32.ActiveCfg = Release|Win32
+		{0C58E886-EF29-4EF5-BC23-10615ACE6F0D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

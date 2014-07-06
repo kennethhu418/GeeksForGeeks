@@ -31,6 +31,9 @@
     <Filter Include="知识型题目">
       <UniqueIdentifier>{f5bab50d-8589-4f83-9bf4-fefd0f0c1472}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MultiThread">
+      <UniqueIdentifier>{09155053-8e1f-4c37-bf6a-36cf34fc4033}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -81,6 +84,12 @@
     </None>
     <None Include="..\Document - URL Navigate\What really happens when you navigate to a URL.docx">
       <Filter>知识型题目</Filter>
+    </None>
+    <None Include="..\Document - Multithread\Introduction to cocurrency.docx">
+      <Filter>MultiThread</Filter>
+    </None>
+    <None Include="..\Document - Multithread\threads management on multi-cores.pdf">
+      <Filter>MultiThread</Filter>
     </None>
   </ItemGroup>
 </Project>

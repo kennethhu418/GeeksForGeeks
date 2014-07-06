@@ -90,6 +90,8 @@
   <ItemGroup>
     <None Include="..\ArraySorting\Implementation Problems in Quick Sort.docx" />
     <None Include="..\ArraySorting\数组排序总结.docx" />
+    <None Include="..\Document - Multithread\Introduction to cocurrency.docx" />
+    <None Include="..\Document - Multithread\threads management on multi-cores.pdf" />
     <None Include="..\Document - NP Problem\NP问题的解释.docx">
       <FileType>Document</FileType>
     </None>
