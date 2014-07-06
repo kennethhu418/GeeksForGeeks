@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Array Seperation", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - isFactorialDivisible", "Quiz - isFactorialDivisible\Quiz - isFactorialDivisible.vcxproj", "{0C58E886-EF29-4EF5-BC23-10615ACE6F0D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - next smallest palindrome number", "Quiz - next smallest palindrome number\Quiz - next smallest palindrome number.vcxproj", "{60370CE5-3F84-410C-8F2D-90CDD6C6D898}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -81,6 +83,10 @@ Global
 		{0C58E886-EF29-4EF5-BC23-10615ACE6F0D}.Debug|Win32.Build.0 = Debug|Win32
 		{0C58E886-EF29-4EF5-BC23-10615ACE6F0D}.Release|Win32.ActiveCfg = Release|Win32
 		{0C58E886-EF29-4EF5-BC23-10615ACE6F0D}.Release|Win32.Build.0 = Release|Win32
+		{60370CE5-3F84-410C-8F2D-90CDD6C6D898}.Debug|Win32.ActiveCfg = Debug|Win32
+		{60370CE5-3F84-410C-8F2D-90CDD6C6D898}.Debug|Win32.Build.0 = Debug|Win32
+		{60370CE5-3F84-410C-8F2D-90CDD6C6D898}.Release|Win32.ActiveCfg = Release|Win32
+		{60370CE5-3F84-410C-8F2D-90CDD6C6D898}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
