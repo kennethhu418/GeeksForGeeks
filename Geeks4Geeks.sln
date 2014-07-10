@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Pair Sum In BST", "Q
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Connect Nodes Vertically In Binary Tree", "Quiz - Connect Nodes Vertically In Binary Tree\Quiz - Connect Nodes Vertically In Binary Tree.vcxproj", "{A1576E14-8AD2-4BD5-8CF8-BC3CE7B28E82}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Array Partition Problem", "Quiz - Array Partition Problem\Quiz - Array Partition Problem.vcxproj", "{9A493312-51C4-411B-8EB9-57B74EC72A7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -99,6 +101,10 @@ Global
 		{A1576E14-8AD2-4BD5-8CF8-BC3CE7B28E82}.Debug|Win32.Build.0 = Debug|Win32
 		{A1576E14-8AD2-4BD5-8CF8-BC3CE7B28E82}.Release|Win32.ActiveCfg = Release|Win32
 		{A1576E14-8AD2-4BD5-8CF8-BC3CE7B28E82}.Release|Win32.Build.0 = Release|Win32
+		{9A493312-51C4-411B-8EB9-57B74EC72A7E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9A493312-51C4-411B-8EB9-57B74EC72A7E}.Debug|Win32.Build.0 = Debug|Win32
+		{9A493312-51C4-411B-8EB9-57B74EC72A7E}.Release|Win32.ActiveCfg = Release|Win32
+		{9A493312-51C4-411B-8EB9-57B74EC72A7E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
