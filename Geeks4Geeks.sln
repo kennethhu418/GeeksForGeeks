@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Search SubArray with
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Matrix Search", "Quiz - Matrix Search\Quiz - Matrix Search.vcxproj", "{599ED81C-AE80-467A-8D16-810D5CA33F6D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Longest Repeating SubString", "Quiz - Longest Repeating SubString\Quiz - Longest Repeating SubString.vcxproj", "{BC5077A4-A8E6-4D27-BD7B-5F3C4905825D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -123,6 +125,10 @@ Global
 		{599ED81C-AE80-467A-8D16-810D5CA33F6D}.Debug|Win32.Build.0 = Debug|Win32
 		{599ED81C-AE80-467A-8D16-810D5CA33F6D}.Release|Win32.ActiveCfg = Release|Win32
 		{599ED81C-AE80-467A-8D16-810D5CA33F6D}.Release|Win32.Build.0 = Release|Win32
+		{BC5077A4-A8E6-4D27-BD7B-5F3C4905825D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC5077A4-A8E6-4D27-BD7B-5F3C4905825D}.Debug|Win32.Build.0 = Debug|Win32
+		{BC5077A4-A8E6-4D27-BD7B-5F3C4905825D}.Release|Win32.ActiveCfg = Release|Win32
+		{BC5077A4-A8E6-4D27-BD7B-5F3C4905825D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
