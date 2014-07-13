@@ -29,13 +29,8 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Quiz - Array Seperation.cpp">
+    <ClCompile Include="Quiz - Find 3 Inversed Number.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Problem Description.PNG">
-      <Filter>资源文件</Filter>
-    </Image>
   </ItemGroup>
 </Project>

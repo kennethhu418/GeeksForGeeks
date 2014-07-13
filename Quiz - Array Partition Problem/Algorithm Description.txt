@@ -1,1 +1,23 @@
 http://en.wikipedia.org/wiki/Partition_problem
+数组分解问题，其贪心算法有两种：
+见链接。
+
+http://en.wikipedia.org/wiki/Subset_sum_problem
+贪心算法：
+The key idea is to eliminate sums that are close to one another.
+
+http://en.wikipedia.org/wiki/Bin_packing_problem
+
+Bin Packing Problem: 装箱问题
+有四种贪心解法：
+1. Next Fit算法
+按照物品的顺序，将物品一个一个地装入箱子。如果箱子装不下当前物品了，则将当前的箱子拿走，换一个新的箱子继续装。
+
+2. First Fit算法
+按照物品的顺序，将物品放入第一个能装得下该物品的箱子
+
+3. Best Fit算法
+按照物品的顺序，将物品放入能装得下该物品的箱子。这样的箱子可能有多个，我们将其放入装入后箱子所剩容量最小的那个箱子。
+
+4. First Fit Decreasing算法
+将物品降序排列，然后运用First Fit算法

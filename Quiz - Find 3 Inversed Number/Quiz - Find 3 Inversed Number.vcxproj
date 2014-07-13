@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1C4718B5-146A-4987-9081-F3F195B61211}</ProjectGuid>
+    <ProjectGuid>{3B5A4A35-EC66-4520-BBE3-5F5903C06E81}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>QuizArraySeperation</RootNamespace>
+    <RootNamespace>QuizFind3InversedNumber</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -83,11 +83,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Quiz - Array Seperation.cpp" />
+    <ClCompile Include="Quiz - Find 3 Inversed Number.cpp" />
     <ClCompile Include="stdafx.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Problem Description.PNG" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
