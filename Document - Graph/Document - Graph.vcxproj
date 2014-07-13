@@ -77,6 +77,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include="..\Document - Multithread\MMU的工作原理.txt" />
+    <Text Include="..\Document - Multithread\mutex实现.txt" />
+    <Text Include="..\Document - Multithread\Spinlocks.txt" />
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -91,7 +94,11 @@
     <None Include="..\ArraySorting\Implementation Problems in Quick Sort.docx" />
     <None Include="..\ArraySorting\数组排序总结.docx" />
     <None Include="..\Document - Multithread\Introduction to cocurrency.docx" />
+    <None Include="..\Document - Multithread\semaphore 实现机制.docx" />
     <None Include="..\Document - Multithread\threads management on multi-cores.pdf" />
+    <None Include="..\Document - Multithread\win32下进程间通信.docx" />
+    <None Include="..\Document - Multithread\内存管理.docx" />
+    <None Include="..\Document - Multithread\自旋锁和排队自旋锁.docx" />
     <None Include="..\Document - NP Problem\NP问题的解释.docx">
       <FileType>Document</FileType>
     </None>

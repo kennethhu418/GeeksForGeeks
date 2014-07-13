@@ -37,6 +37,15 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="..\Document - Multithread\MMU的工作原理.txt">
+      <Filter>MultiThread</Filter>
+    </Text>
+    <Text Include="..\Document - Multithread\mutex实现.txt">
+      <Filter>MultiThread</Filter>
+    </Text>
+    <Text Include="..\Document - Multithread\Spinlocks.txt">
+      <Filter>MultiThread</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -89,6 +98,18 @@
       <Filter>MultiThread</Filter>
     </None>
     <None Include="..\Document - Multithread\threads management on multi-cores.pdf">
+      <Filter>MultiThread</Filter>
+    </None>
+    <None Include="..\Document - Multithread\semaphore 实现机制.docx">
+      <Filter>MultiThread</Filter>
+    </None>
+    <None Include="..\Document - Multithread\win32下进程间通信.docx">
+      <Filter>MultiThread</Filter>
+    </None>
+    <None Include="..\Document - Multithread\内存管理.docx">
+      <Filter>MultiThread</Filter>
+    </None>
+    <None Include="..\Document - Multithread\自旋锁和排队自旋锁.docx">
       <Filter>MultiThread</Filter>
     </None>
   </ItemGroup>
