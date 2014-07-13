@@ -54,6 +54,9 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ReadWriteLock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -61,6 +64,9 @@
     </ClCompile>
     <ClCompile Include="Document - Graph.cpp">
       <Filter>Graph Related</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadWriteLock Implementation.h">
+      <Filter>MultiThread</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

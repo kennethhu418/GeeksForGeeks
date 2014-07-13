@@ -6,6 +6,7 @@
 #include <time.h>
 #include <algorithm>
 #include <assert.h>
+#include <queue>
 
 /***************************************************************************
 * Problem Statement:
