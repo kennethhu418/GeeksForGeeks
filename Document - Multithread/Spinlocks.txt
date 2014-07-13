@@ -1,0 +1,87 @@
+EmcPAL.h
+
+#if defined (EMCPAL_USE_CSX_SPL) && !defined (EMCPAL_DEBUGEXT)
+typedef csx_p_spl_t             EMCPAL_SPINLOCK          , *PEMCPAL_SPINLOCK;
+typedef csx_p_spl_t             EMCPAL_SPINLOCK_QUEUED,         *PEMCPAL_SPINLOCK_QUEUED;
+typedef csx_nuint_t             EMCPAL_SPINLOCK_QUEUE_NODE, *PEMCPAL_SPINLOCK_QUEUE_NODE;
+#else                                   /* EMCPAL_USE_CSX_SPL */
+/*! @brief EmcPAL spinlock */
+typedef struct CSX_ALIGN_NATIVE _EMCPAL_SPINLOCK
+{
+	KSPIN_LOCK		lockObject; /*!< Lock object */
+	KIRQL				irql; /*!< IRQL for lock */	 
+} EMCPAL_SPINLOCK, *PEMCPAL_SPINLOCK;		/*!< Pointer to EmcPal spinlock*/
+
+/*! @brief EmcPAL queued spinlock */
+typedef KSPIN_LOCK			EMCPAL_SPINLOCK_QUEUED, *PEMCPAL_SPINLOCK_QUEUED;	/*!< Pointer to EmcPal queued spinlock */
+/*! @brief EmcPAL spinlock queue node */
+typedef KLOCK_QUEUE_HANDLE	EMCPAL_SPINLOCK_QUEUE_NODE, *PEMCPAL_SPINLOCK_QUEUE_NODE; /*!< Pointer to EmcPAL spinlock queue node */
+#endif                                  /* EMCPAL_USE_CSX_SPL */
+
+
+
+callstack of create a csx_p_spl_t lock:
+EmcpalSpinlockCreate(PEMCPAL_CLIENT pPalClient,PEMCPAL_SPINLOCK pSpinlock,const TEXT *pName)
+csx_p_spl_create_nid_always(pPalClient->csxModuleContext, pSpinlock, pName)
+csx_p_spl_create_nid_maybe
+csx_p_int_resource_header_initialize_any_level = CSX_P_INT_SCHED_RESOURCE_HEADER_INITIALIZE_ANY_LEVEL
+csx_p_int_resource_header_initialize_backend
+csx_p_int_resource_header_validate_init = CSX_P_INT_RESOURCE_HEADER_VALIDATE_INIT
+csx_p_int_resource_header_exists
+
+
+
+/*!
+ * @brief
+ *      Contains state information about a PAL client.
+ *
+ *      Each driver that wants to communicate with the PAL must register
+ *      as a client so the PAL can track resources allocated on the client's
+ *      behalf.  If a driver uses the PAL driver shell they will be automatically
+ *      registered as a PAL client when the driver loads and unregistered when
+ *      the driver unloads.  This structure should be considered opaque to PAL
+ *      users.  The contents of this structure should only be accessed using the
+ *      exported PAL client APIs declared below and defined in EmcPAL_Client.c
+ *
+ */
+typedef struct _EMCPAL_CLIENT
+{
+    ULONG                 magic;			/*!< Magic number ued to detect valid client object */
+    TEXT                 *clientName;		/*!< Name of the client */
+    csx_dlist_entry_t     clientListEntry;	/*!< Entry on the list of PAL clients */
+    TEXT                 *registryPath;		/*!< Path to the client registry parameters */
+    csx_module_context_t  csxModuleContext;	/*!< CSX module context we must pass to any APIs that create CSX resources */
+} EMCPAL_CLIENT, *PEMCPAL_CLIENT;			/*!< PEMCPAL_CLIENT - Pointer to EMCPAL_CLIENT */
+
+
+
+
+Hi, Dave and Austin,
+
+I am now looking at AR635822, which complains that MCC is disabling csx resource accounting due to intializing a spinlock which has already been created and used before.
+
+To be specific, csx resource accounting is used to track whether a csx scheduling object (e.g. spinlock) is manipulated in a standard way: initialize->use->destroy. In MCC, when system reboots from a panic, we recover and reinitilaize the objects in the persistent memory, including some BasicLockedObject such as CachePageReferenceManager::DirtyCommit:
+
+    void CachePageReferenceManager::PersistentRefs::Initialize() {
+         /* SAFEBUG - causes resource list corruption, cannot initialize over an already created resource */
+        csx_ci_module_disable_resource_accounting(EmcpalClientGetCsxModuleContext(EmcpalDriverGetCurrentClientObject())); /* SAFEBUG - this is not a fix, it is just a temporary workaround to allow us to run without disabling CSX resource validation for all cache tests - */
+        for (ULONG i = 0; i < MaxCPUs; i++) {
+            DirtyCommit *c = &mCommit[i];
+            new (c) DirtyCommit();
+        }
+        csx_ci_module_enable_resource_accounting(EmcpalClientGetCsxModuleContext(EmcpalDriverGetCurrentClientObject())); /* SAFEBUG - this is not a fix, it is just a temporary workaround to allow us to run without disabling CSX resource validation for all cache tests - */
+    }
+
+When reinitializing the spinlock in BasicLockedObject, csx resource accounting logic would find that we are initializing a previous created csx scheduling object without destroying it first. So csx complains about this. In order to avoid csx's complain, currently we disable csx accounting before reinitializing the BasicLockedObject and enable it again after the reinitializing, just as shown in the above codes.
+
+The csx accounting disabling in our codes is what this AR complains. Joe Caisse suggests that using csx_p_raw_spl_t as our spinlock, rather than using csx_p_spl_t. The previous one is raw spinlock which has no csx resource accounting. However, I think this is not applicable in our case:
+(1) BasicLockedObject is a common inherited object in BVD framework, which means not only MCC objects inherits from it.
+    Changing spinlock in it has high risk and all basic volume drivers lose the capability of resource accounting, which is actually quite useful.
+
+(2) It seems the only exported lock that MCx can use is EMCPAL_SPINLOCK (actually the spinlock in BasicLockedObject is just EMCPAL_SPINLOCK), and EMCPAL_SPINLOCK is just defined as csx_p_spl_t in user mode.
+
+Based on my understanding from reading the spinlock creation logic, csx resource accounting's complaint in our case only happens in simulation tests. To be specific, the header of the created spinlock is registered in PAL driver, and resource accounting is based on checking the registered information in PAL. On hardware, when system reboots from a panic, the information in PAL of the last system run is cleared. When MCC reinitialize the spinlock, csx takes it as a brand new spinlock (because there is no existing spinlock header in PAL), so csx would not complain about it. In simulation tests, the panic of system does not unload the PAL driver. So when MCC reinitialize the spinlock, csx complains about it because it finds existing spinlock header in PAL.
+
+So my suggestion is to only disabling csx resource accounting during cache initialization in MCC simulation tests, rather than putting it in the production codes which would affect all other modules no matter on simulation or hardware.
+
+Could you give some comments? Thanks.

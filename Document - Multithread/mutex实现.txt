@@ -1,0 +1,5 @@
+Mutex的实现和semaphore基本原理是一致的，只不过由于其counter最大为1，所以可以进行更多的优化。其实现请见
+
+http://www.cs.fsu.edu/~baker/devices/lxr/http/source/linux/kernel/mutex.c
+
+可以从mutex_init, mutex_lock和mutex_unlock三个函数进入。
