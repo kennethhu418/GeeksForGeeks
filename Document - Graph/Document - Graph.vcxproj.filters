@@ -118,5 +118,8 @@
     <None Include="..\Document - Multithread\自旋锁和排队自旋锁.docx">
       <Filter>MultiThread</Filter>
     </None>
+    <None Include="..\Document - Multithread\Deadlocks.docx">
+      <Filter>MultiThread</Filter>
+    </None>
   </ItemGroup>
 </Project>

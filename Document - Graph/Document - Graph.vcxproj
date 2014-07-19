@@ -95,6 +95,7 @@
   <ItemGroup>
     <None Include="..\ArraySorting\Implementation Problems in Quick Sort.docx" />
     <None Include="..\ArraySorting\数组排序总结.docx" />
+    <None Include="..\Document - Multithread\Deadlocks.docx" />
     <None Include="..\Document - Multithread\Introduction to cocurrency.docx" />
     <None Include="..\Document - Multithread\semaphore 实现机制.docx" />
     <None Include="..\Document - Multithread\threads management on multi-cores.pdf" />
