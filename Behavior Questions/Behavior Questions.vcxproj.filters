@@ -34,4 +34,7 @@
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="How_to_Answer_Interview_Questions_top50.pdf" />
+  </ItemGroup>
 </Project>
