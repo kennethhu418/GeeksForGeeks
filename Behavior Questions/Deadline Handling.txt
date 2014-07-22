@@ -1,0 +1,7 @@
+How do you cope with multiple deadlines?
+Well, actually I have produced some of my best work in such situations. The most important thing is focus on effective planning by priority as early as possible. At the planning phase, I think the most important thing is to leave room for interruptions and unexpected things during the job, which actually always happen. Then talk to the manager or tech lead about my plan and re-arrange the priorities. Then kill one thing after another.
+
+How do you cope with missing deadlines.
+Well, this does not occur on me oftenly. Usually I can finish my job on time because at the feature planning stage, if I feel I cannot finish the job before the planned deadline, I will go to negotiate with the manager or product owner and explained why from the technical estimation perspective.
+
+After begginning doing the job, if I feel I cannot finish all the job planned on time, my principle is "never surprise anyone at the last minute.". Speak to my manager or tech lead to let them know, in good time, so that an alternative solution can be found. For example, when I implement the incomplete job transaction feature, there are always custermor issues coming in, which of course is the highest priority things. Then I will let my manager know about this situation and tell him maybe the feature completion will be delayed so that we can re-plan and talk to the team which is affected by this.

@@ -17,6 +17,8 @@
   <ItemGroup>
     <Text Include="ReadMe.txt" />
     <Text Include="Why join Amazon.txt" />
+    <Text Include="Deadline Handling.txt" />
+    <Text Include="Proud Things.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
