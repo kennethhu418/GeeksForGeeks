@@ -53,6 +53,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Longest Palindrome",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Behavior Questions", "Behavior Questions\Behavior Questions.vcxproj", "{3E285A0A-0095-48A7-87BF-B509624A3C0A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Array Partial Sorting", "Quiz - Array Partial Sorting\Quiz - Array Partial Sorting.vcxproj", "{F31A2C90-9E22-49C2-ACF7-2AF33542E1C3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CountNumberOfTwos", "CountNumberOfTwos\CountNumberOfTwos.vcxproj", "{0278A352-9BEA-4D0C-AFB9-9D6DB66791B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -159,6 +163,14 @@ Global
 		{3E285A0A-0095-48A7-87BF-B509624A3C0A}.Debug|Win32.Build.0 = Debug|Win32
 		{3E285A0A-0095-48A7-87BF-B509624A3C0A}.Release|Win32.ActiveCfg = Release|Win32
 		{3E285A0A-0095-48A7-87BF-B509624A3C0A}.Release|Win32.Build.0 = Release|Win32
+		{F31A2C90-9E22-49C2-ACF7-2AF33542E1C3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F31A2C90-9E22-49C2-ACF7-2AF33542E1C3}.Debug|Win32.Build.0 = Debug|Win32
+		{F31A2C90-9E22-49C2-ACF7-2AF33542E1C3}.Release|Win32.ActiveCfg = Release|Win32
+		{F31A2C90-9E22-49C2-ACF7-2AF33542E1C3}.Release|Win32.Build.0 = Release|Win32
+		{0278A352-9BEA-4D0C-AFB9-9D6DB66791B2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0278A352-9BEA-4D0C-AFB9-9D6DB66791B2}.Debug|Win32.Build.0 = Debug|Win32
+		{0278A352-9BEA-4D0C-AFB9-9D6DB66791B2}.Release|Win32.ActiveCfg = Release|Win32
+		{0278A352-9BEA-4D0C-AFB9-9D6DB66791B2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
