@@ -10,6 +10,8 @@ using namespace std;
 class Solution
 {
 public:
+
+    //calculate how many 2 there are for the numbers below n in decimal representation
     unsigned int getNumberOfTwos(unsigned int n)
     {
         if (n < 2)  return 0;
@@ -38,6 +40,27 @@ public:
 
         return total;
     }
+
+    //calculate how many 1 there are for the numbers below n in binary representation
+    unsigned int getNumberOfOnes(unsigned int n)
+    {
+        unsigned int low_bitmask = 0, shift_count_for_high_bit = 1;
+        unsigned int total = 0, high = 0, low = 0;
+
+        while (n & (~low_bitmask))
+        {
+            high = (n >> shift_count_for_high_bit);
+            low = n & low_bitmask;
+
+            total += high * (low_bitmask + 1);
+            if (n & (1 + low_bitmask))  total += (low + 1);
+
+            ++shift_count_for_high_bit;
+            low_bitmask = (low_bitmask << 1) | 1;
+        }
+
+        return total;
+    }
 };
 
 class Solution_BruteForce
@@ -48,6 +71,14 @@ public:
         unsigned int total = 0;
         while (n > 0)
             total += getTwosNum(n--);
+        return total;
+    }
+
+    unsigned int getNumberOfOnes(unsigned int n)
+    {
+        unsigned int total = 0;
+        while (n-- > 0)
+            total += getOnesNum(n + 1);
         return total;
     }
 
@@ -65,6 +96,18 @@ private:
         }
         return count;
     }
+
+    unsigned int getOnesNum(unsigned int n)
+    {
+        if (n == 0) return 0;
+        unsigned int total = 0;
+        while (n)
+        {
+            if (n & 1) ++total;
+            n = (n >> 1);
+        }
+        return total;
+    }
 };
 
 int _tmain(int argc, _TCHAR* argv[])
@@ -78,11 +121,26 @@ int _tmain(int argc, _TCHAR* argv[])
 
     srand(time(0));
 
+    cout << endl << "================================================" << endl;
+    cout << "      Now begin testing getNumberOfTwos routine." << endl;
     while (times-- > 0)
     {
         n = rand() % (MAX_VAL + 1);
         standardAns = so2.getNumberOfTwos(n);
         myAns = so.getNumberOfTwos(n);
+        if (myAns != standardAns)
+            cout << "Inconsistent Ans for n = " << n << " standard: " << standardAns << " my: " << myAns << endl;
+    }
+
+    cout << endl<<"================================================" << endl;
+    cout << "      Now begin testing getNumberOfOnes routine." << endl;
+
+    times = TIMES;
+    while (times-- > 0)
+    {
+        n = rand() % (MAX_VAL + 1);
+        standardAns = so2.getNumberOfOnes(n);
+        myAns = so.getNumberOfOnes(n);
         if (myAns != standardAns)
             cout << "Inconsistent Ans for n = " << n << " standard: " << standardAns << " my: " << myAns << endl;
     }
