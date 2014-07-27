@@ -63,6 +63,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Quick Sort and Selec
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Get Minimum Number for Multiply With Only 1 and 0", "Quiz - Get Minimum Number for Multiply With Only 1 and 0\Quiz - Get Minimum Number for Multiply With Only 1 and 0.vcxproj", "{FAC4B8F6-45A0-4327-9304-746B48214589}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find Closest Point Pair", "Quiz - Find Closest Point Pair\Quiz - Find Closest Point Pair.vcxproj", "{97B6A6EC-F043-404E-8A47-5B6C29A3CFFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -189,6 +191,10 @@ Global
 		{FAC4B8F6-45A0-4327-9304-746B48214589}.Debug|Win32.Build.0 = Debug|Win32
 		{FAC4B8F6-45A0-4327-9304-746B48214589}.Release|Win32.ActiveCfg = Release|Win32
 		{FAC4B8F6-45A0-4327-9304-746B48214589}.Release|Win32.Build.0 = Release|Win32
+		{97B6A6EC-F043-404E-8A47-5B6C29A3CFFE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{97B6A6EC-F043-404E-8A47-5B6C29A3CFFE}.Debug|Win32.Build.0 = Debug|Win32
+		{97B6A6EC-F043-404E-8A47-5B6C29A3CFFE}.Release|Win32.ActiveCfg = Release|Win32
+		{97B6A6EC-F043-404E-8A47-5B6C29A3CFFE}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
