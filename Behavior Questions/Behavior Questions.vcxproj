@@ -79,6 +79,7 @@
     <Text Include="Deadline Handling.txt" />
     <Text Include="Proud Things.txt" />
     <Text Include="ReadMe.txt" />
+    <Text Include="tell me about yourself.txt" />
     <Text Include="Why join Amazon.txt" />
   </ItemGroup>
   <ItemGroup>
