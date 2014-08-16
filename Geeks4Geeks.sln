@@ -69,6 +69,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Prune BST out of ran
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Search Almost Sorted Array", "Quiz - Search Almost Sorted Array\Quiz - Search Almost Sorted Array.vcxproj", "{BDDF0570-3AD4-4F1E-B4BD-AC65033FF486}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Max Distance in DAG", "Quiz - Max Distance in DAG\Quiz - Max Distance in DAG.vcxproj", "{F4129980-A41F-4353-9834-5E06C7C5C4D4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Multiple Stacks", "Quiz - Multiple Stacks\Quiz - Multiple Stacks.vcxproj", "{D1A96D24-C1F0-40F9-8721-972CD84C3DF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -207,6 +211,14 @@ Global
 		{BDDF0570-3AD4-4F1E-B4BD-AC65033FF486}.Debug|Win32.Build.0 = Debug|Win32
 		{BDDF0570-3AD4-4F1E-B4BD-AC65033FF486}.Release|Win32.ActiveCfg = Release|Win32
 		{BDDF0570-3AD4-4F1E-B4BD-AC65033FF486}.Release|Win32.Build.0 = Release|Win32
+		{F4129980-A41F-4353-9834-5E06C7C5C4D4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F4129980-A41F-4353-9834-5E06C7C5C4D4}.Debug|Win32.Build.0 = Debug|Win32
+		{F4129980-A41F-4353-9834-5E06C7C5C4D4}.Release|Win32.ActiveCfg = Release|Win32
+		{F4129980-A41F-4353-9834-5E06C7C5C4D4}.Release|Win32.Build.0 = Release|Win32
+		{D1A96D24-C1F0-40F9-8721-972CD84C3DF2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D1A96D24-C1F0-40F9-8721-972CD84C3DF2}.Debug|Win32.Build.0 = Debug|Win32
+		{D1A96D24-C1F0-40F9-8721-972CD84C3DF2}.Release|Win32.ActiveCfg = Release|Win32
+		{D1A96D24-C1F0-40F9-8721-972CD84C3DF2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

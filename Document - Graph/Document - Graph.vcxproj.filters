@@ -9,9 +9,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="结点的最大最小距离">
-      <UniqueIdentifier>{1fba7d48-7c2d-4fe4-8ee6-826f46e50e99}</UniqueIdentifier>
-    </Filter>
     <Filter Include="数组排序">
       <UniqueIdentifier>{f2275b4e-180c-48a8-9c2c-91c889735294}</UniqueIdentifier>
     </Filter>
@@ -34,6 +31,12 @@
     <Filter Include="MultiThread">
       <UniqueIdentifier>{09155053-8e1f-4c37-bf6a-36cf34fc4033}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Graph Related\结点的最大最小距离">
+      <UniqueIdentifier>{1fba7d48-7c2d-4fe4-8ee6-826f46e50e99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graph Related\二分图的最大和最佳匹配">
+      <UniqueIdentifier>{e58da47e-7717-4386-9ddc-887d9036c701}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -43,8 +46,8 @@
     <Text Include="..\Document - Multithread\mutex实现.txt">
       <Filter>MultiThread</Filter>
     </Text>
-    <Text Include="..\Document - Multithread\Spinlocks.txt">
-      <Filter>MultiThread</Filter>
+    <Text Include="二分图最佳匹配\无权二分图的最大匹配和最佳匹配.txt">
+      <Filter>Graph Related\二分图的最大和最佳匹配</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
@@ -71,10 +74,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="图中的距离\图中结点的最短距离汇总.docx">
-      <Filter>结点的最大最小距离</Filter>
+      <Filter>Graph Related\结点的最大最小距离</Filter>
     </None>
     <None Include="图中的距离\图中结点的最长距离汇总 .docx">
-      <Filter>结点的最大最小距离</Filter>
+      <Filter>Graph Related\结点的最大最小距离</Filter>
     </None>
     <None Include="..\ArraySorting\数组排序总结.docx">
       <Filter>数组排序</Filter>
@@ -120,6 +123,9 @@
     </None>
     <None Include="..\Document - Multithread\Deadlocks.docx">
       <Filter>MultiThread</Filter>
+    </None>
+    <None Include="二分图最佳匹配\带权二分图的最佳匹配算法.docx">
+      <Filter>Graph Related\二分图的最大和最佳匹配</Filter>
     </None>
   </ItemGroup>
 </Project>
