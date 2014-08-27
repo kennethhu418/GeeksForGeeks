@@ -73,6 +73,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Max Distance in DAG"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Multiple Stacks", "Quiz - Multiple Stacks\Quiz - Multiple Stacks.vcxproj", "{D1A96D24-C1F0-40F9-8721-972CD84C3DF2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Minimum Element in Rotated Array", "Quiz - Minimum Element in Rotated Array\Quiz - Minimum Element in Rotated Array.vcxproj", "{4CAD07E3-0007-49F3-BE46-5A32E7138B62}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Randomly Select Numbers from Stream", "Quiz - Randomly Select Numbers from Stream\Quiz - Randomly Select Numbers from Stream.vcxproj", "{DB27E220-6B65-4C58-9B22-FF4746109338}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -219,6 +223,14 @@ Global
 		{D1A96D24-C1F0-40F9-8721-972CD84C3DF2}.Debug|Win32.Build.0 = Debug|Win32
 		{D1A96D24-C1F0-40F9-8721-972CD84C3DF2}.Release|Win32.ActiveCfg = Release|Win32
 		{D1A96D24-C1F0-40F9-8721-972CD84C3DF2}.Release|Win32.Build.0 = Release|Win32
+		{4CAD07E3-0007-49F3-BE46-5A32E7138B62}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4CAD07E3-0007-49F3-BE46-5A32E7138B62}.Debug|Win32.Build.0 = Debug|Win32
+		{4CAD07E3-0007-49F3-BE46-5A32E7138B62}.Release|Win32.ActiveCfg = Release|Win32
+		{4CAD07E3-0007-49F3-BE46-5A32E7138B62}.Release|Win32.Build.0 = Release|Win32
+		{DB27E220-6B65-4C58-9B22-FF4746109338}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DB27E220-6B65-4C58-9B22-FF4746109338}.Debug|Win32.Build.0 = Debug|Win32
+		{DB27E220-6B65-4C58-9B22-FF4746109338}.Release|Win32.ActiveCfg = Release|Win32
+		{DB27E220-6B65-4C58-9B22-FF4746109338}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
