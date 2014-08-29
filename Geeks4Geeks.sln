@@ -77,6 +77,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Minimum Element in R
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Randomly Select Numbers from Stream", "Quiz - Randomly Select Numbers from Stream\Quiz - Randomly Select Numbers from Stream.vcxproj", "{DB27E220-6B65-4C58-9B22-FF4746109338}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Lucky Number", "Quiz - Lucky Number\Quiz - Lucky Number.vcxproj", "{96607A86-975D-420E-B4A1-C7D6A561AD4F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find the largest multiple of 3", "Quiz - Find the largest multiple of 3\Quiz - Find the largest multiple of 3.vcxproj", "{CEDCF756-BB0B-49B3-8C00-5B99D8519FA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -231,6 +235,14 @@ Global
 		{DB27E220-6B65-4C58-9B22-FF4746109338}.Debug|Win32.Build.0 = Debug|Win32
 		{DB27E220-6B65-4C58-9B22-FF4746109338}.Release|Win32.ActiveCfg = Release|Win32
 		{DB27E220-6B65-4C58-9B22-FF4746109338}.Release|Win32.Build.0 = Release|Win32
+		{96607A86-975D-420E-B4A1-C7D6A561AD4F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{96607A86-975D-420E-B4A1-C7D6A561AD4F}.Debug|Win32.Build.0 = Debug|Win32
+		{96607A86-975D-420E-B4A1-C7D6A561AD4F}.Release|Win32.ActiveCfg = Release|Win32
+		{96607A86-975D-420E-B4A1-C7D6A561AD4F}.Release|Win32.Build.0 = Release|Win32
+		{CEDCF756-BB0B-49B3-8C00-5B99D8519FA9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CEDCF756-BB0B-49B3-8C00-5B99D8519FA9}.Debug|Win32.Build.0 = Debug|Win32
+		{CEDCF756-BB0B-49B3-8C00-5B99D8519FA9}.Release|Win32.ActiveCfg = Release|Win32
+		{CEDCF756-BB0B-49B3-8C00-5B99D8519FA9}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
