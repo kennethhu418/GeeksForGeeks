@@ -81,7 +81,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Lucky Number", "Quiz
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find the largest multiple of 3", "Quiz - Find the largest multiple of 3\Quiz - Find the largest multiple of 3.vcxproj", "{CEDCF756-BB0B-49B3-8C00-5B99D8519FA9}"
 EndProject
-
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Radix Sort", "Quiz - Radix Sort\Quiz - Radix Sort.vcxproj", "{26D9DD9B-3D9A-485B-80BF-E3AE68BE3FC3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Segment Tree", "Quiz - Segment Tree\Quiz - Segment Tree.vcxproj", "{621D6DE8-32A7-40B8-98BF-044A32BD9A69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -244,6 +247,14 @@ Global
 		{CEDCF756-BB0B-49B3-8C00-5B99D8519FA9}.Debug|Win32.Build.0 = Debug|Win32
 		{CEDCF756-BB0B-49B3-8C00-5B99D8519FA9}.Release|Win32.ActiveCfg = Release|Win32
 		{CEDCF756-BB0B-49B3-8C00-5B99D8519FA9}.Release|Win32.Build.0 = Release|Win32
+		{26D9DD9B-3D9A-485B-80BF-E3AE68BE3FC3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{26D9DD9B-3D9A-485B-80BF-E3AE68BE3FC3}.Debug|Win32.Build.0 = Debug|Win32
+		{26D9DD9B-3D9A-485B-80BF-E3AE68BE3FC3}.Release|Win32.ActiveCfg = Release|Win32
+		{26D9DD9B-3D9A-485B-80BF-E3AE68BE3FC3}.Release|Win32.Build.0 = Release|Win32
+		{621D6DE8-32A7-40B8-98BF-044A32BD9A69}.Debug|Win32.ActiveCfg = Debug|Win32
+		{621D6DE8-32A7-40B8-98BF-044A32BD9A69}.Debug|Win32.Build.0 = Debug|Win32
+		{621D6DE8-32A7-40B8-98BF-044A32BD9A69}.Release|Win32.ActiveCfg = Release|Win32
+		{621D6DE8-32A7-40B8-98BF-044A32BD9A69}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
