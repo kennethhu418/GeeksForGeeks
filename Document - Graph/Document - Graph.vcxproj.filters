@@ -37,6 +37,9 @@
     <Filter Include="Graph Related\二分图的最大和最佳匹配">
       <UniqueIdentifier>{e58da47e-7717-4386-9ddc-887d9036c701}</UniqueIdentifier>
     </Filter>
+    <Filter Include="几何学 - Geometry Problems">
+      <UniqueIdentifier>{772f0fa9-77fe-419d-9069-453186695333}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -48,6 +51,9 @@
     </Text>
     <Text Include="二分图最佳匹配\无权二分图的最大匹配和最佳匹配.txt">
       <Filter>Graph Related\二分图的最大和最佳匹配</Filter>
+    </Text>
+    <Text Include="..\Document - 几何学 - Geometry Problems\Geometry Problems - dot product and cross product.txt">
+      <Filter>几何学 - Geometry Problems</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>

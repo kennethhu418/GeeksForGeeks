@@ -15,55 +15,54 @@ public:
     void    sort(int arr[], int n)
     {
         if (n < 2)  return;
+        if (n == 2)
+        {
+            if (arr[0] > arr[1])
+                swap(arr[0], arr[1]);
+            return;
+        }
 
-        quickSort(arr, 0, n - 1);
+        int pivotStart = 0, pivotCount = 0;
+        pivotStart = partition(arr, n, pivotCount);
+
+        sort(arr, pivotStart);
+        sort(arr + pivotStart + pivotCount, n - (pivotStart + pivotCount));
     }
 
 private:
-    void quickSort(int arr[], int start, int end)
+    int     partition(int arr[], int n, int &pivotCount)
     {
-        if (start >= end)   return;
-        int leftEnd = start -1, rightStart = end + 1;
-        partitionArray(arr, start, end, leftEnd, rightStart);
+        int pivotIndex = selectPivot(arr, n);
+        if (pivotIndex > 0) swap(arr[pivotIndex], arr[0]);
 
-        quickSort(arr, start, leftEnd);
-        quickSort(arr, rightStart, end);
-    }
-
-    void partitionArray(int arr[], int start, int end, int &leftEnd, int &rightStart)
-    {
-        leftEnd = start; rightStart = end;
-        int curPosL = start, curPosR = end;
-        int pivot = arr[(start + end) >> 1];
-        int temp = 0;
-
-        while (curPosL <= curPosR)
+        pivotCount = 1;
+        int startP = 0, curPos = 1, startG = n - 1, pivot = arr[0];
+        while (curPos <= startG)
         {
-            while (curPosL <= curPosR && arr[curPosL] <= pivot)
-            {
-                if (arr[curPosL] < pivot)  arr[leftEnd++] = arr[curPosL];
-                ++curPosL;
+            if (arr[curPos] == pivot){
+                ++pivotCount; ++curPos;
+                continue;
             }
 
-            if (curPosL > curPosR)  break;
-
-            while (curPosL <= curPosR && arr[curPosR] >= pivot)
+            if (arr[curPos] < pivot)
+                swap(arr[curPos++], arr[startP++]);
+            else
             {
-                if (arr[curPosR] > pivot)  arr[rightStart--] = arr[curPosR];
-                --curPosR;
+                while (startG >= curPos && arr[startG] > pivot) --startG;
+                if (startG < curPos) break;
+                swap(arr[startG--], arr[curPos]);
             }
-
-            if (curPosL > curPosR)  break;
-
-            temp = arr[curPosR];
-            arr[rightStart--] = arr[curPosL];
-            arr[leftEnd++] = temp;
-            ++curPosL; --curPosR;
         }
 
-        for (int i = leftEnd; i <= rightStart; i++)
-            arr[i] = pivot;
-        --leftEnd;  ++rightStart;
+        return startP;
+    }
+
+    int selectPivot(int arr[], int n)
+    {
+        int     mid = ((n - 1) >> 1);
+        if (arr[0] >= arr[mid] && arr[0] <= arr[n - 1] || arr[0] >= arr[n - 1] && arr[0] <= arr[mid])   return 0;
+        if (arr[mid] >= arr[0] && arr[mid] <= arr[n - 1] || arr[mid] >= arr[n - 1] && arr[mid] <= arr[0]) return mid;
+        return n - 1;
     }
 };
 
@@ -178,78 +177,78 @@ void OutputArray(int arr[], int n)
 
 
 //Verify Sorting algorithm
-//int _tmain(int argc, _TCHAR* argv[])
-//{
-//    const int   MAX_VAL = 700;
-//    int dataArr[1000];
-//    int resultArr[1000];
-//    int size;
-//    int times = 6000;
-//    Solution_QSort so;
-//
-//    srand(time(0));
-//
-//    while (times-- > 0)
-//    {
-//        size = rand() % 1001;
-//        generateArray(dataArr, size, MAX_VAL);
-//        memcpy(resultArr, dataArr, sizeof(int)*size);
-//        cout << "Before sorting:" << endl;
-//        OutputArray(resultArr, size);
-//        so.sort(resultArr, size);
-//        cout << "After sorting:" << endl;
-//        OutputArray(resultArr, size);
-//        if (!checkArray(resultArr, dataArr, size))
-//        {
-//            cout << "Oh, no!" << endl;
-//            system("PAUSE");
-//        }
-//            
-//        //cout << "==============================================" << endl;
-//    }
-//
-//
-//	return 0;
-//}
-
-
-//Verify Selecting largest K Number algorithm
 int _tmain(int argc, _TCHAR* argv[])
 {
     const int   MAX_VAL = 700;
     int dataArr[1000];
     int resultArr[1000];
-    int size, K;
+    int size;
     int times = 6000;
-    Solution_QSort so_sort;
-    Solution_KLargest so_select;
+    Solution_QSort so;
 
     srand(time(0));
 
     while (times-- > 0)
     {
-        size = 1 + rand() % 1000;
-        K = rand() % size + 1;
+        size = rand() % 1001;
         generateArray(dataArr, size, MAX_VAL);
         memcpy(resultArr, dataArr, sizeof(int)*size);
-
-        //sort original array
-        so_sort.sort(dataArr, size);
-
-        //get the largest K numbers
-        so_select.selectKLargestNumber(resultArr, size, K);
-
-        //verify results
-        so_sort.sort(resultArr, K);
-        if (!verifySelection(resultArr, dataArr, K))
+        //cout << "Before sorting:" << endl;
+        //OutputArray(resultArr, size);
+        so.sort(resultArr, size);
+        //cout << "After sorting:" << endl;
+        //OutputArray(resultArr, size);
+        if (!checkArray(resultArr, dataArr, size))
         {
             cout << "Oh, no!" << endl;
             system("PAUSE");
         }
-
+            
         //cout << "==============================================" << endl;
     }
 
 
-    return 0;
+	return 0;
 }
+
+
+//Verify Selecting largest K Number algorithm
+//int _tmain(int argc, _TCHAR* argv[])
+//{
+//    const int   MAX_VAL = 700;
+//    int dataArr[1000];
+//    int resultArr[1000];
+//    int size, K;
+//    int times = 6000;
+//    Solution_QSort so_sort;
+//    Solution_KLargest so_select;
+//
+//    srand(time(0));
+//
+//    while (times-- > 0)
+//    {
+//        size = 1 + rand() % 1000;
+//        K = rand() % size + 1;
+//        generateArray(dataArr, size, MAX_VAL);
+//        memcpy(resultArr, dataArr, sizeof(int)*size);
+//
+//        //sort original array
+//        so_sort.sort(dataArr, size);
+//
+//        //get the largest K numbers
+//        so_select.selectKLargestNumber(resultArr, size, K);
+//
+//        //verify results
+//        so_sort.sort(resultArr, K);
+//        if (!verifySelection(resultArr, dataArr, K))
+//        {
+//            cout << "Oh, no!" << endl;
+//            system("PAUSE");
+//        }
+//
+//        //cout << "==============================================" << endl;
+//    }
+//
+//
+//    return 0;
+//}
