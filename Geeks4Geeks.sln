@@ -85,6 +85,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Radix Sort", "Quiz -
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Segment Tree", "Quiz - Segment Tree\Quiz - Segment Tree.vcxproj", "{621D6DE8-32A7-40B8-98BF-044A32BD9A69}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Maximum of all subarrays of size K", "Quiz - Maximum of all subarrays of size K\Quiz - Maximum of all subarrays of size K.vcxproj", "{8CA86C08-38CD-4DB4-8682-50B6CC8C34A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -255,6 +257,10 @@ Global
 		{621D6DE8-32A7-40B8-98BF-044A32BD9A69}.Debug|Win32.Build.0 = Debug|Win32
 		{621D6DE8-32A7-40B8-98BF-044A32BD9A69}.Release|Win32.ActiveCfg = Release|Win32
 		{621D6DE8-32A7-40B8-98BF-044A32BD9A69}.Release|Win32.Build.0 = Release|Win32
+		{8CA86C08-38CD-4DB4-8682-50B6CC8C34A0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8CA86C08-38CD-4DB4-8682-50B6CC8C34A0}.Debug|Win32.Build.0 = Debug|Win32
+		{8CA86C08-38CD-4DB4-8682-50B6CC8C34A0}.Release|Win32.ActiveCfg = Release|Win32
+		{8CA86C08-38CD-4DB4-8682-50B6CC8C34A0}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
