@@ -87,6 +87,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Segment Tree", "Quiz
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Maximum of all subarrays of size K", "Quiz - Maximum of all subarrays of size K\Quiz - Maximum of all subarrays of size K.vcxproj", "{8CA86C08-38CD-4DB4-8682-50B6CC8C34A0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - find the maximum j - i such that arr(j) - arr(i)", "Quiz - find the maximum j - i such that arr(j) - arr(i)\Quiz - find the maximum j - i such that arr(j) - arr(i).vcxproj", "{749D7788-9AC7-42A0-B573-431C1CA6BE1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -261,6 +263,10 @@ Global
 		{8CA86C08-38CD-4DB4-8682-50B6CC8C34A0}.Debug|Win32.Build.0 = Debug|Win32
 		{8CA86C08-38CD-4DB4-8682-50B6CC8C34A0}.Release|Win32.ActiveCfg = Release|Win32
 		{8CA86C08-38CD-4DB4-8682-50B6CC8C34A0}.Release|Win32.Build.0 = Release|Win32
+		{749D7788-9AC7-42A0-B573-431C1CA6BE1B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{749D7788-9AC7-42A0-B573-431C1CA6BE1B}.Debug|Win32.Build.0 = Debug|Win32
+		{749D7788-9AC7-42A0-B573-431C1CA6BE1B}.Release|Win32.ActiveCfg = Release|Win32
+		{749D7788-9AC7-42A0-B573-431C1CA6BE1B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
