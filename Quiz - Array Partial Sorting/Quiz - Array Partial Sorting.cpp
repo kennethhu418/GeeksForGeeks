@@ -13,95 +13,80 @@
 
 using namespace std;
 
-typedef struct _Range
-{
-    int     start;
-    int     end;
-}Range;
+#include <iostream>
+using namespace std;
 
 class Solution
 {
-public:
-    Range   getUnsortedRange(int A[], int n)
+private:
+    int getFirstDecrease(int arr[], int n)
     {
-        Range result = {-1, -1};
-        if (n < 2)  return result;
-
-        int leftEnd = 0, rightStart = n - 1;
-        while (leftEnd < n - 1)
+        int pos = 0;
+        while (pos < n - 1)
         {
-            if (A[leftEnd + 1] < A[leftEnd])
-                break;
-            ++leftEnd;
+            if (arr[pos] > arr[pos + 1]) return pos;
+            ++pos;
         }
-        if (leftEnd == n - 1)   return result;
-
-        while (rightStart > 0)
-        {
-            if (A[rightStart] < A[rightStart - 1])
-                break;
-            --rightStart;
-        }
-
-        int middleMin = 0, middleMax = 0;
-        if (leftEnd + 1 == rightStart)
-        {
-            middleMin = A[rightStart++];
-            middleMax = A[leftEnd--];
-        }
-        else
-        {
-            getMinMaxInRange(A, leftEnd + 1, rightStart - 1, middleMin, middleMax);
-        }
-
-        while (true)
-        {
-            if (leftEnd >= 0 && A[leftEnd] > middleMin)
-            {
-                if (A[leftEnd] > middleMax)
-                    middleMax = A[leftEnd];
-                --leftEnd;
-                continue;
-            }
-
-            if (rightStart < n && A[rightStart] < middleMax)
-            {
-                if (A[rightStart] < middleMin)
-                    middleMin = A[rightStart];
-                ++rightStart;
-                continue;
-            }
-
-            break;
-        }
-
-        result.start = leftEnd + 1;
-        result.end = rightStart - 1;
-        return result;
+        return n;
     }
 
-private:
-    inline void getMinMaxInRange(int A[], int start, int end, int &minVal, int &maxVal)
+    int getFirstIncrease(int arr[], int n)
     {
-        minVal = maxVal = A[start++];
-        while (start <= end)
+        int pos = n - 1;
+        while (pos > 0)
         {
-            if (A[start] > maxVal)
-                maxVal = A[start];
-            if (A[start] < minVal)
-                minVal = A[start];
-            ++start;
+            if (arr[pos] < arr[pos - 1]) return pos;
+            --pos;
         }
+        return -1;
+    }
+
+    void getMinMax(int arr[], int start, int end, int &minVal, int &maxVal)
+    {
+        minVal = maxVal = arr[start++];
+        while (start <= end){
+            minVal = min(minVal, arr[start]);
+            maxVal = max(maxVal, arr[start++]);
+        }
+    }
+
+public:
+    int getUnsorted(int arr[], int n, int &rangeEnd)
+    {
+        int rangeStart = -1; rangeEnd = -1;
+        if (n < 2)	return rangeStart;
+
+        rangeStart = getFirstDecrease(arr, n);
+        if (rangeStart >= n) return -1;
+
+        rangeEnd = getFirstIncrease(arr, n);
+
+        int minVal = 0, maxVal = 0;
+        getMinMax(arr, rangeStart, rangeEnd, minVal, maxVal);
+
+        while (rangeStart > 0 && arr[rangeStart - 1] > minVal)
+            --rangeStart;
+        while (rangeEnd < n - 1 && arr[rangeEnd + 1] < maxVal)
+            ++rangeEnd;
+
+        return rangeStart;
     }
 };
 
-
-int _tmain(int argc, _TCHAR* argv[])
-{
-    int A[] = {1, 2, 5, 3, 6, 4, 7,  8};
+int main() {
+    int arr1[] = { 10, 12, 20, 30, 25, 40, 32, 31, 35, 50, 60 };
+    int arr2[] = { 0, 1, 15, 25, 6, 7, 30, 40, 50 };
+    int arr3[] = { 10, 12, 20, 30, 35, 40, 42, 43, 45, 50, 60, 10 };
+    int start = -1, end = -1;
     Solution so;
 
-    Range r = so.getUnsortedRange(A, sizeof(A) / sizeof(int));
-	return 0;
-}
+    start = so.getUnsorted(arr1, sizeof(arr1) / sizeof(int), end);
+    cout << "Unsorted range of arr1 is from " << start << " to " << end << endl;
 
+    start = so.getUnsorted(arr2, sizeof(arr2) / sizeof(int), end);
+    cout << "Unsorted range of arr2 is from " << start << " to " << end << endl;
+
+    start = so.getUnsorted(arr3, sizeof(arr3) / sizeof(int), end);
+    cout << "Unsorted range of arr3 is from " << start << " to " << end << endl;
+    return 0;
+}
