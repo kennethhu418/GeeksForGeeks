@@ -89,6 +89,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Maximum of all subar
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - find the maximum j - i such that arr(j) - arr(i)", "Quiz - find the maximum j - i such that arr(j) - arr(i)\Quiz - find the maximum j - i such that arr(j) - arr(i).vcxproj", "{749D7788-9AC7-42A0-B573-431C1CA6BE1B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Equally divide cards", "Quiz - Equally divide cards\Quiz - Equally divide cards.vcxproj", "{CBEDF457-05A6-450E-9DBD-B7B171943CBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -267,6 +269,10 @@ Global
 		{749D7788-9AC7-42A0-B573-431C1CA6BE1B}.Debug|Win32.Build.0 = Debug|Win32
 		{749D7788-9AC7-42A0-B573-431C1CA6BE1B}.Release|Win32.ActiveCfg = Release|Win32
 		{749D7788-9AC7-42A0-B573-431C1CA6BE1B}.Release|Win32.Build.0 = Release|Win32
+		{CBEDF457-05A6-450E-9DBD-B7B171943CBC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CBEDF457-05A6-450E-9DBD-B7B171943CBC}.Debug|Win32.Build.0 = Debug|Win32
+		{CBEDF457-05A6-450E-9DBD-B7B171943CBC}.Release|Win32.ActiveCfg = Release|Win32
+		{CBEDF457-05A6-450E-9DBD-B7B171943CBC}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
