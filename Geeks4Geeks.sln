@@ -95,6 +95,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Line Segment Overlay
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Interceptor Missile", "Quiz - Interceptor Missile\Quiz - Interceptor Missile.vcxproj", "{88A80B18-CC27-4587-92FB-8D7FE2206C9E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Trie", "Trie\Trie.vcxproj", "{6AC30057-C7BE-413F-957C-33DE14EDAFFA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Maximum Leading Scores", "Facebook - Maximum Leading Scores\Facebook - Maximum Leading Scores.vcxproj", "{21525237-2EF2-4458-BE79-C02946EC7414}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -285,6 +289,14 @@ Global
 		{88A80B18-CC27-4587-92FB-8D7FE2206C9E}.Debug|Win32.Build.0 = Debug|Win32
 		{88A80B18-CC27-4587-92FB-8D7FE2206C9E}.Release|Win32.ActiveCfg = Release|Win32
 		{88A80B18-CC27-4587-92FB-8D7FE2206C9E}.Release|Win32.Build.0 = Release|Win32
+		{6AC30057-C7BE-413F-957C-33DE14EDAFFA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6AC30057-C7BE-413F-957C-33DE14EDAFFA}.Debug|Win32.Build.0 = Debug|Win32
+		{6AC30057-C7BE-413F-957C-33DE14EDAFFA}.Release|Win32.ActiveCfg = Release|Win32
+		{6AC30057-C7BE-413F-957C-33DE14EDAFFA}.Release|Win32.Build.0 = Release|Win32
+		{21525237-2EF2-4458-BE79-C02946EC7414}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21525237-2EF2-4458-BE79-C02946EC7414}.Debug|Win32.Build.0 = Debug|Win32
+		{21525237-2EF2-4458-BE79-C02946EC7414}.Release|Win32.ActiveCfg = Release|Win32
+		{21525237-2EF2-4458-BE79-C02946EC7414}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
