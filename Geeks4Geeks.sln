@@ -103,6 +103,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find nth number in a
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Minimum Cost Polygon Triangulation", "Quiz - Minimum Cost Polygon Triangulation\Quiz - Minimum Cost Polygon Triangulation.vcxproj", "{8F6E94E0-6697-4373-9259-3FCBAED012FF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Remove Comments", "Facebook - Remove Comments\Facebook - Remove Comments.vcxproj", "{0393C99B-BE7F-43CF-8494-55D34906CD46}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Tree Iterator", "Facebook - Tree Iterator\Facebook - Tree Iterator.vcxproj", "{DE295A2F-2072-4336-8F27-F62464CD9166}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -309,6 +313,14 @@ Global
 		{8F6E94E0-6697-4373-9259-3FCBAED012FF}.Debug|Win32.Build.0 = Debug|Win32
 		{8F6E94E0-6697-4373-9259-3FCBAED012FF}.Release|Win32.ActiveCfg = Release|Win32
 		{8F6E94E0-6697-4373-9259-3FCBAED012FF}.Release|Win32.Build.0 = Release|Win32
+		{0393C99B-BE7F-43CF-8494-55D34906CD46}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0393C99B-BE7F-43CF-8494-55D34906CD46}.Debug|Win32.Build.0 = Debug|Win32
+		{0393C99B-BE7F-43CF-8494-55D34906CD46}.Release|Win32.ActiveCfg = Release|Win32
+		{0393C99B-BE7F-43CF-8494-55D34906CD46}.Release|Win32.Build.0 = Release|Win32
+		{DE295A2F-2072-4336-8F27-F62464CD9166}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE295A2F-2072-4336-8F27-F62464CD9166}.Debug|Win32.Build.0 = Debug|Win32
+		{DE295A2F-2072-4336-8F27-F62464CD9166}.Release|Win32.ActiveCfg = Release|Win32
+		{DE295A2F-2072-4336-8F27-F62464CD9166}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
