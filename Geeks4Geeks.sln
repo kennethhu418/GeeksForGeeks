@@ -107,6 +107,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Remove Comments"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Tree Iterator", "Facebook - Tree Iterator\Facebook - Tree Iterator.vcxproj", "{DE295A2F-2072-4336-8F27-F62464CD9166}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Sink Zero in Binary Tree", "Facebook - Sink Zero in Binary Tree\Facebook - Sink Zero in Binary Tree.vcxproj", "{F78F3AF8-8BE1-4CED-9615-062A5188DAB8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common Utility", "Common Utility\Common Utility.vcxproj", "{7004A425-DCBD-460D-AD31-47D0981A011A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -321,6 +325,14 @@ Global
 		{DE295A2F-2072-4336-8F27-F62464CD9166}.Debug|Win32.Build.0 = Debug|Win32
 		{DE295A2F-2072-4336-8F27-F62464CD9166}.Release|Win32.ActiveCfg = Release|Win32
 		{DE295A2F-2072-4336-8F27-F62464CD9166}.Release|Win32.Build.0 = Release|Win32
+		{F78F3AF8-8BE1-4CED-9615-062A5188DAB8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F78F3AF8-8BE1-4CED-9615-062A5188DAB8}.Debug|Win32.Build.0 = Debug|Win32
+		{F78F3AF8-8BE1-4CED-9615-062A5188DAB8}.Release|Win32.ActiveCfg = Release|Win32
+		{F78F3AF8-8BE1-4CED-9615-062A5188DAB8}.Release|Win32.Build.0 = Release|Win32
+		{7004A425-DCBD-460D-AD31-47D0981A011A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7004A425-DCBD-460D-AD31-47D0981A011A}.Debug|Win32.Build.0 = Debug|Win32
+		{7004A425-DCBD-460D-AD31-47D0981A011A}.Release|Win32.ActiveCfg = Release|Win32
+		{7004A425-DCBD-460D-AD31-47D0981A011A}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
