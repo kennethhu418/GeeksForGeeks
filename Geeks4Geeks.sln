@@ -99,6 +99,18 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook -Trie", "Trie\Trie
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Maximum Leading Scores", "Facebook - Maximum Leading Scores\Facebook - Maximum Leading Scores.vcxproj", "{21525237-2EF2-4458-BE79-C02946EC7414}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find nth number in a number system with only 3 and 4", "Quiz - Find nth number in a number system with only 3 and 4\Quiz - Find nth number in a number system with only 3 and 4.vcxproj", "{3FBC9CF0-0B9B-4DE1-AA45-ABA1156BC7B9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Minimum Cost Polygon Triangulation", "Quiz - Minimum Cost Polygon Triangulation\Quiz - Minimum Cost Polygon Triangulation.vcxproj", "{8F6E94E0-6697-4373-9259-3FCBAED012FF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Remove Comments", "Facebook - Remove Comments\Facebook - Remove Comments.vcxproj", "{0393C99B-BE7F-43CF-8494-55D34906CD46}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Tree Iterator", "Facebook - Tree Iterator\Facebook - Tree Iterator.vcxproj", "{DE295A2F-2072-4336-8F27-F62464CD9166}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Sink Zero in Binary Tree", "Facebook - Sink Zero in Binary Tree\Facebook - Sink Zero in Binary Tree.vcxproj", "{F78F3AF8-8BE1-4CED-9615-062A5188DAB8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common Utility", "Common Utility\Common Utility.vcxproj", "{7004A425-DCBD-460D-AD31-47D0981A011A}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Random Output Maximum Number in one Array", "Facebook - Random Output Maximum Number in one Array\Facebook - Random Output Maximum Number in one Array.vcxproj", "{C0651E75-DF51-42D6-81AC-8A7B9EDD6EB5}"
 EndProject
 Global
@@ -299,6 +311,30 @@ Global
 		{21525237-2EF2-4458-BE79-C02946EC7414}.Debug|Win32.Build.0 = Debug|Win32
 		{21525237-2EF2-4458-BE79-C02946EC7414}.Release|Win32.ActiveCfg = Release|Win32
 		{21525237-2EF2-4458-BE79-C02946EC7414}.Release|Win32.Build.0 = Release|Win32
+		{3FBC9CF0-0B9B-4DE1-AA45-ABA1156BC7B9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3FBC9CF0-0B9B-4DE1-AA45-ABA1156BC7B9}.Debug|Win32.Build.0 = Debug|Win32
+		{3FBC9CF0-0B9B-4DE1-AA45-ABA1156BC7B9}.Release|Win32.ActiveCfg = Release|Win32
+		{3FBC9CF0-0B9B-4DE1-AA45-ABA1156BC7B9}.Release|Win32.Build.0 = Release|Win32
+		{8F6E94E0-6697-4373-9259-3FCBAED012FF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F6E94E0-6697-4373-9259-3FCBAED012FF}.Debug|Win32.Build.0 = Debug|Win32
+		{8F6E94E0-6697-4373-9259-3FCBAED012FF}.Release|Win32.ActiveCfg = Release|Win32
+		{8F6E94E0-6697-4373-9259-3FCBAED012FF}.Release|Win32.Build.0 = Release|Win32
+		{0393C99B-BE7F-43CF-8494-55D34906CD46}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0393C99B-BE7F-43CF-8494-55D34906CD46}.Debug|Win32.Build.0 = Debug|Win32
+		{0393C99B-BE7F-43CF-8494-55D34906CD46}.Release|Win32.ActiveCfg = Release|Win32
+		{0393C99B-BE7F-43CF-8494-55D34906CD46}.Release|Win32.Build.0 = Release|Win32
+		{DE295A2F-2072-4336-8F27-F62464CD9166}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE295A2F-2072-4336-8F27-F62464CD9166}.Debug|Win32.Build.0 = Debug|Win32
+		{DE295A2F-2072-4336-8F27-F62464CD9166}.Release|Win32.ActiveCfg = Release|Win32
+		{DE295A2F-2072-4336-8F27-F62464CD9166}.Release|Win32.Build.0 = Release|Win32
+		{F78F3AF8-8BE1-4CED-9615-062A5188DAB8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F78F3AF8-8BE1-4CED-9615-062A5188DAB8}.Debug|Win32.Build.0 = Debug|Win32
+		{F78F3AF8-8BE1-4CED-9615-062A5188DAB8}.Release|Win32.ActiveCfg = Release|Win32
+		{F78F3AF8-8BE1-4CED-9615-062A5188DAB8}.Release|Win32.Build.0 = Release|Win32
+		{7004A425-DCBD-460D-AD31-47D0981A011A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7004A425-DCBD-460D-AD31-47D0981A011A}.Debug|Win32.Build.0 = Debug|Win32
+		{7004A425-DCBD-460D-AD31-47D0981A011A}.Release|Win32.ActiveCfg = Release|Win32
+		{7004A425-DCBD-460D-AD31-47D0981A011A}.Release|Win32.Build.0 = Release|Win32
 		{C0651E75-DF51-42D6-81AC-8A7B9EDD6EB5}.Debug|Win32.ActiveCfg = Debug|Win32
 		{C0651E75-DF51-42D6-81AC-8A7B9EDD6EB5}.Debug|Win32.Build.0 = Debug|Win32
 		{C0651E75-DF51-42D6-81AC-8A7B9EDD6EB5}.Release|Win32.ActiveCfg = Release|Win32
