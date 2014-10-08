@@ -113,6 +113,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common Utility", "Common Ut
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Random Output Maximum Number in one Array", "Facebook - Random Output Maximum Number in one Array\Facebook - Random Output Maximum Number in one Array.vcxproj", "{C0651E75-DF51-42D6-81AC-8A7B9EDD6EB5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Median in distributed servers", "Facebook - Median in distributed servers\Facebook - Median in distributed servers.vcxproj", "{5684F45C-5176-477D-909B-8DF94FF165F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -339,6 +341,10 @@ Global
 		{C0651E75-DF51-42D6-81AC-8A7B9EDD6EB5}.Debug|Win32.Build.0 = Debug|Win32
 		{C0651E75-DF51-42D6-81AC-8A7B9EDD6EB5}.Release|Win32.ActiveCfg = Release|Win32
 		{C0651E75-DF51-42D6-81AC-8A7B9EDD6EB5}.Release|Win32.Build.0 = Release|Win32
+		{5684F45C-5176-477D-909B-8DF94FF165F5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5684F45C-5176-477D-909B-8DF94FF165F5}.Debug|Win32.Build.0 = Debug|Win32
+		{5684F45C-5176-477D-909B-8DF94FF165F5}.Release|Win32.ActiveCfg = Release|Win32
+		{5684F45C-5176-477D-909B-8DF94FF165F5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
