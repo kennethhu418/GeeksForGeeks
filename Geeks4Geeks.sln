@@ -115,6 +115,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Random Output Ma
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Median in distributed servers", "Facebook - Median in distributed servers\Facebook - Median in distributed servers.vcxproj", "{5684F45C-5176-477D-909B-8DF94FF165F5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Reverse Each Word", "Facebook - Reverse Each Word\Facebook - Reverse Each Word.vcxproj", "{28C6704B-BE3E-43AB-90FA-19A7A9B754AC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Staff Making", "Facebook - Staff Making\Facebook - Staff Making.vcxproj", "{4AC4ABE7-DDF4-444F-B2BA-D5BD9405F91B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -345,6 +349,14 @@ Global
 		{5684F45C-5176-477D-909B-8DF94FF165F5}.Debug|Win32.Build.0 = Debug|Win32
 		{5684F45C-5176-477D-909B-8DF94FF165F5}.Release|Win32.ActiveCfg = Release|Win32
 		{5684F45C-5176-477D-909B-8DF94FF165F5}.Release|Win32.Build.0 = Release|Win32
+		{28C6704B-BE3E-43AB-90FA-19A7A9B754AC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{28C6704B-BE3E-43AB-90FA-19A7A9B754AC}.Debug|Win32.Build.0 = Debug|Win32
+		{28C6704B-BE3E-43AB-90FA-19A7A9B754AC}.Release|Win32.ActiveCfg = Release|Win32
+		{28C6704B-BE3E-43AB-90FA-19A7A9B754AC}.Release|Win32.Build.0 = Release|Win32
+		{4AC4ABE7-DDF4-444F-B2BA-D5BD9405F91B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4AC4ABE7-DDF4-444F-B2BA-D5BD9405F91B}.Debug|Win32.Build.0 = Debug|Win32
+		{4AC4ABE7-DDF4-444F-B2BA-D5BD9405F91B}.Release|Win32.ActiveCfg = Release|Win32
+		{4AC4ABE7-DDF4-444F-B2BA-D5BD9405F91B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
