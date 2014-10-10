@@ -119,6 +119,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Reverse Each Wor
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Staff Making", "Facebook - Staff Making\Facebook - Staff Making.vcxproj", "{4AC4ABE7-DDF4-444F-B2BA-D5BD9405F91B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Parsing Path", "Facebook - Parsing Path\Facebook - Parsing Path.vcxproj", "{7FDF8DF7-EAE6-4942-B618-804E6306824E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Multiply Lists", "Facebook - Multiply Lists\Facebook - Multiply Lists.vcxproj", "{ACF54030-0BA9-41FA-A73B-AA696BF5D7C4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - RPN Generation minimum operations", "Facebook - RPN Generation minimum operations\Facebook - RPN Generation minimum operations.vcxproj", "{9E131793-E7DC-48FA-8EA7-A8727AC23382}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -357,6 +363,18 @@ Global
 		{4AC4ABE7-DDF4-444F-B2BA-D5BD9405F91B}.Debug|Win32.Build.0 = Debug|Win32
 		{4AC4ABE7-DDF4-444F-B2BA-D5BD9405F91B}.Release|Win32.ActiveCfg = Release|Win32
 		{4AC4ABE7-DDF4-444F-B2BA-D5BD9405F91B}.Release|Win32.Build.0 = Release|Win32
+		{7FDF8DF7-EAE6-4942-B618-804E6306824E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7FDF8DF7-EAE6-4942-B618-804E6306824E}.Debug|Win32.Build.0 = Debug|Win32
+		{7FDF8DF7-EAE6-4942-B618-804E6306824E}.Release|Win32.ActiveCfg = Release|Win32
+		{7FDF8DF7-EAE6-4942-B618-804E6306824E}.Release|Win32.Build.0 = Release|Win32
+		{ACF54030-0BA9-41FA-A73B-AA696BF5D7C4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ACF54030-0BA9-41FA-A73B-AA696BF5D7C4}.Debug|Win32.Build.0 = Debug|Win32
+		{ACF54030-0BA9-41FA-A73B-AA696BF5D7C4}.Release|Win32.ActiveCfg = Release|Win32
+		{ACF54030-0BA9-41FA-A73B-AA696BF5D7C4}.Release|Win32.Build.0 = Release|Win32
+		{9E131793-E7DC-48FA-8EA7-A8727AC23382}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9E131793-E7DC-48FA-8EA7-A8727AC23382}.Debug|Win32.Build.0 = Debug|Win32
+		{9E131793-E7DC-48FA-8EA7-A8727AC23382}.Release|Win32.ActiveCfg = Release|Win32
+		{9E131793-E7DC-48FA-8EA7-A8727AC23382}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
