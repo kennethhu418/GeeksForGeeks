@@ -21,8 +21,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Least Common Ansesto
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find the row with maximum number of 1s", "Quiz - Find the row with maximum number of 1s\Quiz - Find the row with maximum number of 1s.vcxproj", "{BAFFFBE7-DDEF-491D-A958-201AF80EBF10}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - MsExcel Column Pattern", "Quiz - MsExcel Column Pattern\Quiz - MsExcel Column Pattern.vcxproj", "{EFBFE16E-740D-438E-B998-452B4670065D}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Array Seperation", "Quiz - Array Seperation\Quiz - Array Seperation.vcxproj", "{1C4718B5-146A-4987-9081-F3F195B61211}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - isFactorialDivisible", "Quiz - isFactorialDivisible\Quiz - isFactorialDivisible.vcxproj", "{0C58E886-EF29-4EF5-BC23-10615ACE6F0D}"
@@ -125,6 +123,16 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Multiply Lists",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - RPN Generation minimum operations", "Facebook - RPN Generation minimum operations\Facebook - RPN Generation minimum operations.vcxproj", "{9E131793-E7DC-48FA-8EA7-A8727AC23382}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Rearrange Array", "Facebook - Rearrange Array\Facebook - Rearrange Array.vcxproj", "{33A915DC-1274-4DE8-9E94-3FEE6A413B48}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Excel to Number", "Facebook - Excel to Number\Facebook - Excel to Number.vcxproj", "{B7ED10F7-35A2-4825-A39C-BA1EB1F812D6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Max Component with 1s", "Facebook - Max Component with 1s\Facebook - Max Component with 1s.vcxproj", "{5A9AA1A9-3F3C-40BB-BB74-A95A111F644E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Tree Serialization", "Facebook - Tree Serialization\Facebook - Tree Serialization.vcxproj", "{D3A8D8DE-9FF5-4C7B-A5D4-B248F85910CB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - atof", "Facebook - atof\Facebook - atof.vcxproj", "{CB679C8E-2279-49DF-9648-12AA7B3640F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -167,10 +175,6 @@ Global
 		{BAFFFBE7-DDEF-491D-A958-201AF80EBF10}.Debug|Win32.Build.0 = Debug|Win32
 		{BAFFFBE7-DDEF-491D-A958-201AF80EBF10}.Release|Win32.ActiveCfg = Release|Win32
 		{BAFFFBE7-DDEF-491D-A958-201AF80EBF10}.Release|Win32.Build.0 = Release|Win32
-		{EFBFE16E-740D-438E-B998-452B4670065D}.Debug|Win32.ActiveCfg = Debug|Win32
-		{EFBFE16E-740D-438E-B998-452B4670065D}.Debug|Win32.Build.0 = Debug|Win32
-		{EFBFE16E-740D-438E-B998-452B4670065D}.Release|Win32.ActiveCfg = Release|Win32
-		{EFBFE16E-740D-438E-B998-452B4670065D}.Release|Win32.Build.0 = Release|Win32
 		{1C4718B5-146A-4987-9081-F3F195B61211}.Debug|Win32.ActiveCfg = Debug|Win32
 		{1C4718B5-146A-4987-9081-F3F195B61211}.Debug|Win32.Build.0 = Debug|Win32
 		{1C4718B5-146A-4987-9081-F3F195B61211}.Release|Win32.ActiveCfg = Release|Win32
@@ -375,6 +379,26 @@ Global
 		{9E131793-E7DC-48FA-8EA7-A8727AC23382}.Debug|Win32.Build.0 = Debug|Win32
 		{9E131793-E7DC-48FA-8EA7-A8727AC23382}.Release|Win32.ActiveCfg = Release|Win32
 		{9E131793-E7DC-48FA-8EA7-A8727AC23382}.Release|Win32.Build.0 = Release|Win32
+		{33A915DC-1274-4DE8-9E94-3FEE6A413B48}.Debug|Win32.ActiveCfg = Debug|Win32
+		{33A915DC-1274-4DE8-9E94-3FEE6A413B48}.Debug|Win32.Build.0 = Debug|Win32
+		{33A915DC-1274-4DE8-9E94-3FEE6A413B48}.Release|Win32.ActiveCfg = Release|Win32
+		{33A915DC-1274-4DE8-9E94-3FEE6A413B48}.Release|Win32.Build.0 = Release|Win32
+		{B7ED10F7-35A2-4825-A39C-BA1EB1F812D6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B7ED10F7-35A2-4825-A39C-BA1EB1F812D6}.Debug|Win32.Build.0 = Debug|Win32
+		{B7ED10F7-35A2-4825-A39C-BA1EB1F812D6}.Release|Win32.ActiveCfg = Release|Win32
+		{B7ED10F7-35A2-4825-A39C-BA1EB1F812D6}.Release|Win32.Build.0 = Release|Win32
+		{5A9AA1A9-3F3C-40BB-BB74-A95A111F644E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5A9AA1A9-3F3C-40BB-BB74-A95A111F644E}.Debug|Win32.Build.0 = Debug|Win32
+		{5A9AA1A9-3F3C-40BB-BB74-A95A111F644E}.Release|Win32.ActiveCfg = Release|Win32
+		{5A9AA1A9-3F3C-40BB-BB74-A95A111F644E}.Release|Win32.Build.0 = Release|Win32
+		{D3A8D8DE-9FF5-4C7B-A5D4-B248F85910CB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D3A8D8DE-9FF5-4C7B-A5D4-B248F85910CB}.Debug|Win32.Build.0 = Debug|Win32
+		{D3A8D8DE-9FF5-4C7B-A5D4-B248F85910CB}.Release|Win32.ActiveCfg = Release|Win32
+		{D3A8D8DE-9FF5-4C7B-A5D4-B248F85910CB}.Release|Win32.Build.0 = Release|Win32
+		{CB679C8E-2279-49DF-9648-12AA7B3640F7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB679C8E-2279-49DF-9648-12AA7B3640F7}.Debug|Win32.Build.0 = Debug|Win32
+		{CB679C8E-2279-49DF-9648-12AA7B3640F7}.Release|Win32.ActiveCfg = Release|Win32
+		{CB679C8E-2279-49DF-9648-12AA7B3640F7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

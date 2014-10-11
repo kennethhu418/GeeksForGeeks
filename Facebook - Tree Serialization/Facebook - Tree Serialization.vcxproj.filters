@@ -29,13 +29,8 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Quiz - MsExcel Column Pattern.cpp">
+    <ClCompile Include="Facebook - Tree Serialization.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Problem Description.PNG">
-      <Filter>资源文件</Filter>
-    </Image>
   </ItemGroup>
 </Project>

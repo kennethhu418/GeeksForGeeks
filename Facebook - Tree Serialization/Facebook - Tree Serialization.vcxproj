@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{EFBFE16E-740D-438E-B998-452B4670065D}</ProjectGuid>
+    <ProjectGuid>{D3A8D8DE-9FF5-4C7B-A5D4-B248F85910CB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>QuizMsExcelColumnPattern</RootNamespace>
+    <RootNamespace>FacebookTreeSerialization</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -83,11 +83,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Quiz - MsExcel Column Pattern.cpp" />
+    <ClCompile Include="Facebook - Tree Serialization.cpp" />
     <ClCompile Include="stdafx.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Problem Description.PNG" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
