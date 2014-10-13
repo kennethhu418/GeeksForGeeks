@@ -133,6 +133,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Tree Serializati
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - atof", "Facebook - atof\Facebook - atof.vcxproj", "{CB679C8E-2279-49DF-9648-12AA7B3640F7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Search String Anagram", "Facebook - Search String Anagram\Facebook - Search String Anagram.vcxproj", "{224EC630-405E-4BB2-9D3A-89084ADD2064}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -399,6 +401,10 @@ Global
 		{CB679C8E-2279-49DF-9648-12AA7B3640F7}.Debug|Win32.Build.0 = Debug|Win32
 		{CB679C8E-2279-49DF-9648-12AA7B3640F7}.Release|Win32.ActiveCfg = Release|Win32
 		{CB679C8E-2279-49DF-9648-12AA7B3640F7}.Release|Win32.Build.0 = Release|Win32
+		{224EC630-405E-4BB2-9D3A-89084ADD2064}.Debug|Win32.ActiveCfg = Debug|Win32
+		{224EC630-405E-4BB2-9D3A-89084ADD2064}.Debug|Win32.Build.0 = Debug|Win32
+		{224EC630-405E-4BB2-9D3A-89084ADD2064}.Release|Win32.ActiveCfg = Release|Win32
+		{224EC630-405E-4BB2-9D3A-89084ADD2064}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
