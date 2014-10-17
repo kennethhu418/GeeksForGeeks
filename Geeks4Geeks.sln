@@ -141,6 +141,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Rearrange Array2
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Miminum Spanning Tree", "Facebook - Miminum Spanning Tree\Facebook - Miminum Spanning Tree.vcxproj", "{7C126358-644A-40EE-9EA6-CDA1A16CD426}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Snake And Ladder Board Game", "Quiz - Snake And Ladder Board Game\Quiz - Snake And Ladder Board Game.vcxproj", "{8DBD0B23-A37C-44DF-BD42-5D490BC4D52C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -423,6 +425,10 @@ Global
 		{7C126358-644A-40EE-9EA6-CDA1A16CD426}.Debug|Win32.Build.0 = Debug|Win32
 		{7C126358-644A-40EE-9EA6-CDA1A16CD426}.Release|Win32.ActiveCfg = Release|Win32
 		{7C126358-644A-40EE-9EA6-CDA1A16CD426}.Release|Win32.Build.0 = Release|Win32
+		{8DBD0B23-A37C-44DF-BD42-5D490BC4D52C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8DBD0B23-A37C-44DF-BD42-5D490BC4D52C}.Debug|Win32.Build.0 = Debug|Win32
+		{8DBD0B23-A37C-44DF-BD42-5D490BC4D52C}.Release|Win32.ActiveCfg = Release|Win32
+		{8DBD0B23-A37C-44DF-BD42-5D490BC4D52C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
