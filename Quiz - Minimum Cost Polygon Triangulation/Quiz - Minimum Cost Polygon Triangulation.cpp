@@ -52,10 +52,8 @@ double getMinimumCut(const Point *pointArr, int n)
     for (int len = 3; len <= n; ++len){
         for (i = 0; i < n; ++i){
             j = (i + len - 1) % n;
-            if (j < i) break;
-
             minCost = MAX_COST;
-            for (int k = i + 1; k < j; ++k){
+            for (int k = (i + 1) % n; k !=  j; k = (k + 1)%n){
                 curCost = getPerimeter(pointArr[i], pointArr[k], pointArr[j]);
                 curCost += (resultArr[i][k] + resultArr[k][j]);
                 if (curCost < minCost) minCost = curCost;

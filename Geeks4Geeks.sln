@@ -143,6 +143,16 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Miminum Spanning
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Snake And Ladder Board Game", "Quiz - Snake And Ladder Board Game\Quiz - Snake And Ladder Board Game.vcxproj", "{8DBD0B23-A37C-44DF-BD42-5D490BC4D52C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Print increasing sequences of length k from n natural numbers", "Quiz - Print increasing sequences of length k from n natural numbers\Quiz - Print increasing sequences of length k from n natural numbers.vcxproj", "{FDD99C42-09AA-4DC2-9C38-8CDBA2DD71DF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Print Boundary Nodes of A Tree", "Quiz - Print Boundary Nodes of A Tree\Quiz - Print Boundary Nodes of A Tree.vcxproj", "{934B8D17-B630-4D92-BEEB-DDBB3ABDD93D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Distance between Tree Nodes", "Quiz - Distance between Tree Nodes\Quiz - Distance between Tree Nodes.vcxproj", "{C6C4D66E-E9A6-4059-A4B5-EEDBCC29695F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Next Increasing Digit Number", "Quiz - Next Increasing Digit Number\Quiz - Next Increasing Digit Number.vcxproj", "{9EFB8715-0D1A-4A34-AACF-CEAE07753047}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Rotate Matrix by 90 degree clockwise", "Quiz - Rotate Matrix by 90 degree clockwise\Quiz - Rotate Matrix by 90 degree clockwise.vcxproj", "{C1A29D08-CEFF-4288-8BDA-626B262BCAB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -429,6 +439,26 @@ Global
 		{8DBD0B23-A37C-44DF-BD42-5D490BC4D52C}.Debug|Win32.Build.0 = Debug|Win32
 		{8DBD0B23-A37C-44DF-BD42-5D490BC4D52C}.Release|Win32.ActiveCfg = Release|Win32
 		{8DBD0B23-A37C-44DF-BD42-5D490BC4D52C}.Release|Win32.Build.0 = Release|Win32
+		{FDD99C42-09AA-4DC2-9C38-8CDBA2DD71DF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FDD99C42-09AA-4DC2-9C38-8CDBA2DD71DF}.Debug|Win32.Build.0 = Debug|Win32
+		{FDD99C42-09AA-4DC2-9C38-8CDBA2DD71DF}.Release|Win32.ActiveCfg = Release|Win32
+		{FDD99C42-09AA-4DC2-9C38-8CDBA2DD71DF}.Release|Win32.Build.0 = Release|Win32
+		{934B8D17-B630-4D92-BEEB-DDBB3ABDD93D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{934B8D17-B630-4D92-BEEB-DDBB3ABDD93D}.Debug|Win32.Build.0 = Debug|Win32
+		{934B8D17-B630-4D92-BEEB-DDBB3ABDD93D}.Release|Win32.ActiveCfg = Release|Win32
+		{934B8D17-B630-4D92-BEEB-DDBB3ABDD93D}.Release|Win32.Build.0 = Release|Win32
+		{C6C4D66E-E9A6-4059-A4B5-EEDBCC29695F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C6C4D66E-E9A6-4059-A4B5-EEDBCC29695F}.Debug|Win32.Build.0 = Debug|Win32
+		{C6C4D66E-E9A6-4059-A4B5-EEDBCC29695F}.Release|Win32.ActiveCfg = Release|Win32
+		{C6C4D66E-E9A6-4059-A4B5-EEDBCC29695F}.Release|Win32.Build.0 = Release|Win32
+		{9EFB8715-0D1A-4A34-AACF-CEAE07753047}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9EFB8715-0D1A-4A34-AACF-CEAE07753047}.Debug|Win32.Build.0 = Debug|Win32
+		{9EFB8715-0D1A-4A34-AACF-CEAE07753047}.Release|Win32.ActiveCfg = Release|Win32
+		{9EFB8715-0D1A-4A34-AACF-CEAE07753047}.Release|Win32.Build.0 = Release|Win32
+		{C1A29D08-CEFF-4288-8BDA-626B262BCAB7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C1A29D08-CEFF-4288-8BDA-626B262BCAB7}.Debug|Win32.Build.0 = Debug|Win32
+		{C1A29D08-CEFF-4288-8BDA-626B262BCAB7}.Release|Win32.ActiveCfg = Release|Win32
+		{C1A29D08-CEFF-4288-8BDA-626B262BCAB7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
