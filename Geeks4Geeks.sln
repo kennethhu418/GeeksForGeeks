@@ -159,6 +159,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Max Product of Three
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Height Of Tree With DLL Leaf", "Quiz - Height Of Tree With DLL Leaf\Quiz - Height Of Tree With DLL Leaf.vcxproj", "{0F9B5C6B-F1CC-4163-9ACD-943CAC8D22A1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Minimum number of Information Passsing In Tree", "Quiz - Minimum number of Information Passsing In Tree\Quiz - Minimum number of Information Passsing In Tree.vcxproj", "{BA5A593F-4ADE-4A57-9A56-3EFC9FEE9FD6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Print Combinations in lexicographical order", "Quiz - Print Combinations in lexicographical order\Quiz - Print Combinations in lexicographical order.vcxproj", "{542E2EAB-A490-4EF8-A813-356AF7D1B86E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -477,6 +481,14 @@ Global
 		{0F9B5C6B-F1CC-4163-9ACD-943CAC8D22A1}.Debug|Win32.Build.0 = Debug|Win32
 		{0F9B5C6B-F1CC-4163-9ACD-943CAC8D22A1}.Release|Win32.ActiveCfg = Release|Win32
 		{0F9B5C6B-F1CC-4163-9ACD-943CAC8D22A1}.Release|Win32.Build.0 = Release|Win32
+		{BA5A593F-4ADE-4A57-9A56-3EFC9FEE9FD6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BA5A593F-4ADE-4A57-9A56-3EFC9FEE9FD6}.Debug|Win32.Build.0 = Debug|Win32
+		{BA5A593F-4ADE-4A57-9A56-3EFC9FEE9FD6}.Release|Win32.ActiveCfg = Release|Win32
+		{BA5A593F-4ADE-4A57-9A56-3EFC9FEE9FD6}.Release|Win32.Build.0 = Release|Win32
+		{542E2EAB-A490-4EF8-A813-356AF7D1B86E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{542E2EAB-A490-4EF8-A813-356AF7D1B86E}.Debug|Win32.Build.0 = Debug|Win32
+		{542E2EAB-A490-4EF8-A813-356AF7D1B86E}.Release|Win32.ActiveCfg = Release|Win32
+		{542E2EAB-A490-4EF8-A813-356AF7D1B86E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
