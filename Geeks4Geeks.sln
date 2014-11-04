@@ -153,6 +153,16 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Next Increasing Digi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Rotate Matrix by 90 degree clockwise", "Quiz - Rotate Matrix by 90 degree clockwise\Quiz - Rotate Matrix by 90 degree clockwise.vcxproj", "{C1A29D08-CEFF-4288-8BDA-626B262BCAB7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Pair Product", "Quiz - Pair Product\Quiz - Pair Product.vcxproj", "{2EC79311-807A-4BB9-B314-BBFAF8428AE2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Max Product of Three Elements", "Quiz - Max Product of Three Elements\Quiz - Max Product of Three Elements.vcxproj", "{70FA5EBE-4A8D-4BC0-AD11-DAF6B90876A4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Height Of Tree With DLL Leaf", "Quiz - Height Of Tree With DLL Leaf\Quiz - Height Of Tree With DLL Leaf.vcxproj", "{0F9B5C6B-F1CC-4163-9ACD-943CAC8D22A1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Minimum number of Information Passsing In Tree", "Quiz - Minimum number of Information Passsing In Tree\Quiz - Minimum number of Information Passsing In Tree.vcxproj", "{BA5A593F-4ADE-4A57-9A56-3EFC9FEE9FD6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Print Combinations in lexicographical order", "Quiz - Print Combinations in lexicographical order\Quiz - Print Combinations in lexicographical order.vcxproj", "{542E2EAB-A490-4EF8-A813-356AF7D1B86E}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Square of Float Number", "Quiz - Square of Float Number\Quiz - Square of Float Number.vcxproj", "{BEBE6FAA-B737-48F9-9D61-338508136E50}"
 EndProject
 Global
@@ -461,6 +471,26 @@ Global
 		{C1A29D08-CEFF-4288-8BDA-626B262BCAB7}.Debug|Win32.Build.0 = Debug|Win32
 		{C1A29D08-CEFF-4288-8BDA-626B262BCAB7}.Release|Win32.ActiveCfg = Release|Win32
 		{C1A29D08-CEFF-4288-8BDA-626B262BCAB7}.Release|Win32.Build.0 = Release|Win32
+		{2EC79311-807A-4BB9-B314-BBFAF8428AE2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2EC79311-807A-4BB9-B314-BBFAF8428AE2}.Debug|Win32.Build.0 = Debug|Win32
+		{2EC79311-807A-4BB9-B314-BBFAF8428AE2}.Release|Win32.ActiveCfg = Release|Win32
+		{2EC79311-807A-4BB9-B314-BBFAF8428AE2}.Release|Win32.Build.0 = Release|Win32
+		{70FA5EBE-4A8D-4BC0-AD11-DAF6B90876A4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{70FA5EBE-4A8D-4BC0-AD11-DAF6B90876A4}.Debug|Win32.Build.0 = Debug|Win32
+		{70FA5EBE-4A8D-4BC0-AD11-DAF6B90876A4}.Release|Win32.ActiveCfg = Release|Win32
+		{70FA5EBE-4A8D-4BC0-AD11-DAF6B90876A4}.Release|Win32.Build.0 = Release|Win32
+		{0F9B5C6B-F1CC-4163-9ACD-943CAC8D22A1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0F9B5C6B-F1CC-4163-9ACD-943CAC8D22A1}.Debug|Win32.Build.0 = Debug|Win32
+		{0F9B5C6B-F1CC-4163-9ACD-943CAC8D22A1}.Release|Win32.ActiveCfg = Release|Win32
+		{0F9B5C6B-F1CC-4163-9ACD-943CAC8D22A1}.Release|Win32.Build.0 = Release|Win32
+		{BA5A593F-4ADE-4A57-9A56-3EFC9FEE9FD6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BA5A593F-4ADE-4A57-9A56-3EFC9FEE9FD6}.Debug|Win32.Build.0 = Debug|Win32
+		{BA5A593F-4ADE-4A57-9A56-3EFC9FEE9FD6}.Release|Win32.ActiveCfg = Release|Win32
+		{BA5A593F-4ADE-4A57-9A56-3EFC9FEE9FD6}.Release|Win32.Build.0 = Release|Win32
+		{542E2EAB-A490-4EF8-A813-356AF7D1B86E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{542E2EAB-A490-4EF8-A813-356AF7D1B86E}.Debug|Win32.Build.0 = Debug|Win32
+		{542E2EAB-A490-4EF8-A813-356AF7D1B86E}.Release|Win32.ActiveCfg = Release|Win32
+		{542E2EAB-A490-4EF8-A813-356AF7D1B86E}.Release|Win32.Build.0 = Release|Win32
 		{BEBE6FAA-B737-48F9-9D61-338508136E50}.Debug|Win32.ActiveCfg = Debug|Win32
 		{BEBE6FAA-B737-48F9-9D61-338508136E50}.Debug|Win32.Build.0 = Debug|Win32
 		{BEBE6FAA-B737-48F9-9D61-338508136E50}.Release|Win32.ActiveCfg = Release|Win32
