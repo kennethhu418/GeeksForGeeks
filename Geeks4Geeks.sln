@@ -165,6 +165,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Print Combinations i
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Square of Float Number", "Quiz - Square of Float Number\Quiz - Square of Float Number.vcxproj", "{BEBE6FAA-B737-48F9-9D61-338508136E50}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Search Target in Adjacent 1 Element Array", "Quiz - Search Target in Adjacent 1 Element Array\Quiz - Search Target in Adjacent 1 Element Array.vcxproj", "{07A63187-B4B0-4E3D-87CB-622673060045}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find Duplicated Elements in Array with O(n) complexity", "Quiz - Find Duplicated Elements in Array with O(n) complexity\Quiz - Find Duplicated Elements in Array with O(n) complexity.vcxproj", "{838C5B81-7D4D-4855-9EC6-903CA91B43BB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Prove that the square of a primer number can be divided by 24", "Quiz - Prove that the square of a primer number can be divided by 24\Quiz - Prove that the square of a primer number can be divided by 24.vcxproj", "{9AA8FF27-AE64-401B-929A-762EA19FA2FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -495,6 +501,18 @@ Global
 		{BEBE6FAA-B737-48F9-9D61-338508136E50}.Debug|Win32.Build.0 = Debug|Win32
 		{BEBE6FAA-B737-48F9-9D61-338508136E50}.Release|Win32.ActiveCfg = Release|Win32
 		{BEBE6FAA-B737-48F9-9D61-338508136E50}.Release|Win32.Build.0 = Release|Win32
+		{07A63187-B4B0-4E3D-87CB-622673060045}.Debug|Win32.ActiveCfg = Debug|Win32
+		{07A63187-B4B0-4E3D-87CB-622673060045}.Debug|Win32.Build.0 = Debug|Win32
+		{07A63187-B4B0-4E3D-87CB-622673060045}.Release|Win32.ActiveCfg = Release|Win32
+		{07A63187-B4B0-4E3D-87CB-622673060045}.Release|Win32.Build.0 = Release|Win32
+		{838C5B81-7D4D-4855-9EC6-903CA91B43BB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{838C5B81-7D4D-4855-9EC6-903CA91B43BB}.Debug|Win32.Build.0 = Debug|Win32
+		{838C5B81-7D4D-4855-9EC6-903CA91B43BB}.Release|Win32.ActiveCfg = Release|Win32
+		{838C5B81-7D4D-4855-9EC6-903CA91B43BB}.Release|Win32.Build.0 = Release|Win32
+		{9AA8FF27-AE64-401B-929A-762EA19FA2FF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9AA8FF27-AE64-401B-929A-762EA19FA2FF}.Debug|Win32.Build.0 = Debug|Win32
+		{9AA8FF27-AE64-401B-929A-762EA19FA2FF}.Release|Win32.ActiveCfg = Release|Win32
+		{9AA8FF27-AE64-401B-929A-762EA19FA2FF}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
