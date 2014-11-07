@@ -171,6 +171,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find Duplicated Elem
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Prove that the square of a primer number can be divided by 24", "Quiz - Prove that the square of a primer number can be divided by 24\Quiz - Prove that the square of a primer number can be divided by 24.vcxproj", "{9AA8FF27-AE64-401B-929A-762EA19FA2FF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Rehash with Multiple Threads", "Quiz - Rehash with Multiple Threads\Quiz - Rehash with Multiple Threads.vcxproj", "{72D4AE7F-A7F0-45AC-9576-2D6EE7E3509F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -513,6 +515,10 @@ Global
 		{9AA8FF27-AE64-401B-929A-762EA19FA2FF}.Debug|Win32.Build.0 = Debug|Win32
 		{9AA8FF27-AE64-401B-929A-762EA19FA2FF}.Release|Win32.ActiveCfg = Release|Win32
 		{9AA8FF27-AE64-401B-929A-762EA19FA2FF}.Release|Win32.Build.0 = Release|Win32
+		{72D4AE7F-A7F0-45AC-9576-2D6EE7E3509F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{72D4AE7F-A7F0-45AC-9576-2D6EE7E3509F}.Debug|Win32.Build.0 = Debug|Win32
+		{72D4AE7F-A7F0-45AC-9576-2D6EE7E3509F}.Release|Win32.ActiveCfg = Release|Win32
+		{72D4AE7F-A7F0-45AC-9576-2D6EE7E3509F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
