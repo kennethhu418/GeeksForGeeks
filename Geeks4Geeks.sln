@@ -175,6 +175,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Rehash with Multiple
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find Next Larger Number by swapping adjacent digits", "Quiz - Find Next Larger Number by swapping adjacent digits\Quiz - Find Next Larger Number by swapping adjacent digits.vcxproj", "{5548FFC7-4059-4E2F-9CB8-5CA0F384AF49}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Longest Increasing Subsequence", "Quiz - Longest Increasing Subsequence\Quiz - Longest Increasing Subsequence.vcxproj", "{32263A25-835F-4BF7-85B7-46D5C1D5EB8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -525,6 +527,10 @@ Global
 		{5548FFC7-4059-4E2F-9CB8-5CA0F384AF49}.Debug|Win32.Build.0 = Debug|Win32
 		{5548FFC7-4059-4E2F-9CB8-5CA0F384AF49}.Release|Win32.ActiveCfg = Release|Win32
 		{5548FFC7-4059-4E2F-9CB8-5CA0F384AF49}.Release|Win32.Build.0 = Release|Win32
+		{32263A25-835F-4BF7-85B7-46D5C1D5EB8D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{32263A25-835F-4BF7-85B7-46D5C1D5EB8D}.Debug|Win32.Build.0 = Debug|Win32
+		{32263A25-835F-4BF7-85B7-46D5C1D5EB8D}.Release|Win32.ActiveCfg = Release|Win32
+		{32263A25-835F-4BF7-85B7-46D5C1D5EB8D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
