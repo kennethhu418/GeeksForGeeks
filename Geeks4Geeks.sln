@@ -183,6 +183,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Calculate Inverse Nu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Grouping People", "Quiz - Grouping People\Quiz - Grouping People.vcxproj", "{248D0527-167C-45F2-AF2C-D786C75381DA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Egg Dropping Puzzle", "Quiz - Egg Dropping Puzzle\Quiz - Egg Dropping Puzzle.vcxproj", "{C983D5AF-4463-42D9-85CF-E16DDC65B557}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -549,6 +551,10 @@ Global
 		{248D0527-167C-45F2-AF2C-D786C75381DA}.Debug|Win32.Build.0 = Debug|Win32
 		{248D0527-167C-45F2-AF2C-D786C75381DA}.Release|Win32.ActiveCfg = Release|Win32
 		{248D0527-167C-45F2-AF2C-D786C75381DA}.Release|Win32.Build.0 = Release|Win32
+		{C983D5AF-4463-42D9-85CF-E16DDC65B557}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C983D5AF-4463-42D9-85CF-E16DDC65B557}.Debug|Win32.Build.0 = Debug|Win32
+		{C983D5AF-4463-42D9-85CF-E16DDC65B557}.Release|Win32.ActiveCfg = Release|Win32
+		{C983D5AF-4463-42D9-85CF-E16DDC65B557}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
