@@ -177,6 +177,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find Next Larger Num
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Longest Increasing Subsequence", "Quiz - Longest Increasing Subsequence\Quiz - Longest Increasing Subsequence.vcxproj", "{32263A25-835F-4BF7-85B7-46D5C1D5EB8D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - KMP Algorithm", "Quiz - KMP Algorithm\Quiz - KMP Algorithm.vcxproj", "{F34B1607-839C-4D76-B19E-7F2E96FB2C69}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Calculate Inverse Number", "Quiz - Calculate Inverse Number\Quiz - Calculate Inverse Number.vcxproj", "{2CD01FBB-265D-4751-A6BE-105F5716973D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Grouping People", "Quiz - Grouping People\Quiz - Grouping People.vcxproj", "{248D0527-167C-45F2-AF2C-D786C75381DA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Egg Dropping Puzzle", "Quiz - Egg Dropping Puzzle\Quiz - Egg Dropping Puzzle.vcxproj", "{C983D5AF-4463-42D9-85CF-E16DDC65B557}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Shortest path with exactly k edges in a graph", "Quiz - Shortest path with exactly k edges in a graph\Quiz - Shortest path with exactly k edges in a graph.vcxproj", "{E7E178B8-2792-48FC-9BEE-1ED2B00273E8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find if the strings can be chained to form a circle", "Quiz - Find if the strings can be chained to form a circle\Quiz - Find if the strings can be chained to form a circle.vcxproj", "{4371FE81-1446-4B68-93D4-25146C19C6E2}"
@@ -535,6 +543,22 @@ Global
 		{32263A25-835F-4BF7-85B7-46D5C1D5EB8D}.Debug|Win32.Build.0 = Debug|Win32
 		{32263A25-835F-4BF7-85B7-46D5C1D5EB8D}.Release|Win32.ActiveCfg = Release|Win32
 		{32263A25-835F-4BF7-85B7-46D5C1D5EB8D}.Release|Win32.Build.0 = Release|Win32
+		{F34B1607-839C-4D76-B19E-7F2E96FB2C69}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F34B1607-839C-4D76-B19E-7F2E96FB2C69}.Debug|Win32.Build.0 = Debug|Win32
+		{F34B1607-839C-4D76-B19E-7F2E96FB2C69}.Release|Win32.ActiveCfg = Release|Win32
+		{F34B1607-839C-4D76-B19E-7F2E96FB2C69}.Release|Win32.Build.0 = Release|Win32
+		{2CD01FBB-265D-4751-A6BE-105F5716973D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2CD01FBB-265D-4751-A6BE-105F5716973D}.Debug|Win32.Build.0 = Debug|Win32
+		{2CD01FBB-265D-4751-A6BE-105F5716973D}.Release|Win32.ActiveCfg = Release|Win32
+		{2CD01FBB-265D-4751-A6BE-105F5716973D}.Release|Win32.Build.0 = Release|Win32
+		{248D0527-167C-45F2-AF2C-D786C75381DA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{248D0527-167C-45F2-AF2C-D786C75381DA}.Debug|Win32.Build.0 = Debug|Win32
+		{248D0527-167C-45F2-AF2C-D786C75381DA}.Release|Win32.ActiveCfg = Release|Win32
+		{248D0527-167C-45F2-AF2C-D786C75381DA}.Release|Win32.Build.0 = Release|Win32
+		{C983D5AF-4463-42D9-85CF-E16DDC65B557}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C983D5AF-4463-42D9-85CF-E16DDC65B557}.Debug|Win32.Build.0 = Debug|Win32
+		{C983D5AF-4463-42D9-85CF-E16DDC65B557}.Release|Win32.ActiveCfg = Release|Win32
+		{C983D5AF-4463-42D9-85CF-E16DDC65B557}.Release|Win32.Build.0 = Release|Win32
 		{E7E178B8-2792-48FC-9BEE-1ED2B00273E8}.Debug|Win32.ActiveCfg = Debug|Win32
 		{E7E178B8-2792-48FC-9BEE-1ED2B00273E8}.Debug|Win32.Build.0 = Debug|Win32
 		{E7E178B8-2792-48FC-9BEE-1ED2B00273E8}.Release|Win32.ActiveCfg = Release|Win32
