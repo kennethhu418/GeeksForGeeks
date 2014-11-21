@@ -1,0 +1,33 @@
+定义：
+   欧拉回路(Eulerian Cycle)：从图的某一个顶点出发，图中每条边走且仅走一次，最后回到出发点；如果这样的回路存在，则称之为欧拉回路。 
+   欧拉路径(Eulerian Path)：从图的某一个顶点出发，图中每条边走且仅走一次，最后到达某一个点；如果这样的路径存在，则称之为欧拉路径。
+
+判断：
+     **************************************************************
+     无向图欧拉回路判断：图为连通图且所有顶点的度数都为偶数。
+
+     有向图欧拉回路判断：图为连通图（不一定是强连通图，连通图的意思是将图变为无向图后图为连通图）且所有顶点的出度与入读相等。
+
+     **************************************************************
+
+     无向图欧拉路径判断： 图为连通图且至多有两个顶点的度数为奇数，其他顶点的度数为偶数。
+
+     有向图欧拉路径判断： 图为连通图（不一定是强连通图，连通图的意思是将图变为无向图后图为连通图）且至多有两个顶点的入度和出度绝对值差1（若有两个这样的顶点，则必须其中一个出度大于入度，另一个入度大于出度）,其他顶点的入度与出度相等。
+     **************************************************************
+
+如何找出欧拉回路：
+Hierholzer's algorithm
+  Hierholzer's 1873 paper provides a different method for finding Euler cycles that is more efficient than Fleury's algorithm:
+
+  - Choose any starting vertex v, and follow a trail of edges from that vertex until returning to v. It is not possible to get stuck at any vertex other than v, 
+     because the even degree of all vertices ensures that, when the trail enters another vertex w there must be an unused edge leaving w. The tour formed 
+     in this way is a closed tour, but may not cover all the vertices and edges of the initial graph.
+
+  - As long as there exists a vertex u that belongs to the current tour but that has adjacent edges not part of the tour, start another trail from u, following 
+    unused edges until returning to u, and join the tour formed in this way to the previous tour.
+
+判断欧拉路径/回路并且找出欧拉回路/路径的代码：
+  见同目录下的Eulerian_path.cpp与Eulerian_cycle.cpp
+
+欧拉路径或欧拉回路的应用：
+  http://www.cnblogs.com/nanke/archive/2011/08/02/2125614.html

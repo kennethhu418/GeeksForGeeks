@@ -40,6 +40,9 @@
     <Filter Include="几何学 - Geometry Problems">
       <UniqueIdentifier>{772f0fa9-77fe-419d-9069-453186695333}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Graph Related\欧拉路径">
+      <UniqueIdentifier>{6f5c0a6c-5dde-4613-ae73-7efc860887f7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -54,6 +57,9 @@
     </Text>
     <Text Include="..\Document - 几何学 - Geometry Problems\Geometry Problems - dot product and cross product.txt">
       <Filter>几何学 - Geometry Problems</Filter>
+    </Text>
+    <Text Include="欧拉路径与欧拉环\欧拉路径与欧拉环.txt">
+      <Filter>Graph Related\欧拉路径</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +82,12 @@
     </ClCompile>
     <ClCompile Include="ReadWriteLock Implementation.h">
       <Filter>MultiThread</Filter>
+    </ClCompile>
+    <ClCompile Include="欧拉路径与欧拉环\Eulerian_Cycle.cpp">
+      <Filter>Graph Related\欧拉路径</Filter>
+    </ClCompile>
+    <ClCompile Include="欧拉路径与欧拉环\Eulerian_Path.cpp">
+      <Filter>Graph Related\欧拉路径</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -133,5 +145,13 @@
     <None Include="二分图最佳匹配\带权二分图的最佳匹配算法.docx">
       <Filter>Graph Related\二分图的最大和最佳匹配</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="欧拉路径与欧拉环\Eulerian_Path.png">
+      <Filter>Graph Related\欧拉路径</Filter>
+    </Image>
+    <Image Include="欧拉路径与欧拉环\Eulerian_Cycle.png">
+      <Filter>Graph Related\欧拉路径</Filter>
+    </Image>
   </ItemGroup>
 </Project>

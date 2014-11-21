@@ -82,6 +82,7 @@
     <Text Include="..\Document - 几何学 - Geometry Problems\Geometry Problems - dot product and cross product.txt" />
     <Text Include="ReadMe.txt" />
     <Text Include="二分图最佳匹配\无权二分图的最大匹配和最佳匹配.txt" />
+    <Text Include="欧拉路径与欧拉环\欧拉路径与欧拉环.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ReadWriteLock.h" />
@@ -92,6 +93,8 @@
     <ClCompile Include="Document - Graph.cpp" />
     <ClCompile Include="ReadWriteLock Implementation.h" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="欧拉路径与欧拉环\Eulerian_Cycle.cpp" />
+    <ClCompile Include="欧拉路径与欧拉环\Eulerian_Path.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\ArraySorting\Implementation Problems in Quick Sort.docx" />
@@ -114,6 +117,10 @@
     <None Include="二分图最佳匹配\带权二分图的最佳匹配算法.docx" />
     <None Include="图中的距离\图中结点的最短距离汇总.docx" />
     <None Include="图中的距离\图中结点的最长距离汇总 .docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="欧拉路径与欧拉环\Eulerian_Cycle.png" />
+    <Image Include="欧拉路径与欧拉环\Eulerian_Path.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
