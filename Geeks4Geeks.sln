@@ -189,6 +189,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Shortest path with e
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find if the strings can be chained to form a circle", "Quiz - Find if the strings can be chained to form a circle\Quiz - Find if the strings can be chained to form a circle.vcxproj", "{4371FE81-1446-4B68-93D4-25146C19C6E2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Longest Bitonic Subsequence", "Quiz - Longest Bitonic Subsequence\Quiz - Longest Bitonic Subsequence.vcxproj", "{DD48B32F-E5C4-427E-8DF4-D05118DB5BD8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Top View of a Tree", "Quiz - Top View of a Tree\Quiz - Top View of a Tree.vcxproj", "{C95525F8-4561-4BDC-BE60-FE5D1F38F165}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Threaded Binary Tree", "Quiz - Threaded Binary Tree\Quiz - Threaded Binary Tree.vcxproj", "{6D6C1A2D-B418-453D-8E8A-0153A02D128C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -567,6 +573,18 @@ Global
 		{4371FE81-1446-4B68-93D4-25146C19C6E2}.Debug|Win32.Build.0 = Debug|Win32
 		{4371FE81-1446-4B68-93D4-25146C19C6E2}.Release|Win32.ActiveCfg = Release|Win32
 		{4371FE81-1446-4B68-93D4-25146C19C6E2}.Release|Win32.Build.0 = Release|Win32
+		{DD48B32F-E5C4-427E-8DF4-D05118DB5BD8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD48B32F-E5C4-427E-8DF4-D05118DB5BD8}.Debug|Win32.Build.0 = Debug|Win32
+		{DD48B32F-E5C4-427E-8DF4-D05118DB5BD8}.Release|Win32.ActiveCfg = Release|Win32
+		{DD48B32F-E5C4-427E-8DF4-D05118DB5BD8}.Release|Win32.Build.0 = Release|Win32
+		{C95525F8-4561-4BDC-BE60-FE5D1F38F165}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C95525F8-4561-4BDC-BE60-FE5D1F38F165}.Debug|Win32.Build.0 = Debug|Win32
+		{C95525F8-4561-4BDC-BE60-FE5D1F38F165}.Release|Win32.ActiveCfg = Release|Win32
+		{C95525F8-4561-4BDC-BE60-FE5D1F38F165}.Release|Win32.Build.0 = Release|Win32
+		{6D6C1A2D-B418-453D-8E8A-0153A02D128C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6D6C1A2D-B418-453D-8E8A-0153A02D128C}.Debug|Win32.Build.0 = Debug|Win32
+		{6D6C1A2D-B418-453D-8E8A-0153A02D128C}.Release|Win32.ActiveCfg = Release|Win32
+		{6D6C1A2D-B418-453D-8E8A-0153A02D128C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

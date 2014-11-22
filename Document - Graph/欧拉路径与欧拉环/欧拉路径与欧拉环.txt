@@ -31,3 +31,4 @@ Hierholzer's algorithm
 
 欧拉路径或欧拉回路的应用：
   http://www.cnblogs.com/nanke/archive/2011/08/02/2125614.html
+  http://blog.csdn.net/kk303/article/details/10529071
