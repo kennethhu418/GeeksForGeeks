@@ -13,6 +13,8 @@ public:
         vector<int>  resultArr;
         if (root == NULL) return resultArr;
 
+        // First get globally min and max vertical levels
+        // Here we use iterative implementation.
         int minL = INT_MAX, maxL = INT_MIN, curLevel = 0;
         stack<TreeNode*> nodeStack; stack<int> levelStack;
         TreeNode* node = root;
@@ -38,14 +40,14 @@ public:
                 curLevel--;
             }
         }
-
+        
         int levelCount = maxL - minL + 1;
         resultArr.resize(levelCount);
-        vector<bool> visited(levelCount);
-        for (int i = 0; i < levelCount; ++i) visited[i] = false;
 
+        // Now let's do level order traversal
         queue<TreeNode*> nodeQ; queue<int> levelQ;
         nodeQ.push(root); levelQ.push(0);
+        int curSeenMinLevel = INT_MAX, curSeenMaxLevel = INT_MIN;
         while (!nodeQ.empty()) {
             node = nodeQ.front(); curLevel = levelQ.front();
             nodeQ.pop(); levelQ.pop();
@@ -57,10 +59,15 @@ public:
                 nodeQ.push(node->right); levelQ.push(curLevel + 1);
             }
 
-            if (visited[curLevel - minL]) continue;
-            visited[curLevel - minL] = true;
-            resultArr[curLevel - minL] = node->val;
-        }
+            if (curLevel < curSeenMinLevel) {
+                curSeenMinLevel = curLevel;
+                resultArr[curLevel - minL] = node->val;
+            }
+            if (curLevel > curSeenMaxLevel) {
+                curSeenMaxLevel = curLevel;
+                resultArr[curLevel - minL] = node->val;
+            }
+        }      
 
         return resultArr;
     }

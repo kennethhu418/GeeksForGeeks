@@ -195,6 +195,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Top View of a Tree",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Threaded Binary Tree", "Quiz - Threaded Binary Tree\Quiz - Threaded Binary Tree.vcxproj", "{6D6C1A2D-B418-453D-8E8A-0153A02D128C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Binary Tree Upside Down", "Quiz - Binary Tree Upside Down\Quiz - Binary Tree Upside Down.vcxproj", "{10921C1D-12F0-4A3D-808D-381C570A04CE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Read N characters with read4 API", "Quiz - Read N characters with read4 API\Quiz - Read N characters with read4 API.vcxproj", "{18B908E4-C15F-4042-9C0C-14ACB6F0E9D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -585,6 +589,14 @@ Global
 		{6D6C1A2D-B418-453D-8E8A-0153A02D128C}.Debug|Win32.Build.0 = Debug|Win32
 		{6D6C1A2D-B418-453D-8E8A-0153A02D128C}.Release|Win32.ActiveCfg = Release|Win32
 		{6D6C1A2D-B418-453D-8E8A-0153A02D128C}.Release|Win32.Build.0 = Release|Win32
+		{10921C1D-12F0-4A3D-808D-381C570A04CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{10921C1D-12F0-4A3D-808D-381C570A04CE}.Debug|Win32.Build.0 = Debug|Win32
+		{10921C1D-12F0-4A3D-808D-381C570A04CE}.Release|Win32.ActiveCfg = Release|Win32
+		{10921C1D-12F0-4A3D-808D-381C570A04CE}.Release|Win32.Build.0 = Release|Win32
+		{18B908E4-C15F-4042-9C0C-14ACB6F0E9D6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{18B908E4-C15F-4042-9C0C-14ACB6F0E9D6}.Debug|Win32.Build.0 = Debug|Win32
+		{18B908E4-C15F-4042-9C0C-14ACB6F0E9D6}.Release|Win32.ActiveCfg = Release|Win32
+		{18B908E4-C15F-4042-9C0C-14ACB6F0E9D6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

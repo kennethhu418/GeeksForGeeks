@@ -71,50 +71,55 @@ class Solution_KLargest
 public:
     void    selectKLargestNumber(int arr[], int n, int K)
     {
-        if (K >= n) return;
-
-        quickSelectionSort(arr, 0, n - 1, K);
+        if (n < 2) return;
+        int start = 0, end = n - 1, pStart = 0, pEnd = 0;
+        while (start <= end) {
+            partition(arr + start, end - start + 1, pStart, pEnd);
+            if (K >= pStart + 1 && K <= pEnd + 1) return;
+            if (K <= pStart)
+                end = start + pStart - 1;
+            else {
+                start = start + pEnd + 1;
+                K -= (pEnd + 1);
+            }        
+        }
     }
 
 private:
-    void    quickSelectionSort(int arr[], int start, int end, int K)
+    int selectPivot(int arr[], int n)
     {
-        if (start == end)
-        {
-            assert(K == 1);
-            return;
+        int     mid = ((n - 1) >> 1);
+        if (arr[0] >= arr[mid] && arr[0] <= arr[n - 1] || arr[0] >= arr[n - 1] && arr[0] <= arr[mid])   return 0;
+        if (arr[mid] >= arr[0] && arr[mid] <= arr[n - 1] || arr[mid] >= arr[n - 1] && arr[mid] <= arr[0]) return mid;
+        return n - 1;
+    }
+
+    void partition(int * arr, int n, int &pStart, int &pEnd) {
+        if (n <= 0) return;
+        if (n == 1) {
+            pStart = pEnd = 0; return;
         }
 
-        int pivot = arr[(start + end) >> 1];
-        int curL = start, curR = end, nextLPlace = start, nextRPlace = end, tmp = -1;
-        while (curL <= curR)
-        {
-            while (curL <= curR && arr[curL] <= pivot)
-            {
-                if (arr[curL] < pivot)  arr[nextLPlace++] = arr[curL];
-                ++curL;
+        int pivotIndex = selectPivot(arr, n);
+        swap(arr[0], arr[pivotIndex]);
+
+        int pivot = arr[0], curPos = 1, curEnd = n - 1, pCnt = 1;
+        pStart = 0;
+        while (curPos <= curEnd) {
+            if (arr[curPos] == pivot) {
+                ++curPos; ++pCnt; continue;
+            }
+            if (arr[curPos] > pivot) {
+                swap(arr[pStart++], arr[curPos++]);
+                continue;
             }
 
-            if (curL > curR)    break;
-
-            while (curL <= curR && arr[curR] >= pivot)
-            {
-                if (arr[curR] > pivot)  arr[nextRPlace--] = arr[curR];
-                --curR;
-            }
-
-            if (curL > curR)    break;
-
-            tmp = arr[curR--];
-            arr[nextRPlace--] = arr[curL++];
-            arr[nextLPlace++] = tmp;
+            while (curPos <= curEnd && arr[curEnd] < pivot) --curEnd;
+            if (curPos > curEnd) break;
+            swap(arr[curPos], arr[curEnd--]);
         }
-
-        for (int i = nextLPlace; i <= nextRPlace; i++)
-            arr[i] = pivot;
-
-        if (K < nextLPlace - start)  quickSelectionSort(arr, start, nextLPlace - 1, K);
-        if (K > nextRPlace + 1 - start)  quickSelectionSort(arr, nextRPlace + 1, end, K + start - nextRPlace - 1);
+        
+        pEnd = pStart + pCnt - 1;
     }
 };
 
@@ -177,78 +182,81 @@ void OutputArray(int arr[], int n)
 
 
 //Verify Sorting algorithm
-int _tmain(int argc, _TCHAR* argv[])
-{
-    const int   MAX_VAL = 700;
-    int dataArr[1000];
-    int resultArr[1000];
-    int size;
-    int times = 6000;
-    Solution_QSort so;
-
-    srand(time(0));
-
-    while (times-- > 0)
-    {
-        size = rand() % 1001;
-        generateArray(dataArr, size, MAX_VAL);
-        memcpy(resultArr, dataArr, sizeof(int)*size);
-        //cout << "Before sorting:" << endl;
-        //OutputArray(resultArr, size);
-        so.sort(resultArr, size);
-        //cout << "After sorting:" << endl;
-        //OutputArray(resultArr, size);
-        if (!checkArray(resultArr, dataArr, size))
-        {
-            cout << "Oh, no!" << endl;
-            system("PAUSE");
-        }
-            
-        //cout << "==============================================" << endl;
-    }
-
-
-	return 0;
-}
-
-
-//Verify Selecting largest K Number algorithm
 //int _tmain(int argc, _TCHAR* argv[])
 //{
 //    const int   MAX_VAL = 700;
 //    int dataArr[1000];
 //    int resultArr[1000];
-//    int size, K;
+//    int size;
 //    int times = 6000;
-//    Solution_QSort so_sort;
-//    Solution_KLargest so_select;
+//    Solution_QSort so;
 //
 //    srand(time(0));
 //
 //    while (times-- > 0)
 //    {
-//        size = 1 + rand() % 1000;
-//        K = rand() % size + 1;
+//        size = rand() % 1001;
 //        generateArray(dataArr, size, MAX_VAL);
 //        memcpy(resultArr, dataArr, sizeof(int)*size);
-//
-//        //sort original array
-//        so_sort.sort(dataArr, size);
-//
-//        //get the largest K numbers
-//        so_select.selectKLargestNumber(resultArr, size, K);
-//
-//        //verify results
-//        so_sort.sort(resultArr, K);
-//        if (!verifySelection(resultArr, dataArr, K))
+//        //cout << "Before sorting:" << endl;
+//        //OutputArray(resultArr, size);
+//        so.sort(resultArr, size);
+//        //cout << "After sorting:" << endl;
+//        //OutputArray(resultArr, size);
+//        if (!checkArray(resultArr, dataArr, size))
 //        {
 //            cout << "Oh, no!" << endl;
 //            system("PAUSE");
 //        }
-//
+//            
 //        //cout << "==============================================" << endl;
 //    }
 //
 //
-//    return 0;
+//	return 0;
 //}
+
+
+//Verify Selecting largest K Number algorithm
+int _tmain(int argc, _TCHAR* argv[])
+{
+    const int   MAX_VAL = 700;
+    int dataArr[1000];
+    int resultArr[1000];
+    int size, K;
+    int times = 6000;
+    Solution_QSort so_sort;
+    Solution_KLargest so_select;
+
+    srand(time(0));
+
+    while (times-- > 0)
+    {
+        size = 1 + rand() % 1000;
+        K = rand() % size + 1;
+
+        generateArray(dataArr, size, MAX_VAL);
+        memcpy(resultArr, dataArr, sizeof(int)*size);
+
+        //sort original array
+        so_sort.sort(dataArr, size); //sorted increasingly, should reverse
+        int s = 0, e = size - 1; while (s < e) swap(dataArr[s++], dataArr[e--]);
+        s = 0; e = K - 1; while (s < e) swap(dataArr[s++], dataArr[e--]);
+
+        //get the largest K numbers
+        so_select.selectKLargestNumber(resultArr, size, K);
+
+        //verify results
+        so_sort.sort(resultArr, K);
+        if (!verifySelection(resultArr, dataArr, K))
+        {
+            cout << "Oh, no!    " << times << endl;
+            system("PAUSE");
+        }
+
+        //cout << "==============================================" << endl;
+    }
+
+
+    return 0;
+}
