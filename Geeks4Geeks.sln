@@ -203,6 +203,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find Longest Contino
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Maximum Sum List out of two Lists with common nodes", "Quiz - Maximum Sum List out of two Lists with common nodes\Quiz - Maximum Sum List out of two Lists with common nodes.vcxproj", "{624CD1D8-E227-47B1-BD1D-8EDFE32C65C2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - M Coloring Problem", "Quiz - M Coloring Problem\Quiz - M Coloring Problem.vcxproj", "{3424B9A2-59D9-444E-8C5E-F5B17760E179}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -609,6 +611,10 @@ Global
 		{624CD1D8-E227-47B1-BD1D-8EDFE32C65C2}.Debug|Win32.Build.0 = Debug|Win32
 		{624CD1D8-E227-47B1-BD1D-8EDFE32C65C2}.Release|Win32.ActiveCfg = Release|Win32
 		{624CD1D8-E227-47B1-BD1D-8EDFE32C65C2}.Release|Win32.Build.0 = Release|Win32
+		{3424B9A2-59D9-444E-8C5E-F5B17760E179}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3424B9A2-59D9-444E-8C5E-F5B17760E179}.Debug|Win32.Build.0 = Debug|Win32
+		{3424B9A2-59D9-444E-8C5E-F5B17760E179}.Release|Win32.ActiveCfg = Release|Win32
+		{3424B9A2-59D9-444E-8C5E-F5B17760E179}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
