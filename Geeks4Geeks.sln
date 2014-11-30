@@ -199,6 +199,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Binary Tree Upside D
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Read N characters with read4 API", "Quiz - Read N characters with read4 API\Quiz - Read N characters with read4 API.vcxproj", "{18B908E4-C15F-4042-9C0C-14ACB6F0E9D6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find Longest Continouse 1 Sequence by replacing one 0", "Quiz - Find Longest Continouse 1 Sequence by replacing one 0\Quiz - Find Longest Continouse 1 Sequence by replacing one 0.vcxproj", "{A949C72A-8EE7-4426-BF01-8EA47E94E42D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Maximum Sum List out of two Lists with common nodes", "Quiz - Maximum Sum List out of two Lists with common nodes\Quiz - Maximum Sum List out of two Lists with common nodes.vcxproj", "{624CD1D8-E227-47B1-BD1D-8EDFE32C65C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -597,6 +601,14 @@ Global
 		{18B908E4-C15F-4042-9C0C-14ACB6F0E9D6}.Debug|Win32.Build.0 = Debug|Win32
 		{18B908E4-C15F-4042-9C0C-14ACB6F0E9D6}.Release|Win32.ActiveCfg = Release|Win32
 		{18B908E4-C15F-4042-9C0C-14ACB6F0E9D6}.Release|Win32.Build.0 = Release|Win32
+		{A949C72A-8EE7-4426-BF01-8EA47E94E42D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A949C72A-8EE7-4426-BF01-8EA47E94E42D}.Debug|Win32.Build.0 = Debug|Win32
+		{A949C72A-8EE7-4426-BF01-8EA47E94E42D}.Release|Win32.ActiveCfg = Release|Win32
+		{A949C72A-8EE7-4426-BF01-8EA47E94E42D}.Release|Win32.Build.0 = Release|Win32
+		{624CD1D8-E227-47B1-BD1D-8EDFE32C65C2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{624CD1D8-E227-47B1-BD1D-8EDFE32C65C2}.Debug|Win32.Build.0 = Debug|Win32
+		{624CD1D8-E227-47B1-BD1D-8EDFE32C65C2}.Release|Win32.ActiveCfg = Release|Win32
+		{624CD1D8-E227-47B1-BD1D-8EDFE32C65C2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
