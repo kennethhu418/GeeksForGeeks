@@ -205,6 +205,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Maximum Sum List out
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - M Coloring Problem", "Quiz - M Coloring Problem\Quiz - M Coloring Problem.vcxproj", "{3424B9A2-59D9-444E-8C5E-F5B17760E179}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Lexicographic rank of a string", "Quiz - Lexicographic rank of a string\Quiz - Lexicographic rank of a string.vcxproj", "{E3433F6E-EA6B-4F32-8857-E7987D3CD383}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -615,6 +617,10 @@ Global
 		{3424B9A2-59D9-444E-8C5E-F5B17760E179}.Debug|Win32.Build.0 = Debug|Win32
 		{3424B9A2-59D9-444E-8C5E-F5B17760E179}.Release|Win32.ActiveCfg = Release|Win32
 		{3424B9A2-59D9-444E-8C5E-F5B17760E179}.Release|Win32.Build.0 = Release|Win32
+		{E3433F6E-EA6B-4F32-8857-E7987D3CD383}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E3433F6E-EA6B-4F32-8857-E7987D3CD383}.Debug|Win32.Build.0 = Debug|Win32
+		{E3433F6E-EA6B-4F32-8857-E7987D3CD383}.Release|Win32.ActiveCfg = Release|Win32
+		{E3433F6E-EA6B-4F32-8857-E7987D3CD383}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
