@@ -207,6 +207,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - M Coloring Problem",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Lexicographic rank of a string", "Quiz - Lexicographic rank of a string\Quiz - Lexicographic rank of a string.vcxproj", "{E3433F6E-EA6B-4F32-8857-E7987D3CD383}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Traverling Salesman Problem", "Quiz - Traverling Salesman Problem\Quiz - Traverling Salesman Problem.vcxproj", "{F3E8EFF6-EE66-4512-BA15-7F6E649F9770}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Ugly Number", "Quiz - Ugly Number\Quiz - Ugly Number.vcxproj", "{1F833876-90D3-4AF0-B1EE-7DC33911322D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -621,6 +625,14 @@ Global
 		{E3433F6E-EA6B-4F32-8857-E7987D3CD383}.Debug|Win32.Build.0 = Debug|Win32
 		{E3433F6E-EA6B-4F32-8857-E7987D3CD383}.Release|Win32.ActiveCfg = Release|Win32
 		{E3433F6E-EA6B-4F32-8857-E7987D3CD383}.Release|Win32.Build.0 = Release|Win32
+		{F3E8EFF6-EE66-4512-BA15-7F6E649F9770}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F3E8EFF6-EE66-4512-BA15-7F6E649F9770}.Debug|Win32.Build.0 = Debug|Win32
+		{F3E8EFF6-EE66-4512-BA15-7F6E649F9770}.Release|Win32.ActiveCfg = Release|Win32
+		{F3E8EFF6-EE66-4512-BA15-7F6E649F9770}.Release|Win32.Build.0 = Release|Win32
+		{1F833876-90D3-4AF0-B1EE-7DC33911322D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1F833876-90D3-4AF0-B1EE-7DC33911322D}.Debug|Win32.Build.0 = Debug|Win32
+		{1F833876-90D3-4AF0-B1EE-7DC33911322D}.Release|Win32.ActiveCfg = Release|Win32
+		{1F833876-90D3-4AF0-B1EE-7DC33911322D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

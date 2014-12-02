@@ -54,21 +54,13 @@ using namespace std;
 
 #define ALPHABET_SIZE 26
 
-typedef struct __CompoundEdge
-{
-    int     count;
-    vector<int>     stringsRepresented;
-    vector<bool>  edgeVisited;
-    __CompoundEdge(int count = 0) : count(count) {}
-}CompoundEdge;
-
 class Solution
 {
 public:
-    bool canStringsConcatenate(const string *strArr, int n, vector<int> &concatenatePath) {
+    bool canStringsConcatenate(const string *strArr, int n, vector<string> &concatenatePath) {
         if (n == 0) return false;
         if (n == 1) {
-            concatenatePath.push_back(0);
+            concatenatePath.push_back(strArr[0]);
             return true;
         }
 
@@ -80,7 +72,7 @@ public:
         //we can walk from any node. Here we start from the first string's node.
         walkEulerianCycle(strArr[0][0] - 'a', concatenatePath);
 
-        if (mTraversedEdgeCount != mEdgeCount){
+        if (mTraversedEdgeCount != n){
             concatenatePath.clear();
             return false;
         }
@@ -91,55 +83,51 @@ public:
     }
 
 private:
-    CompoundEdge mEdgeMatrix[ALPHABET_SIZE][ALPHABET_SIZE];    
-    int mInDegree[ALPHABET_SIZE];
-    int mOutDegree[ALPHABET_SIZE];
-    int  mEdgeCount;
+    vector<string> mEdgeMatrix[ALPHABET_SIZE][ALPHABET_SIZE];    
     int mTraversedEdgeCount;
 
     void InitializeEdgeArr(const string *strArr, int n) {
         for (int i = 0; i < ALPHABET_SIZE; ++i){
-            for (int j = 0; j < ALPHABET_SIZE; ++j) {
-                mEdgeMatrix[i][j].count = 0;
-                mEdgeMatrix[i][j].stringsRepresented.clear();
-                mEdgeMatrix[i][j].edgeVisited.clear();
-            }
-            mInDegree[i] = 0;
-            mOutDegree[i] = 0;
+            for (int j = 0; j < ALPHABET_SIZE; ++j)
+                mEdgeMatrix[i][j].clear();
         }
 
-        mEdgeCount = 0;
         mTraversedEdgeCount = 0;
 
         char startC = 0, endC = 0;
         for (int i = 0; i < n; ++i) {
             startC = strArr[i][0] - 'a'; endC = strArr[i][strArr[i].size() - 1] - 'a';
-            mEdgeMatrix[startC][endC].count++;
-            mEdgeMatrix[startC][endC].stringsRepresented.push_back(i);
-            mEdgeMatrix[startC][endC].edgeVisited.push_back(false);
-            mInDegree[endC]++;  mOutDegree[startC]++;
-            ++mEdgeCount;
+            mEdgeMatrix[startC][endC].push_back(strArr[i]);
         }       
     }
 
     bool isEulerianCyclePreliminarily() {
+        static int inDegreeArr[ALPHABET_SIZE];
+        memset(inDegreeArr, 0, sizeof(inDegreeArr));
+        
         for (int i = 0; i < ALPHABET_SIZE; ++i) {
-            if (mInDegree[i] != mOutDegree[i]) return false;
+            for (int j = 0; j < ALPHABET_SIZE; ++j) {
+                inDegreeArr[j] += mEdgeMatrix[i][j].size();
+                inDegreeArr[i] -= mEdgeMatrix[i][j].size();
+            }
+        }
+
+        for (int i = 0; i < ALPHABET_SIZE; ++i) {
+            if (inDegreeArr[i] != 0) return false;
         }
         return true;
     }
 
-    void walkEulerianCycle(int curPos, vector<int> &concatenatePath) {
-        int edgeCount = 0;
+    void walkEulerianCycle(int curPos, vector<string> &concatenatePath) {
+        string curStr;
         for (int i = 0; i < ALPHABET_SIZE; ++i) {
-            edgeCount = mEdgeMatrix[curPos][i].count;
-            for (int j = 0; j < edgeCount; ++j) {
-                if (mEdgeMatrix[curPos][i].edgeVisited[j]) continue;
-                mEdgeMatrix[curPos][i].edgeVisited[j] = true;
-                walkEulerianCycle(i, concatenatePath);
-                concatenatePath.push_back(mEdgeMatrix[curPos][i].stringsRepresented[j]);
+            while (mEdgeMatrix[curPos][i].size()) {
+                curStr = mEdgeMatrix[curPos][i].back();
+                mEdgeMatrix[curPos][i].pop_back();
                 ++mTraversedEdgeCount;
-            }        
+                walkEulerianCycle(i, concatenatePath);
+                concatenatePath.push_back(curStr);
+            } 
         }
     }
 };
@@ -151,11 +139,11 @@ int main()
 
     /*********test 1************/
     const string strArr1[] = { "adam", "meek", "koor", "rea", "klea", "make", "am", "room", "eye", "mask", "eager"};
-    vector<int> result;
+    vector<string> result;
     bool canMakeCycle = so.canStringsConcatenate(strArr1, sizeof(strArr1) / sizeof(string), result);
     if (canMakeCycle) {
-        for (vector<int>::iterator iter = result.begin(); iter != result.end(); iter++)
-            cout << strArr1[*iter] << "  ";
+        for (vector<string>::iterator iter = result.begin(); iter != result.end(); iter++)
+            cout << *iter << "  ";
     }
     else
         cout << "Cannot make cycle !";
@@ -165,8 +153,8 @@ int main()
     const string strArr2[] = { "for", "geek", "rig", "kaf" };
     canMakeCycle = so.canStringsConcatenate(strArr2, sizeof(strArr2) / sizeof(string), result);
     if (canMakeCycle) {
-        for (vector<int>::iterator iter = result.begin(); iter != result.end(); iter++)
-            cout << strArr2[*iter] << "  ";
+        for (vector<string>::iterator iter = result.begin(); iter != result.end(); iter++)
+            cout << *iter << "  ";
     }
     else
         cout << "Cannot make cycle !";
@@ -176,8 +164,8 @@ int main()
     const string strArr3[] = { "am", "erk", "mook", "make" };
     canMakeCycle = so.canStringsConcatenate(strArr3, sizeof(strArr3) / sizeof(string), result);
     if (canMakeCycle) {
-        for (vector<int>::iterator iter = result.begin(); iter != result.end(); iter++)
-            cout << strArr3[*iter] << "  ";
+        for (vector<string>::iterator iter = result.begin(); iter != result.end(); iter++)
+            cout << *iter << "  ";
     }
     else
         cout << "Cannot make cycle !";
@@ -187,14 +175,12 @@ int main()
     const string strArr4[] = { "rob", "laugh", "bear", "ear", "fill", "room", "make" };
     canMakeCycle = so.canStringsConcatenate(strArr4, sizeof(strArr4) / sizeof(string), result);
     if (canMakeCycle) {
-        for (vector<int>::iterator iter = result.begin(); iter != result.end(); iter++)
-            cout << strArr4[*iter] << "  ";
+        for (vector<string>::iterator iter = result.begin(); iter != result.end(); iter++)
+            cout << *iter << "  ";
     }
     else
         cout << "Cannot make cycle !";
     cout << endl << endl;
 
     return 0;
-    
-
 }
