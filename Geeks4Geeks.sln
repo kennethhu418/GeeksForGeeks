@@ -211,6 +211,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Traverling Salesman 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Ugly Number", "Quiz - Ugly Number\Quiz - Ugly Number.vcxproj", "{1F833876-90D3-4AF0-B1EE-7DC33911322D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Arrange given numbers to form the biggest number", "Quiz - Arrange given numbers to form the biggest number\Quiz - Arrange given numbers to form the biggest number.vcxproj", "{807A69B1-87BC-4A46-96A4-34B6B425F274}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -633,6 +635,10 @@ Global
 		{1F833876-90D3-4AF0-B1EE-7DC33911322D}.Debug|Win32.Build.0 = Debug|Win32
 		{1F833876-90D3-4AF0-B1EE-7DC33911322D}.Release|Win32.ActiveCfg = Release|Win32
 		{1F833876-90D3-4AF0-B1EE-7DC33911322D}.Release|Win32.Build.0 = Release|Win32
+		{807A69B1-87BC-4A46-96A4-34B6B425F274}.Debug|Win32.ActiveCfg = Debug|Win32
+		{807A69B1-87BC-4A46-96A4-34B6B425F274}.Debug|Win32.Build.0 = Debug|Win32
+		{807A69B1-87BC-4A46-96A4-34B6B425F274}.Release|Win32.ActiveCfg = Release|Win32
+		{807A69B1-87BC-4A46-96A4-34B6B425F274}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
