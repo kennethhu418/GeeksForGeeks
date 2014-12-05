@@ -43,6 +43,9 @@
     <Filter Include="Graph Related\欧拉路径">
       <UniqueIdentifier>{6f5c0a6c-5dde-4613-ae73-7efc860887f7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="System Design">
+      <UniqueIdentifier>{c3529051-9a98-458c-bf98-e36c722988af}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -144,6 +147,15 @@
     </None>
     <None Include="二分图最佳匹配\带权二分图的最佳匹配算法.docx">
       <Filter>Graph Related\二分图的最大和最佳匹配</Filter>
+    </None>
+    <None Include="..\Document - System Design\System Design\OOP.one">
+      <Filter>System Design</Filter>
+    </None>
+    <None Include="..\Document - System Design\System Design\Scalable Web Service.one">
+      <Filter>System Design</Filter>
+    </None>
+    <None Include="..\Document - System Design\System Design\打开笔记本.onetoc2">
+      <Filter>System Design</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
