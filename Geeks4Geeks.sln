@@ -213,6 +213,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Ugly Number", "Quiz 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Arrange given numbers to form the biggest number", "Quiz - Arrange given numbers to form the biggest number\Quiz - Arrange given numbers to form the biggest number.vcxproj", "{807A69B1-87BC-4A46-96A4-34B6B425F274}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Decimal Number to Alpha Representation", "Quiz - Decimal Number to Alpha Representation\Quiz - Decimal Number to Alpha Representation.vcxproj", "{19DD6400-A3B1-4443-93E9-EC190B9A0922}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -639,6 +641,10 @@ Global
 		{807A69B1-87BC-4A46-96A4-34B6B425F274}.Debug|Win32.Build.0 = Debug|Win32
 		{807A69B1-87BC-4A46-96A4-34B6B425F274}.Release|Win32.ActiveCfg = Release|Win32
 		{807A69B1-87BC-4A46-96A4-34B6B425F274}.Release|Win32.Build.0 = Release|Win32
+		{19DD6400-A3B1-4443-93E9-EC190B9A0922}.Debug|Win32.ActiveCfg = Debug|Win32
+		{19DD6400-A3B1-4443-93E9-EC190B9A0922}.Debug|Win32.Build.0 = Debug|Win32
+		{19DD6400-A3B1-4443-93E9-EC190B9A0922}.Release|Win32.ActiveCfg = Release|Win32
+		{19DD6400-A3B1-4443-93E9-EC190B9A0922}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
