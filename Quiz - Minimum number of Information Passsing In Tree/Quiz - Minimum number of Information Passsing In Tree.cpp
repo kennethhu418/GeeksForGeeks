@@ -26,24 +26,25 @@ typedef struct __TreeNode
 
 typedef priority_queue<int, vector<int>, less<int>> MaxHeap;
 
-int calculateMinPasses(TreeNode *root)
-{
+int calculateMinPasses(TreeNode *root) {
     if (root == NULL || root->childrenCount == 0) return 0;
+
     MaxHeap maxHeap;
     for (int i = 0; i < root->childrenCount; ++i)
         maxHeap.push(calculateMinPasses(root->children[i]));
-    int totalPasses = 1 + maxHeap.top(), remainingPasses = maxHeap.top();
-    int curChildPasses = 0;
-    maxHeap.pop();
+
+    int curTime = 0;    // current time when we begin to pass information to one specific child
+    int endTime = 0;   // current determined the end time of passing information
+    int curChildPassingDuring = 0; // how many time units the current child should use to pass information to all its leaves
+    int curChildPassingEndTime = 0; //the end time for current child to finish passing information to all its leaves
     while (!maxHeap.empty()) {
-        --remainingPasses; //use one pass to given the info to the current child
-        curChildPasses = maxHeap.top(); maxHeap.pop();
-        if (curChildPasses > remainingPasses) {
-            totalPasses += (curChildPasses - remainingPasses);
-            remainingPasses = curChildPasses;
-        }
+        curChildPassingDuring = maxHeap.top(); maxHeap.pop();
+        ++curTime; //use 1 time unit to pass information to current child
+        curChildPassingEndTime = curTime + curChildPassingDuring;
+        if (curChildPassingEndTime > endTime)
+            endTime = curChildPassingEndTime;    
     }
-    return totalPasses;
+    return endTime;
 }
 
 int main()
