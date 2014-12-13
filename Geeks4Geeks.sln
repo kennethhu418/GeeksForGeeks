@@ -215,6 +215,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Arrange given number
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Decimal Number to Alpha Representation", "Quiz - Decimal Number to Alpha Representation\Quiz - Decimal Number to Alpha Representation.vcxproj", "{19DD6400-A3B1-4443-93E9-EC190B9A0922}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedIn - Flatten iterator for NestedList", "LinkedIn - Flatten iterator for NestedList\LinkedIn - Flatten iterator for NestedList.vcxproj", "{68C0985E-46CE-4E6E-865F-BBD882CC57F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -645,6 +647,10 @@ Global
 		{19DD6400-A3B1-4443-93E9-EC190B9A0922}.Debug|Win32.Build.0 = Debug|Win32
 		{19DD6400-A3B1-4443-93E9-EC190B9A0922}.Release|Win32.ActiveCfg = Release|Win32
 		{19DD6400-A3B1-4443-93E9-EC190B9A0922}.Release|Win32.Build.0 = Release|Win32
+		{68C0985E-46CE-4E6E-865F-BBD882CC57F2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68C0985E-46CE-4E6E-865F-BBD882CC57F2}.Debug|Win32.Build.0 = Debug|Win32
+		{68C0985E-46CE-4E6E-865F-BBD882CC57F2}.Release|Win32.ActiveCfg = Release|Win32
+		{68C0985E-46CE-4E6E-865F-BBD882CC57F2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
