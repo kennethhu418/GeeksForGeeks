@@ -217,6 +217,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Decimal Number to Al
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedIn - Flatten iterator for NestedList", "LinkedIn - Flatten iterator for NestedList\LinkedIn - Flatten iterator for NestedList.vcxproj", "{68C0985E-46CE-4E6E-865F-BBD882CC57F2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Split Intervals", "Quiz - Split Intervals\Quiz - Split Intervals.vcxproj", "{0F886DEB-519E-43F8-B720-4F0BA0A8EDA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -651,6 +653,10 @@ Global
 		{68C0985E-46CE-4E6E-865F-BBD882CC57F2}.Debug|Win32.Build.0 = Debug|Win32
 		{68C0985E-46CE-4E6E-865F-BBD882CC57F2}.Release|Win32.ActiveCfg = Release|Win32
 		{68C0985E-46CE-4E6E-865F-BBD882CC57F2}.Release|Win32.Build.0 = Release|Win32
+		{0F886DEB-519E-43F8-B720-4F0BA0A8EDA1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0F886DEB-519E-43F8-B720-4F0BA0A8EDA1}.Debug|Win32.Build.0 = Debug|Win32
+		{0F886DEB-519E-43F8-B720-4F0BA0A8EDA1}.Release|Win32.ActiveCfg = Release|Win32
+		{0F886DEB-519E-43F8-B720-4F0BA0A8EDA1}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
