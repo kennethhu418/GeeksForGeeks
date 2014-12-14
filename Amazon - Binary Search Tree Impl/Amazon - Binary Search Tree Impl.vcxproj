@@ -11,10 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0F886DEB-519E-43F8-B720-4F0BA0A8EDA1}</ProjectGuid>
+    <ProjectGuid>{FB5126EA-39F8-4E09-A859-E9EEE59E7159}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>QuizSplitIntervals</RootNamespace>
-    <ProjectName>Amazon - Split Intervals</ProjectName>
+    <RootNamespace>AmazonBinarySearchTreeImpl</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -84,7 +83,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Quiz - Split Intervals.cpp" />
+    <ClCompile Include="Amazon - Binary Search Tree Impl.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

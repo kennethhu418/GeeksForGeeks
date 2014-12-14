@@ -219,6 +219,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedIn - Flatten iterator
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Split Intervals", "Quiz - Split Intervals\Quiz - Split Intervals.vcxproj", "{0F886DEB-519E-43F8-B720-4F0BA0A8EDA1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Amazon - Binary Search Tree Impl", "Amazon - Binary Search Tree Impl\Amazon - Binary Search Tree Impl.vcxproj", "{FB5126EA-39F8-4E09-A859-E9EEE59E7159}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -657,6 +659,10 @@ Global
 		{0F886DEB-519E-43F8-B720-4F0BA0A8EDA1}.Debug|Win32.Build.0 = Debug|Win32
 		{0F886DEB-519E-43F8-B720-4F0BA0A8EDA1}.Release|Win32.ActiveCfg = Release|Win32
 		{0F886DEB-519E-43F8-B720-4F0BA0A8EDA1}.Release|Win32.Build.0 = Release|Win32
+		{FB5126EA-39F8-4E09-A859-E9EEE59E7159}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FB5126EA-39F8-4E09-A859-E9EEE59E7159}.Debug|Win32.Build.0 = Debug|Win32
+		{FB5126EA-39F8-4E09-A859-E9EEE59E7159}.Release|Win32.ActiveCfg = Release|Win32
+		{FB5126EA-39F8-4E09-A859-E9EEE59E7159}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
