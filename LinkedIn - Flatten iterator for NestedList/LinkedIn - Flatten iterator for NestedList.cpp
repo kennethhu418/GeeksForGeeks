@@ -26,7 +26,6 @@ typedef struct __ListNode
     __ListNode(int val = 0) : val(val), verticalNext(NULL), horizonalNext(NULL) {}
 }ListNode;
 
-
 class ListNodeIterator
 {
 private:
