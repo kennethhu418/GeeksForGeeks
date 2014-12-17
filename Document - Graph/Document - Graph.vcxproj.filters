@@ -98,6 +98,9 @@
     <ClCompile Include="欧拉路径与欧拉环\Eulerian_Path.cpp">
       <Filter>Graph Related\欧拉路径</Filter>
     </ClCompile>
+    <ClCompile Include="Minimum Color Count to Color Graph.cpp">
+      <Filter>Graph Related\图着色</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="图中的距离\图中结点的最短距离汇总.docx">

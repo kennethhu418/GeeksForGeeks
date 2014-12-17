@@ -92,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Document - Graph.cpp" />
+    <ClCompile Include="Minimum Color Count to Color Graph.cpp" />
     <ClCompile Include="ReadWriteLock Implementation.h" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="欧拉路径与欧拉环\Eulerian_Cycle.cpp" />
