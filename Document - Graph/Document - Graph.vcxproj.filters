@@ -46,6 +46,9 @@
     <Filter Include="System Design">
       <UniqueIdentifier>{c3529051-9a98-458c-bf98-e36c722988af}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Graph Related\图着色">
+      <UniqueIdentifier>{f521bda7-9ad6-455c-bd41-ba0da667f3a1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -63,6 +66,9 @@
     </Text>
     <Text Include="欧拉路径与欧拉环\欧拉路径与欧拉环.txt">
       <Filter>Graph Related\欧拉路径</Filter>
+    </Text>
+    <Text Include="图着色\Graph Coloring Courses.txt">
+      <Filter>Graph Related\图着色</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
