@@ -227,6 +227,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Stable Marriage Prob
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Tug of War", "Quiz - Tug of War\Quiz - Tug of War.vcxproj", "{5E0CFC08-897A-4C0D-B659-74CAC2383FB3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Amazon - Construct N-ary Tree based on Pre and Post order array", "Amazon - Construct N-ary Tree based on Pre and Post order array\Amazon - Construct N-ary Tree based on Pre and Post order array.vcxproj", "{D0029725-67B9-4426-BE73-3F888A079C85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -681,6 +683,10 @@ Global
 		{5E0CFC08-897A-4C0D-B659-74CAC2383FB3}.Debug|Win32.Build.0 = Debug|Win32
 		{5E0CFC08-897A-4C0D-B659-74CAC2383FB3}.Release|Win32.ActiveCfg = Release|Win32
 		{5E0CFC08-897A-4C0D-B659-74CAC2383FB3}.Release|Win32.Build.0 = Release|Win32
+		{D0029725-67B9-4426-BE73-3F888A079C85}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D0029725-67B9-4426-BE73-3F888A079C85}.Debug|Win32.Build.0 = Debug|Win32
+		{D0029725-67B9-4426-BE73-3F888A079C85}.Release|Win32.ActiveCfg = Release|Win32
+		{D0029725-67B9-4426-BE73-3F888A079C85}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
