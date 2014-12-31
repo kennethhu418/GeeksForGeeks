@@ -235,6 +235,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - check if an instance
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Biconnected Component in Undirected Graph", "Quiz - Biconnected Component in Undirected Graph\Quiz - Biconnected Component in Undirected Graph.vcxproj", "{72148F01-345F-4550-BBD1-1B48F805F2DC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Amazon - Polite Number", "Amazon - Polite Number\Amazon - Polite Number.vcxproj", "{6762EDC1-A152-41CA-9E12-AE726EFEB688}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -705,6 +707,10 @@ Global
 		{72148F01-345F-4550-BBD1-1B48F805F2DC}.Debug|Win32.Build.0 = Debug|Win32
 		{72148F01-345F-4550-BBD1-1B48F805F2DC}.Release|Win32.ActiveCfg = Release|Win32
 		{72148F01-345F-4550-BBD1-1B48F805F2DC}.Release|Win32.Build.0 = Release|Win32
+		{6762EDC1-A152-41CA-9E12-AE726EFEB688}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6762EDC1-A152-41CA-9E12-AE726EFEB688}.Debug|Win32.Build.0 = Debug|Win32
+		{6762EDC1-A152-41CA-9E12-AE726EFEB688}.Release|Win32.ActiveCfg = Release|Win32
+		{6762EDC1-A152-41CA-9E12-AE726EFEB688}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
