@@ -237,6 +237,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Biconnected Componen
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Amazon - Polite Number", "Amazon - Polite Number\Amazon - Polite Number.vcxproj", "{6762EDC1-A152-41CA-9E12-AE726EFEB688}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Maximum Ones after flipping a segment in a binary array", "Quiz - Maximum Ones after flipping a segment in a binary array\Quiz - Maximum Ones after flipping a segment in a binary array.vcxproj", "{D51D9673-A3E7-4021-AE66-FE309D1419A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -711,6 +713,10 @@ Global
 		{6762EDC1-A152-41CA-9E12-AE726EFEB688}.Debug|Win32.Build.0 = Debug|Win32
 		{6762EDC1-A152-41CA-9E12-AE726EFEB688}.Release|Win32.ActiveCfg = Release|Win32
 		{6762EDC1-A152-41CA-9E12-AE726EFEB688}.Release|Win32.Build.0 = Release|Win32
+		{D51D9673-A3E7-4021-AE66-FE309D1419A3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D51D9673-A3E7-4021-AE66-FE309D1419A3}.Debug|Win32.Build.0 = Debug|Win32
+		{D51D9673-A3E7-4021-AE66-FE309D1419A3}.Release|Win32.ActiveCfg = Release|Win32
+		{D51D9673-A3E7-4021-AE66-FE309D1419A3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
