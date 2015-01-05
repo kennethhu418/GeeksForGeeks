@@ -239,6 +239,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Amazon - Polite Number", "A
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Maximum Ones after flipping a segment in a binary array", "Quiz - Maximum Ones after flipping a segment in a binary array\Quiz - Maximum Ones after flipping a segment in a binary array.vcxproj", "{D51D9673-A3E7-4021-AE66-FE309D1419A3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Linkedin - 100 Game Can I Win", "Linkedin - 100 Game Can I Win\Linkedin - 100 Game Can I Win.vcxproj", "{9F276CBB-7464-4E1A-9ABF-0835A34E207E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rocket Fuel - Deque Sequences", "Rocket Fuel - Deque Sequences\Rocket Fuel - Deque Sequences.vcxproj", "{71832647-CFAF-4FD4-A14A-A6D33AB2F62F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -717,6 +721,14 @@ Global
 		{D51D9673-A3E7-4021-AE66-FE309D1419A3}.Debug|Win32.Build.0 = Debug|Win32
 		{D51D9673-A3E7-4021-AE66-FE309D1419A3}.Release|Win32.ActiveCfg = Release|Win32
 		{D51D9673-A3E7-4021-AE66-FE309D1419A3}.Release|Win32.Build.0 = Release|Win32
+		{9F276CBB-7464-4E1A-9ABF-0835A34E207E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9F276CBB-7464-4E1A-9ABF-0835A34E207E}.Debug|Win32.Build.0 = Debug|Win32
+		{9F276CBB-7464-4E1A-9ABF-0835A34E207E}.Release|Win32.ActiveCfg = Release|Win32
+		{9F276CBB-7464-4E1A-9ABF-0835A34E207E}.Release|Win32.Build.0 = Release|Win32
+		{71832647-CFAF-4FD4-A14A-A6D33AB2F62F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{71832647-CFAF-4FD4-A14A-A6D33AB2F62F}.Debug|Win32.Build.0 = Debug|Win32
+		{71832647-CFAF-4FD4-A14A-A6D33AB2F62F}.Release|Win32.ActiveCfg = Release|Win32
+		{71832647-CFAF-4FD4-A14A-A6D33AB2F62F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
