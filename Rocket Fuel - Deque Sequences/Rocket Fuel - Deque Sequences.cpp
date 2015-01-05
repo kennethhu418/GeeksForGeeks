@@ -85,7 +85,7 @@ bool validDequeOrder(int *resultSequence, int n, TraceRecord *traceArr) {
 
         // After pushing the current number into the deque, check whether the back
         // of the deque is the next popped number. If it is, pop it out from the deque
-        while (!dequeSim.empty() && dequeSim.back() == resultSequence[nextPoppedNumIndex]) {
+        if (dequeSim.back() == resultSequence[nextPoppedNumIndex]) {
             dequeSim.pop_back();            
             traceArr[nextTraceIndex++] = TraceRecord(resultSequence[nextPoppedNumIndex], POP_BACK);
             ++nextPoppedNumIndex;
@@ -93,8 +93,15 @@ bool validDequeOrder(int *resultSequence, int n, TraceRecord *traceArr) {
     }
 
     delete[] orderArr;
-    // If the deque is empty now, it means the result sequence is valid
-    return dequeSim.empty();
+
+    // Let's see whether the remaining elements in the deque satisefies the remaining result sequence
+    while (!dequeSim.empty()) {
+        if (dequeSim.back() != resultSequence[nextPoppedNumIndex])
+            return false;
+        dequeSim.pop_back();
+        ++nextPoppedNumIndex;
+    }
+    return true;
 }
 
 
