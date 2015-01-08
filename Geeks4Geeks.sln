@@ -247,6 +247,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Amazon - Calculator", "Amaz
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Google - Min Distance to Build building for employees", "Google - Min Distance to Build building for employees\Google - Min Distance to Build building for employees.vcxproj", "{1E3F99DB-1A6F-4BC9-8D07-C1126ED4249E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Minimum Adjustment Of Array to achieve target adjacent diff", "Quiz - Minimum Adjustment Of Array to achieve target adjacent diff\Quiz - Minimum Adjustment Of Array to achieve target adjacent diff.vcxproj", "{048BFDBF-6DFC-426A-814B-32B4139139E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -741,6 +743,10 @@ Global
 		{1E3F99DB-1A6F-4BC9-8D07-C1126ED4249E}.Debug|Win32.Build.0 = Debug|Win32
 		{1E3F99DB-1A6F-4BC9-8D07-C1126ED4249E}.Release|Win32.ActiveCfg = Release|Win32
 		{1E3F99DB-1A6F-4BC9-8D07-C1126ED4249E}.Release|Win32.Build.0 = Release|Win32
+		{048BFDBF-6DFC-426A-814B-32B4139139E8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{048BFDBF-6DFC-426A-814B-32B4139139E8}.Debug|Win32.Build.0 = Debug|Win32
+		{048BFDBF-6DFC-426A-814B-32B4139139E8}.Release|Win32.ActiveCfg = Release|Win32
+		{048BFDBF-6DFC-426A-814B-32B4139139E8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
