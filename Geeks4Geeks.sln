@@ -251,6 +251,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Minimum Adjustment O
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Amazon - Rearrange array in alternating positive and negative items", "Amazon - Rearrange array in alternating positive and negative items\Amazon - Rearrange array in alternating positive and negative items.vcxproj", "{D99EB715-D96F-4CA7-A9DA-E12D40A7B7E7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Amazon - Implement malloc", "Amazon - Implement malloc\Amazon - Implement malloc.vcxproj", "{A26D7FED-343A-44F1-96D8-43CEE01F5E2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -753,6 +755,10 @@ Global
 		{D99EB715-D96F-4CA7-A9DA-E12D40A7B7E7}.Debug|Win32.Build.0 = Debug|Win32
 		{D99EB715-D96F-4CA7-A9DA-E12D40A7B7E7}.Release|Win32.ActiveCfg = Release|Win32
 		{D99EB715-D96F-4CA7-A9DA-E12D40A7B7E7}.Release|Win32.Build.0 = Release|Win32
+		{A26D7FED-343A-44F1-96D8-43CEE01F5E2D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A26D7FED-343A-44F1-96D8-43CEE01F5E2D}.Debug|Win32.Build.0 = Debug|Win32
+		{A26D7FED-343A-44F1-96D8-43CEE01F5E2D}.Release|Win32.ActiveCfg = Release|Win32
+		{A26D7FED-343A-44F1-96D8-43CEE01F5E2D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
