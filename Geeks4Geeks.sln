@@ -253,6 +253,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Amazon - Rearrange array in
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Amazon - Implement malloc", "Amazon - Implement malloc\Amazon - Implement malloc.vcxproj", "{A26D7FED-343A-44F1-96D8-43CEE01F5E2D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Google - How many balanced trees there are with N leaf nodes", "Google - How many balanced trees there are with N leaf nodes\Google - How many balanced trees there are with N leaf nodes.vcxproj", "{22D6D7EE-92DA-4E7E-B42F-B61FC5D745FF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Google - Whether a string can be represented as a repeated sub string", "Google - Whether a string can be represented as a repeated sub string\Google - Whether a string can be represented as a repeated sub string.vcxproj", "{68006AB0-8849-4A4C-B8CE-6A9C2D7B8EF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -759,6 +763,14 @@ Global
 		{A26D7FED-343A-44F1-96D8-43CEE01F5E2D}.Debug|Win32.Build.0 = Debug|Win32
 		{A26D7FED-343A-44F1-96D8-43CEE01F5E2D}.Release|Win32.ActiveCfg = Release|Win32
 		{A26D7FED-343A-44F1-96D8-43CEE01F5E2D}.Release|Win32.Build.0 = Release|Win32
+		{22D6D7EE-92DA-4E7E-B42F-B61FC5D745FF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{22D6D7EE-92DA-4E7E-B42F-B61FC5D745FF}.Debug|Win32.Build.0 = Debug|Win32
+		{22D6D7EE-92DA-4E7E-B42F-B61FC5D745FF}.Release|Win32.ActiveCfg = Release|Win32
+		{22D6D7EE-92DA-4E7E-B42F-B61FC5D745FF}.Release|Win32.Build.0 = Release|Win32
+		{68006AB0-8849-4A4C-B8CE-6A9C2D7B8EF1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68006AB0-8849-4A4C-B8CE-6A9C2D7B8EF1}.Debug|Win32.Build.0 = Debug|Win32
+		{68006AB0-8849-4A4C-B8CE-6A9C2D7B8EF1}.Release|Win32.ActiveCfg = Release|Win32
+		{68006AB0-8849-4A4C-B8CE-6A9C2D7B8EF1}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
