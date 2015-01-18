@@ -257,6 +257,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Google - How many balanced 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Google - Whether a string can be represented as a repeated sub string", "Google - Whether a string can be represented as a repeated sub string\Google - Whether a string can be represented as a repeated sub string.vcxproj", "{68006AB0-8849-4A4C-B8CE-6A9C2D7B8EF1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Range Sum Closest to Zero", "Quiz - Range Sum Closest to Zero\Quiz - Range Sum Closest to Zero.vcxproj", "{CF8FF355-1417-4695-A43D-ECC7C8F830F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -771,6 +773,10 @@ Global
 		{68006AB0-8849-4A4C-B8CE-6A9C2D7B8EF1}.Debug|Win32.Build.0 = Debug|Win32
 		{68006AB0-8849-4A4C-B8CE-6A9C2D7B8EF1}.Release|Win32.ActiveCfg = Release|Win32
 		{68006AB0-8849-4A4C-B8CE-6A9C2D7B8EF1}.Release|Win32.Build.0 = Release|Win32
+		{CF8FF355-1417-4695-A43D-ECC7C8F830F8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CF8FF355-1417-4695-A43D-ECC7C8F830F8}.Debug|Win32.Build.0 = Debug|Win32
+		{CF8FF355-1417-4695-A43D-ECC7C8F830F8}.Release|Win32.ActiveCfg = Release|Win32
+		{CF8FF355-1417-4695-A43D-ECC7C8F830F8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
