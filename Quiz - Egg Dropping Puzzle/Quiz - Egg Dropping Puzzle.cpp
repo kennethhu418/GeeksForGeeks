@@ -83,6 +83,7 @@ int main()
 {
     for (int floors = 2; floors < MAX_FLOORS; floors++){
         for (int eggs = 1; eggs < MAX_EGGS; ++eggs) {
+            floors = 100; eggs = 2;
             solveEggDropPuzzle(floors, eggs);
             cout << "\n**************************************************" << endl;
             cout << "Result of " << floors << " floors and " << eggs << " eggs: " << endl;
