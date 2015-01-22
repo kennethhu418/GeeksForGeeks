@@ -259,6 +259,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Google - Whether a string c
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Range Sum Closest to Zero", "Quiz - Range Sum Closest to Zero\Quiz - Range Sum Closest to Zero.vcxproj", "{CF8FF355-1417-4695-A43D-ECC7C8F830F8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Expression Evaluation", "Facebook - Expression Evaluation\Facebook - Expression Evaluation.vcxproj", "{ACD8690B-6BB4-4D61-AF29-4E657A1355C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -777,6 +779,10 @@ Global
 		{CF8FF355-1417-4695-A43D-ECC7C8F830F8}.Debug|Win32.Build.0 = Debug|Win32
 		{CF8FF355-1417-4695-A43D-ECC7C8F830F8}.Release|Win32.ActiveCfg = Release|Win32
 		{CF8FF355-1417-4695-A43D-ECC7C8F830F8}.Release|Win32.Build.0 = Release|Win32
+		{ACD8690B-6BB4-4D61-AF29-4E657A1355C0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ACD8690B-6BB4-4D61-AF29-4E657A1355C0}.Debug|Win32.Build.0 = Debug|Win32
+		{ACD8690B-6BB4-4D61-AF29-4E657A1355C0}.Release|Win32.ActiveCfg = Release|Win32
+		{ACD8690B-6BB4-4D61-AF29-4E657A1355C0}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
