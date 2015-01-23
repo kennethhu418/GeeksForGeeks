@@ -263,6 +263,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Expression Evalu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Nested List Iterator", "Facebook - Nested List Iterator\Facebook - Nested List Iterator.vcxproj", "{EB307A34-9EA8-42AC-89CA-981C84BE4CFB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Two Robots Max Profit in Matrix", "Facebook - Two Robots Max Profit in Matrix\Facebook - Two Robots Max Profit in Matrix.vcxproj", "{8A2934C9-BAA2-4638-99CA-4BC43BCF20D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -789,6 +791,10 @@ Global
 		{EB307A34-9EA8-42AC-89CA-981C84BE4CFB}.Debug|Win32.Build.0 = Debug|Win32
 		{EB307A34-9EA8-42AC-89CA-981C84BE4CFB}.Release|Win32.ActiveCfg = Release|Win32
 		{EB307A34-9EA8-42AC-89CA-981C84BE4CFB}.Release|Win32.Build.0 = Release|Win32
+		{8A2934C9-BAA2-4638-99CA-4BC43BCF20D6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8A2934C9-BAA2-4638-99CA-4BC43BCF20D6}.Debug|Win32.Build.0 = Debug|Win32
+		{8A2934C9-BAA2-4638-99CA-4BC43BCF20D6}.Release|Win32.ActiveCfg = Release|Win32
+		{8A2934C9-BAA2-4638-99CA-4BC43BCF20D6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
