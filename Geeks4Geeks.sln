@@ -261,6 +261,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Range Sum Closest to
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Expression Evaluation", "Facebook - Expression Evaluation\Facebook - Expression Evaluation.vcxproj", "{ACD8690B-6BB4-4D61-AF29-4E657A1355C0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Nested List Iterator", "Facebook - Nested List Iterator\Facebook - Nested List Iterator.vcxproj", "{EB307A34-9EA8-42AC-89CA-981C84BE4CFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -783,6 +785,10 @@ Global
 		{ACD8690B-6BB4-4D61-AF29-4E657A1355C0}.Debug|Win32.Build.0 = Debug|Win32
 		{ACD8690B-6BB4-4D61-AF29-4E657A1355C0}.Release|Win32.ActiveCfg = Release|Win32
 		{ACD8690B-6BB4-4D61-AF29-4E657A1355C0}.Release|Win32.Build.0 = Release|Win32
+		{EB307A34-9EA8-42AC-89CA-981C84BE4CFB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EB307A34-9EA8-42AC-89CA-981C84BE4CFB}.Debug|Win32.Build.0 = Debug|Win32
+		{EB307A34-9EA8-42AC-89CA-981C84BE4CFB}.Release|Win32.ActiveCfg = Release|Win32
+		{EB307A34-9EA8-42AC-89CA-981C84BE4CFB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
