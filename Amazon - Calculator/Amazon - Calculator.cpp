@@ -7,172 +7,153 @@
 #include <string>
 using namespace std;
 
-#define INVALID_NUMBER  -9876543210
+#define INVALID_NUMBER INT_MIN
 
-class Calculator{
+class Calculator {
+private:
+    enum Priority {
+        PRIORITY_INVALID = 0,
+        PRIORITY_LOW = 1,
+        PRIORITY_MID = 2,
+        PRIORITY_HIGH = 3
+    };
+
+    Priority PRI(char c) {
+        switch (c) {
+        case '(':
+        case ')':
+            return PRIORITY_HIGH;
+        case '+':
+        case '-':
+            return PRIORITY_MID;
+        case '*':
+        case '/':
+            return PRIORITY_LOW;
+        default:
+            break;
+        }
+        return PRIORITY_INVALID;
+    }
+
 public:
-    double     calculate(const string &expStr) {
-        double num = 0, data1 = 0, data2 = 0;
-        OPT opt = INVALID_OPT, nextOpt = INVALID_OPT;
-        int cursor = 0;
-        stack<double>   dataStack;
-        stack<OPT>  optStack;
-        bool prevIsNumberOrRightEmbrace = false;
-        while (cursor < expStr.size()) {
-            nextOpt = getOperator(expStr, cursor, true);
-            if (nextOpt == ERROR_OPT) break;
+    int    calculate(const string &str) {
+        if (str.size() == 0) return 0;
+        int n = str.size(), curPos = 0;
+        char probeChar = '\0';
+        bool started = false;
+        stack<int>    dataArr;
+        stack<char>   operatorArr;
 
-            if (nextOpt == INVALID_OPT || (nextOpt == MINUS && !prevIsNumberOrRightEmbrace)) {
-                num = getNumber(expStr, cursor);
-                if (num == INVALID_NUMBER) break;
-                dataStack.push(num);
-                prevIsNumberOrRightEmbrace = true;
-                continue;
+        while (curPos < n) {
+            probeChar = probeNextChar(str, curPos);
+            if (probeChar == '\0') break;
+            if (probeChar == '(') {
+                probeChar = getNextChar(str, curPos);
+                operatorArr.push(probeChar);
+                probeChar = probeNextChar(str, curPos);
+                if (probeChar == '-')
+                    dataArr.push(getNumber(str, curPos));
             }
-
-            opt = getOperator(expStr, cursor);
-            if (opt == INVALID_OPT) break;
-
-            prevIsNumberOrRightEmbrace = false;
-
-            if (optStack.empty() || opt == LEFT_EMBRACE)
-                optStack.push(opt);
-            else if (opt == RIGHT_EMBRACE) {
-                while (optStack.size() && optStack.top() != LEFT_EMBRACE) {
-                    nextOpt = optStack.top();  optStack.pop();
-                    if (dataStack.empty()) return INVALID_NUMBER;
-                    data1 = dataStack.top();  dataStack.pop();
-                    if (dataStack.empty()) return INVALID_NUMBER;
-                    data2 = dataStack.top();  dataStack.pop();
-                    dataStack.push(calculate(data2, data1, nextOpt));
+            else if (probeChar == ')') {
+                probeChar = getNextChar(str, curPos);
+                while (true) {
+                    if (operatorArr.empty()) return INVALID_NUMBER;
+                    char opt = operatorArr.top(); operatorArr.pop();
+                    if (opt == '(') break;
+                    if (dataArr.empty()) return INVALID_NUMBER;
+                    int data1 = dataArr.top(); dataArr.pop();
+                    if (dataArr.empty()) return INVALID_NUMBER;
+                    int data2 = dataArr.top(); dataArr.pop();
+                    int data = calculate(data2, data1, opt);
+                    dataArr.push(data);
                 }
-                if (optStack.empty()) return INVALID_NUMBER;
-                optStack.pop();
-                prevIsNumberOrRightEmbrace = true;
             }
-            else {
-                while (optStack.size() && !isGreater(opt, optStack.top())) {
-                    nextOpt = optStack.top();  optStack.pop();
-                    if (dataStack.empty()) return INVALID_NUMBER;
-                    data1 = dataStack.top();  dataStack.pop();
-                    if (dataStack.empty()) return INVALID_NUMBER;
-                    data2 = dataStack.top();  dataStack.pop();
-                    dataStack.push(calculate(data2, data1, nextOpt));
+            else if (probeChar == '+' || probeChar == '-' || probeChar == '*' || probeChar == '/') {
+                if (probeChar == '-' && !started) {
+                    dataArr.push(getNumber(str, curPos));
                 }
-                optStack.push(opt);
+                else {
+                    probeChar = getNextChar(str, curPos);
+                    Priority curPri, targetPri = PRI(probeChar);
+                    while (!operatorArr.empty() && targetPri > (curPri = PRI(operatorArr.top()))) {
+                        int data1 = dataArr.top(); dataArr.pop();
+                        if (dataArr.empty()) return INVALID_NUMBER;
+                        int data2 = dataArr.top(); dataArr.pop();
+                        int data = calculate(data2, data1, operatorArr.top());
+                        operatorArr.pop();
+                        dataArr.push(data);
+                    }
+                    operatorArr.push(probeChar);
+                }
             }
+            else if (probeChar >= '0' && probeChar <= '9')
+                dataArr.push(getNumber(str, curPos));
+            else
+                return INVALID_NUMBER;
+
+            if (!started) started = true;
         }
 
-        if (cursor < expStr.size()) return INVALID_NUMBER;
-
-        while (optStack.size()) {
-            nextOpt = optStack.top();  optStack.pop();
-            if (dataStack.empty()) return INVALID_NUMBER;
-            data1 = dataStack.top();  dataStack.pop();
-            if (dataStack.empty()) return INVALID_NUMBER;
-            data2 = dataStack.top();  dataStack.pop();
-            dataStack.push(calculate(data2, data1, nextOpt));
+        while (!operatorArr.empty()) {
+            int data1 = dataArr.top(); dataArr.pop();
+            if (dataArr.empty()) return INVALID_NUMBER;
+            int data2 = dataArr.top(); dataArr.pop();
+            int data = calculate(data2, data1, operatorArr.top());
+            operatorArr.pop();
+            dataArr.push(data);
         }
 
-        if (dataStack.size() != 1) return INVALID_NUMBER;
-        return dataStack.top();
+        return dataArr.size() == 1 ? dataArr.top() : INVALID_NUMBER;
     }
 
 private:
-
-    typedef enum __OPT{
-        LEFT_EMBRACE = 0,
-        RIGHT_EMBRACE = 1,
-        PLUS = 2,
-        MINUS = 3,
-        MULTIPLY = 4,
-        DIVIDE = 5,
-        ERROR_OPT = 6,
-        INVALID_OPT = 7
-    }OPT;
-
-    bool isGreater(OPT op1, OPT op2) {
-        return (op1 >> 1) > (op2 >> 1);
+    void removeSpaces(const string &str, int &pos) {
+        while (pos < str.size() && str[pos] == ' ')
+            ++pos;
     }
 
-    int  removeSpaces(const string &str, int cursor) {
-        while (cursor < str.size() && str[cursor] == ' ')
-            ++cursor;
-        return cursor;
+    char probeNextChar(const string &str, int &pos) {
+        removeSpaces(str, pos);
+        if (pos >= str.size()) return '\0';
+        return str[pos];
     }
 
-    double getNumber(const string &str, int &cursor) {
-        cursor = removeSpaces(str, cursor);
-        if (cursor >= str.size()) return INVALID_NUMBER;
-
-        bool isNegative = false;
-        if (str[cursor] == '-') {
-            isNegative = true;
-            ++cursor;
-        }
-
-        double result = 0;
-        while (cursor < str.size() && (str[cursor] >= '0' && str[cursor] <= '9')) {
-            result = 10 * result + str[cursor++] - '0';
-        }
-        if (cursor == str.size()) return isNegative ? -result : result;
-
-        double pointPart = 0, base = 10;
-        if (str[cursor] == '.') {
-            ++cursor;
-            while (cursor < str.size() && (str[cursor] >= '0' && str[cursor] <= '9')) {
-                result += (str[cursor++] - '0') / base;
-                base *= 10;
-            }
-        }
-        return isNegative ? (0 - result) : result;
+    char getNextChar(const string &str, int &pos) {
+        char target = probeNextChar(str, pos);
+        ++pos;
+        return target;
     }
 
-    OPT getOperator(const string &str, int &cursor, bool isProbe = false) {
-        cursor = removeSpaces(str, cursor);
-        if (cursor >= str.size()) return INVALID_OPT;
+    int getNumber(const string &str, int &pos) {
+        char c = probeNextChar(str, pos);
+        if (pos == str.size()) return INVALID_NUMBER;
 
-        char optChar = str[cursor];
-        if (!isProbe) ++cursor;
-        else {
-            if (optChar != '+' && optChar != '-' && optChar != '*' && optChar != '/' && optChar != '(' && optChar != ')'
-                && (optChar < '0' || optChar > '9'))
-                return ERROR_OPT;
+        bool negative = false;
+        if (c == '-') {
+            negative = true;
+            ++pos;
         }
 
-        switch (optChar) {
-        case '+':
-            return PLUS;
-        case '-':
-            return MINUS;
-        case '*':
-            return MULTIPLY;
-        case '/':
-            return DIVIDE;
-        case '(':
-            return LEFT_EMBRACE;
-        case ')':
-            return RIGHT_EMBRACE;
-        default:
-            return INVALID_OPT;
-        }
-        return INVALID_OPT;
+        int result = 0;
+        while (pos < str.size() && str[pos] >= '0' && str[pos] <= '9')
+            result = 10 * result + str[pos++] - '0';
+        return negative ? -result : result;
     }
 
-    double calculate(double n1, double n2, OPT opt) {
+    int calculate(int num1, int num2, char opt) {
         switch (opt) {
-        case PLUS:
-            return n1 + n2;
-        case MINUS:
-            return n1 - n2;
-        case MULTIPLY:
-            return n1 * n2;
-        case DIVIDE:
-            return n1 / n2;
+        case '+':
+            return num1 + num2;
+        case '-':
+            return num1 - num2;
+        case '*':
+            return num1 * num2;
+        case '/':
+            return num1 / num2;
         default:
-            return INVALID_OPT;
+            break;
         }
-        return INVALID_NUMBER;
+        return 0;
     }
 };
 
