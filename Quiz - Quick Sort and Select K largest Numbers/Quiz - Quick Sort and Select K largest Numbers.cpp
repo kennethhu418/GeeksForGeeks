@@ -5,10 +5,15 @@
 #include <iostream>
 #include <time.h>
 #include <unordered_map>
+#include <algorithm>
 #include <assert.h>
+#include <functional>
 
 using namespace std;
 
+// We can use median of median to get the optimal pivot, which can equally
+// partition the array.
+// See Solution_KLargest for detailed implementation
 class Solution_QSort
 {
 public:
@@ -66,62 +71,71 @@ private:
     }
 };
 
-class Solution_KLargest
-{
+#define GROUP_SIZE 5
+class Solution_KLargest {
 public:
-    void    selectKLargestNumber(int arr[], int n, int K)
-    {
-        if (n < 2) return;
-        int start = 0, end = n - 1, pStart = 0, pEnd = 0;
-        while (start <= end) {
-            partition(arr + start, end - start + 1, pStart, pEnd);
-            if (K >= pStart + 1 && K <= pEnd + 1) return;
-            if (K <= pStart)
-                end = start + pStart - 1;
-            else {
-                start = start + pEnd + 1;
-                K -= (pEnd + 1);
-            }        
+    int selectKLargestNumber(int *arr, int n, int k) {
+        if (n == 0) return -1;
+        if (n <= GROUP_SIZE) {
+            sort(arr, arr + n, greater<int>());
+            return arr[n - k];
         }
+
+        int pivotStart = 0, pivotCount = 0;
+        pivotCount = partition(arr, n, pivotStart);
+        if ((k - 1 >= pivotStart) && (k - 1 < pivotStart + pivotCount))
+            return arr[pivotStart];
+        if (k - 1 < pivotStart)
+            return selectKLargestNumber(arr, pivotStart, k);
+        return selectKLargestNumber(arr + pivotStart + pivotCount, n - (pivotStart + pivotCount), k - (pivotStart + pivotCount));
     }
 
 private:
-    int selectPivot(int arr[], int n)
-    {
-        int     mid = ((n - 1) >> 1);
-        if (arr[0] >= arr[mid] && arr[0] <= arr[n - 1] || arr[0] >= arr[n - 1] && arr[0] <= arr[mid])   return 0;
-        if (arr[mid] >= arr[0] && arr[mid] <= arr[n - 1] || arr[mid] >= arr[n - 1] && arr[mid] <= arr[0]) return mid;
-        return n - 1;
+    int partition(int *arr, int n, int &pivotStart) {
+        int pivotCount = 0; pivotStart = 0;
+        if (n == 0) return pivotCount;
+        if (n == 1) return 1;
+
+        int groupCount = (n + GROUP_SIZE - 1) / GROUP_SIZE;
+        int *medianArr = new int[groupCount];
+        for (int i = 0; i < groupCount - 1; ++i)
+            medianArr[i] = median(arr + i * GROUP_SIZE, GROUP_SIZE);
+        medianArr[groupCount - 1] = median(arr + (groupCount - 1) * GROUP_SIZE, n % GROUP_SIZE);
+
+        int     pivot = selectKLargestNumber(medianArr, groupCount, (groupCount + 1) >> 1);
+        delete[] medianArr;
+        for (int i = 0; i < n; ++i) {
+            if (pivot == arr[i]) {
+                swap(arr[0], arr[i]);
+                break;
+            }
+        }
+
+        pivotCount = 1; pivotStart = 0;
+        int curPos1 = 1, curPos2 = n - 1;
+        while (curPos1 <= curPos2) {
+            if (pivot == arr[curPos1]) {
+                ++pivotCount; ++curPos1;
+            }
+            else if (pivot > arr[curPos1]) {
+                while (curPos1 <= curPos2 && arr[curPos2] < pivot)
+                    --curPos2;
+                if (curPos1 > curPos2) break;
+                swap(arr[curPos1], arr[curPos2--]);
+            }
+            else
+                swap(arr[curPos1++], arr[pivotStart++]);
+        }
+
+        return pivotCount;
     }
 
-    void partition(int * arr, int n, int &pStart, int &pEnd) {
-        if (n <= 0) return;
-        if (n == 1) {
-            pStart = pEnd = 0; return;
-        }
-
-        int pivotIndex = selectPivot(arr, n);
-        swap(arr[0], arr[pivotIndex]);
-
-        int pivot = arr[0], curPos = 1, curEnd = n - 1, pCnt = 1;
-        pStart = 0;
-        while (curPos <= curEnd) {
-            if (arr[curPos] == pivot) {
-                ++curPos; ++pCnt; continue;
-            }
-            if (arr[curPos] > pivot) {
-                swap(arr[pStart++], arr[curPos++]);
-                continue;
-            }
-
-            while (curPos <= curEnd && arr[curEnd] < pivot) --curEnd;
-            if (curPos > curEnd) break;
-            swap(arr[curPos], arr[curEnd--]);
-        }
-        
-        pEnd = pStart + pCnt - 1;
+    int median(int *arr, int n) {
+        sort(arr, arr + n);
+        return arr[(n - 1) >> 1];
     }
 };
+
 
 void generateArray(int arr[], int n, int maxVal)
 {
@@ -221,18 +235,20 @@ void OutputArray(int arr[], int n)
 int _tmain(int argc, _TCHAR* argv[])
 {
     const int   MAX_VAL = 700;
-    int dataArr[1000];
-    int resultArr[1000];
+    const int   MAX_SIZE = 7;
+    int dataArr[MAX_SIZE];
+    int resultArr[MAX_SIZE];
     int size, K;
-    int times = 6000;
+    int times = 60000;
     Solution_QSort so_sort;
     Solution_KLargest so_select;
 
-    srand(time(0));
+    //srand(time(0));
 
     while (times-- > 0)
     {
-        size = 1 + rand() % 1000;
+        cout << "Current Stamp: " << times << endl;
+        size = 1 + rand() % MAX_SIZE;
         K = rand() % size + 1;
 
         generateArray(dataArr, size, MAX_VAL);
