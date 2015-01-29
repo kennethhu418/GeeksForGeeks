@@ -5,112 +5,101 @@
 #include <unordered_map>
 using namespace std;
 
-
-class Solution {
-public:
-    void RearrangeArray(int *arr, int n) {
-        if (n < 2) return;
-        int nextPositive = getNext(arr, n, 0, true);
-        int nextNegative = getNext(arr, n, 0, false);
-        for (int i = 0; i < n && nextPositive < n && nextNegative < n; ++i) {
-            if (i & 1) {
-                swap(arr[i], arr[nextNegative]);
-                nextNegative = getNext(arr, n, nextNegative + 1, false);
-                nextPositive = getNext(arr, n, nextPositive, true);
-            }
-            else {
-                swap(arr[i], arr[nextPositive]);
-                nextPositive = getNext(arr, n, nextPositive + 1, true);
-                nextNegative = getNext(arr, n, nextNegative, false);
-            }
-        }
-    }
-
-private:
-    int getNext(int *arr, int n, int start, bool positive) {
-        while (start < n) {
-            if (positive && arr[start] >= 0) break;
-            if (!positive && arr[start] < 0) break;
+void reArrangeArray(int *arr, int n) {
+    if (n < 2)	return;
+    int start = 0, end = n - 1;
+    while (start < end) {
+        while (start < end && arr[start] >= 0)
             ++start;
-        }
-        return start;
+        if (start == end) break;
+        while (start < end && arr[end] < 0)
+            --end;
+        if (start == end) break;
+        swap(arr[start++], arr[end]);
     }
-};
-
-/**************************** Tests Codes **********************************/
+    int positiveStart = 0, negativeStart = start;
+    if (arr[start] >= 0) ++negativeStart;
+    int curExpectedNegPos = 1;
+    while (negativeStart < n && curExpectedNegPos < negativeStart) {
+        swap(arr[curExpectedNegPos], arr[negativeStart++]);
+        curExpectedNegPos += 2;
+    }
+}
 
 void generateArray(int *arr, int n, int MAX_VAL) {
+    bool negativeMore = (rand() & 1);
+    int curNum = 0;
     for (int i = 0; i < n; ++i) {
-        arr[i] = 1 + rand() % MAX_VAL;
-        if (rand() & 1)
-            arr[i] = -arr[i];
+        curNum = 1 + rand() % MAX_VAL;
+        if (rand() % 3 == 0)
+            arr[i] = negativeMore ? curNum : -curNum;
+        else
+            arr[i] = negativeMore ? -curNum : curNum;
     }
 }
 
-void Output(int *arr, int n) {
-    for (int i = 0; i < n; ++i)
-        cout << arr[i] << " ";
-    cout << endl;
-}
-
-bool checkArray(int *arr, int n) {    
-    if (n < 2) return true;
-
-    bool allNegative = false;
-    int i = 0;
-    for (i = 0; i < n - 1; ) {
-        if (arr[i] >= 0 && arr[i + 1] < 0) {
-            i += 2; continue;
+bool validate(int *arr, int n) {
+    if (n < 2)	return true;
+    int curPos = 0;
+    bool shouldBeNegative = false;
+    while (curPos < n) {
+        if (curPos & 1) {
+            if (arr[curPos] < 0) ++curPos;
+            else break;
         }
-        if (arr[i] < 0 && arr[i + 1] >= 0)
+        else {
+            if (arr[curPos] >= 0) ++curPos;
+            else {
+                shouldBeNegative = true;
+                break;
+            }
+        }
+    }
+
+    while (curPos < n) {
+        if ((shouldBeNegative && arr[curPos] >= 0)
+            || (!shouldBeNegative && arr[curPos] < 0))
             return false;
-        break;
+        ++curPos;
     }
-
-    if (i < n && arr[i] < 0)
-        allNegative = true;
-
-    for (; i < n; ++i) {
-        if (allNegative && arr[i] >= 0) return false;
-        if (!allNegative && arr[i] < 0) return false;
-    }
-
     return true;
 }
 
-bool checkComplementary(int *orgArr, int *curArr, int n) {
-    unordered_map<int, int> mapA;
+bool validate2(const int *arr1, const int *arr2, int n) {
+    unordered_map<int, int>	mapA;
+    unordered_map<int, int>	mapA2;
     for (int i = 0; i < n; ++i)
-        mapA[orgArr[i]]++;
-
+        mapA[arr1[i]]++;
     for (int i = 0; i < n; ++i) {
-        if (mapA.find(curArr[i]) == mapA.end()) return false;
-        mapA[curArr[i]]--;
-        if (mapA[curArr[i]] == 0)
-            mapA.erase(curArr[i]);
+        if (mapA.find(arr2[i]) == mapA.end())
+            return false;
+        mapA2[arr2[i]]++;
+        if (mapA2[arr2[i]] > mapA[arr2[i]])
+            return false;
     }
-
     return true;
 }
 
 int main() {
-    const int MAX_N = 2000;
-    const int MAX_VAL = 100000;
-    int     orgArr[MAX_N];
-    int     soArr[MAX_N];
-    int     n = 0;
-    int tryTimes = 10000;
-    Solution so;
+    const int MAX_SIZE = 500;
+    const int MAX_VAL = 10000;
+    const int MAX_TRIES = 10000;
+    int	arr[MAX_SIZE];
+    int    testArr[MAX_SIZE];
+    int 	n;
+    int	tryTimes = 0;
+    while (tryTimes++ < MAX_TRIES) {
+        cout << tryTimes << endl;
+        if (tryTimes == 38)
+            cout << endl;
+        n = 1 + rand() % MAX_SIZE;
+        generateArray(arr, n, MAX_VAL);
+        memmove(testArr, arr, n * sizeof(int));
 
-    while (tryTimes-- > 0) {
-        n = 1 + rand() % MAX_N;
-        generateArray(orgArr, n, MAX_VAL);
-        memmove(soArr, orgArr, n * sizeof(int));
+        reArrangeArray(testArr, n);
 
-        so.RearrangeArray(soArr, n);
-
-        assert(checkComplementary(orgArr, soArr, n));
-        assert(checkArray(soArr, n));
+        assert(validate(testArr, n));
+        assert(validate2(arr, testArr, n));
     }
     return 0;
 }

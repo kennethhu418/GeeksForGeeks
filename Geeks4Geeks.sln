@@ -267,6 +267,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Two Robots Max P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quiz - Find the missing number in Arithmetic Progression", "Quiz - Find the missing number in Arithmetic Progression\Quiz - Find the missing number in Arithmetic Progression.vcxproj", "{0F439AD1-2566-4C03-90B1-0C49BB5C8A0F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Google - Insert node in Circular List", "Google - Insert node in Circular List\Google - Insert node in Circular List.vcxproj", "{8AA8A9E8-A2CF-4163-871D-18BEE165467B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Google - Palindrome String Determination", "Google - Palindrome String Determination\Google - Palindrome String Determination.vcxproj", "{A1D8FF03-6AC8-468F-98A3-C49570F0E82D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -801,6 +805,14 @@ Global
 		{0F439AD1-2566-4C03-90B1-0C49BB5C8A0F}.Debug|Win32.Build.0 = Debug|Win32
 		{0F439AD1-2566-4C03-90B1-0C49BB5C8A0F}.Release|Win32.ActiveCfg = Release|Win32
 		{0F439AD1-2566-4C03-90B1-0C49BB5C8A0F}.Release|Win32.Build.0 = Release|Win32
+		{8AA8A9E8-A2CF-4163-871D-18BEE165467B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8AA8A9E8-A2CF-4163-871D-18BEE165467B}.Debug|Win32.Build.0 = Debug|Win32
+		{8AA8A9E8-A2CF-4163-871D-18BEE165467B}.Release|Win32.ActiveCfg = Release|Win32
+		{8AA8A9E8-A2CF-4163-871D-18BEE165467B}.Release|Win32.Build.0 = Release|Win32
+		{A1D8FF03-6AC8-468F-98A3-C49570F0E82D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A1D8FF03-6AC8-468F-98A3-C49570F0E82D}.Debug|Win32.Build.0 = Debug|Win32
+		{A1D8FF03-6AC8-468F-98A3-C49570F0E82D}.Release|Win32.ActiveCfg = Release|Win32
+		{A1D8FF03-6AC8-468F-98A3-C49570F0E82D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
