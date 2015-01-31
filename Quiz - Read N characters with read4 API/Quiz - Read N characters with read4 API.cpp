@@ -16,45 +16,76 @@
 #include <assert.h>
 using namespace std;
 
+#define MAX_SIZE 4
+
 int read4(char * buffer);
 
-class Solution
-{
+class Solution {
 private:
-    char        residuleBuffer[5];
-    int            remainingResiduleCnt;
-    int            residuleBufferSize;
+    char        mBuffer[MAX_SIZE + 1];
+    char        mBufferSize;
+    char        mCurLen;
 
 public:
-    Solution() : remainingResiduleCnt(0), residuleBufferSize(0) {}
+    Solution() : mBufferSize(0), mCurLen(0) {
+        mBufferSize = read4(&mBuffer[0]);
+    }
 
-    int read(char * buf, int n) {
-        int totalReadCnt = 0, curReadCnt = 0;
+    int read(char * dest, int n) {
+        if (n == 0) return n;
+        int curRead = 0, totalRead = 0;
+        while (mBufferSize) {
+            curRead = min(n, mBufferSize - mCurLen);
+            memmove(dest + totalRead, &mBuffer[mCurLen], curRead);
+            n -= curRead;
+            totalRead += curRead;
+            mCurLen += curRead;
 
-        curReadCnt = min(n, remainingResiduleCnt);
-        memmove(buf, &residuleBuffer[residuleBufferSize - remainingResiduleCnt], curReadCnt);
-        remainingResiduleCnt -= curReadCnt; totalReadCnt = curReadCnt; buf += curReadCnt;
-
-        if (totalReadCnt == n) return totalReadCnt;
-
-        int readPass = (n - curReadCnt) / 4, curReadPass = 0;
-        while (curReadPass < readPass) {
-            curReadCnt = read4(buf);  totalReadCnt += curReadCnt;
-            ++curReadPass;  buf += curReadCnt;
-            if (curReadCnt < 4) return totalReadCnt;
+            if (n == 0) return totalRead;
+            mBufferSize = read4(&mBuffer[0]);
+            mCurLen = 0;
         }
-
-        if (totalReadCnt == n) return totalReadCnt;
-
-        curReadCnt = read4(residuleBuffer);
-        residuleBufferSize = remainingResiduleCnt = curReadCnt;
-
-        curReadCnt = min(curReadCnt, n - totalReadCnt);
-        memmove(buf, residuleBuffer, curReadCnt);
-        totalReadCnt += curReadCnt; remainingResiduleCnt -= curReadCnt;
-        return totalReadCnt;
+        return totalRead;
     }
 };
+
+//class Solution
+//{
+//private:
+//    char        residuleBuffer[MAX_SIZE + 1];
+//    int            remainingResiduleCnt;
+//    int            residuleBufferSize;
+//
+//public:
+//    Solution() : remainingResiduleCnt(0), residuleBufferSize(0) {}
+//
+//    int read(char * buf, int n) {
+//        int totalReadCnt = 0, curReadCnt = 0;
+//
+//        curReadCnt = min(n, remainingResiduleCnt);
+//        memmove(buf, &residuleBuffer[residuleBufferSize - remainingResiduleCnt], curReadCnt);
+//        remainingResiduleCnt -= curReadCnt; totalReadCnt = curReadCnt; buf += curReadCnt;
+//
+//        if (totalReadCnt == n) return totalReadCnt;
+//
+//        int readPass = (n - curReadCnt) / 4, curReadPass = 0;
+//        while (curReadPass < readPass) {
+//            curReadCnt = read4(buf);  totalReadCnt += curReadCnt;
+//            ++curReadPass;  buf += curReadCnt;
+//            if (curReadCnt < 4) return totalReadCnt;
+//        }
+//
+//        if (totalReadCnt == n) return totalReadCnt;
+//
+//        curReadCnt = read4(residuleBuffer);
+//        residuleBufferSize = remainingResiduleCnt = curReadCnt;
+//
+//        curReadCnt = min(curReadCnt, n - totalReadCnt);
+//        memmove(buf, residuleBuffer, curReadCnt);
+//        totalReadCnt += curReadCnt; remainingResiduleCnt -= curReadCnt;
+//        return totalReadCnt;
+//    }
+//};
 
 
 /******************** Tests ******************/
@@ -78,14 +109,15 @@ int read4(char * buf) {
 int main()
 {
     string composedString;
-    const int MAX_READ_CNT = 20;
+    const int MAX_READ_CNT = 200;
     char buf[MAX_READ_CNT + 1];
 
-    for (int tryCount = 0; tryCount < 200; ++tryCount) {
-        Solution so;
+    for (int tryCount = 0; tryCount < 20000; ++tryCount) {
+        cout <<  "TryCount: " << tryCount << endl;
         test_file = CONST_TEST_FILE.substr(0, 1 + rand() % CONST_TEST_FILE.size());
         composedString.clear(); curCursor = 0;
 
+        Solution so;
         int curN = 0, actualN = 0;
         while (true) {
             curN = 1 + rand() % MAX_READ_CNT;
