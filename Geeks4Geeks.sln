@@ -271,6 +271,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Google - Insert node in Cir
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Google - Palindrome String Determination", "Google - Palindrome String Determination\Google - Palindrome String Determination.vcxproj", "{A1D8FF03-6AC8-468F-98A3-C49570F0E82D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Amazon - Resort a sorted array by parabola calculation", "Amazon - Resort a sorted array by parabola calculation\Amazon - Resort a sorted array by parabola calculation.vcxproj", "{0809E38B-4826-4FE9-84A1-EBAB20CF1345}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -813,6 +815,10 @@ Global
 		{A1D8FF03-6AC8-468F-98A3-C49570F0E82D}.Debug|Win32.Build.0 = Debug|Win32
 		{A1D8FF03-6AC8-468F-98A3-C49570F0E82D}.Release|Win32.ActiveCfg = Release|Win32
 		{A1D8FF03-6AC8-468F-98A3-C49570F0E82D}.Release|Win32.Build.0 = Release|Win32
+		{0809E38B-4826-4FE9-84A1-EBAB20CF1345}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0809E38B-4826-4FE9-84A1-EBAB20CF1345}.Debug|Win32.Build.0 = Debug|Win32
+		{0809E38B-4826-4FE9-84A1-EBAB20CF1345}.Release|Win32.ActiveCfg = Release|Win32
+		{0809E38B-4826-4FE9-84A1-EBAB20CF1345}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
