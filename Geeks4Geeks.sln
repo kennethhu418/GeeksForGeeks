@@ -273,6 +273,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Google - Palindrome String 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Amazon - Resort a sorted array by parabola calculation", "Amazon - Resort a sorted array by parabola calculation\Amazon - Resort a sorted array by parabola calculation.vcxproj", "{0809E38B-4826-4FE9-84A1-EBAB20CF1345}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facebook - Find the Thief", "Facebook - Find the Thief\Facebook - Find the Thief.vcxproj", "{2FD23419-2283-4E1F-8286-AC0821FC4408}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -819,6 +821,10 @@ Global
 		{0809E38B-4826-4FE9-84A1-EBAB20CF1345}.Debug|Win32.Build.0 = Debug|Win32
 		{0809E38B-4826-4FE9-84A1-EBAB20CF1345}.Release|Win32.ActiveCfg = Release|Win32
 		{0809E38B-4826-4FE9-84A1-EBAB20CF1345}.Release|Win32.Build.0 = Release|Win32
+		{2FD23419-2283-4E1F-8286-AC0821FC4408}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2FD23419-2283-4E1F-8286-AC0821FC4408}.Debug|Win32.Build.0 = Debug|Win32
+		{2FD23419-2283-4E1F-8286-AC0821FC4408}.Release|Win32.ActiveCfg = Release|Win32
+		{2FD23419-2283-4E1F-8286-AC0821FC4408}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
